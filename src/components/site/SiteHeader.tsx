@@ -3,8 +3,6 @@ import { cn } from "@/lib/cn"
 import { Band } from "./Band"
 import { FORMATS } from "@/content/formats"
 
-const today = new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })
-
 function Seal({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 28 28" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -16,7 +14,7 @@ function Seal({ className }: { className?: string }) {
 
 const utilLink = ({ isActive }: { isActive: boolean }) => cn("text-eyebrow font-sans uppercase transition-colors", isActive ? "text-copper-600" : "text-foreground hover:text-navy-600")
 
-/** Masthead: utility strip · centered wordmark with the dateline plate at left · section bar of formats. */
+/** Masthead: utility strip · centered wordmark with the seal plate at left · section bar of formats. */
 export default function SiteHeader() {
   return (
     <header className="masthead bg-background">
@@ -31,7 +29,6 @@ export default function SiteHeader() {
         <div className="hidden lg:absolute lg:left-[var(--spacing-gutter)] lg:top-1/2 lg:block lg:-translate-y-1/2">
           <Seal className="h-12 w-12 text-copper-500" />
           <p className="mt-3 max-w-[13rem] font-serif text-body leading-snug text-foreground">Federal procurement, read from the record.</p>
-          <p className="mt-1 font-mono text-mono-label uppercase text-foreground-subtle">{today}</p>
         </div>
         <Link to="/" className="block text-center">
           <span className="font-display block whitespace-nowrap text-[clamp(2rem,4.7vw,5.25rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
