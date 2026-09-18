@@ -1,0 +1,34 @@
+{
+  "name": "gc-home-v1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Financial-terminal UI environment. DESIGN.md is the absolute source of truth for tokens.",
+  "scripts": {
+    "design:check": "npx impeccable --help",
+    "hf:preview": "hyperframes preview",
+    "hf:render": "hyperframes render",
+    "remotion:studio": "remotion studio",
+    "remotion:render": "remotion render"
+  },
+  "dependencies": {
+    "@remixicon/react": "^4.9.0",
+    "@remotion/cli": "^4.0.526",
+    "@tremor/react": "^3.18.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "echarts": "^6.1.0",
+    "gsap": "^3.15.0",
+    "hyperframes": "^0.8.46",
+    "lucide-react": "^1.47.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.526",
+    "tailwind-merge": "^3.7.0",
+    "tailwind-variants": "^3.3.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@tremor/cli": "^1.2.0",
+    "shadcn": "^4.21.0"
+  }
+}
