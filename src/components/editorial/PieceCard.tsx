@@ -16,15 +16,15 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
 
   if (variant === "lead") {
     return (
-      <article className={cn("border-t-2 border-navy-900 pt-8", className)}>
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-7">
+      <article className={cn("border-b border-line border-t-2 border-t-navy-900 py-10", className)}>
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-0">
+          <div className="flex flex-col lg:col-span-7 lg:pr-14">
             <MonoLabel className="text-copper-600"><Link to={`/section/${piece.format}`} className="hover:text-navy-900">{piece.formatName}</Link> · {dateShort(piece.publishedAt)} · <span className="text-foreground-subtle">{piece.byline}</span></MonoLabel>
-            <Link to={href} className="group mt-4 block"><Heading level={1} className="text-display max-w-[22ch] transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-            <p className="mt-6 max-w-[48ch] text-dek text-foreground-muted">{piece.dek}</p>
-            <Visual piece={piece} size="strip" />
+            <Link to={href} className="group mt-6 block"><Heading level={1} className="text-display max-w-[20ch] transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
+            <p className="mt-7 max-w-[44ch] text-dek-lg text-foreground-muted">{piece.dek}</p>
+            <div className="mt-auto pt-10"><Visual piece={piece} size="strip" /></div>
           </div>
-          <Link to={href} className="block lg:col-span-5 lg:pt-1"><Visual piece={piece} size="lead" /></Link>
+          <Link to={href} className="block lg:col-span-5 lg:border-l lg:border-line lg:pl-14"><Visual piece={piece} size="lead" /></Link>
         </div>
       </article>
     )

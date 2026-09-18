@@ -37,10 +37,10 @@ export default function Front() {
 
   return (
     <>
-      <Band className="front-band pb-16 pt-10">
+      <Band className="front-band pt-8">
         <PieceCard piece={lead} variant="lead" />
       </Band>
-      <Band className="pb-12">
+      <Band className="pb-12 pt-12">
         <div className="mb-6 border-b-2 border-navy-900 pb-3"><Eyebrow>Latest</Eyebrow></div>
         <River pieces={latest} />
       </Band>

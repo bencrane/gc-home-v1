@@ -37,11 +37,11 @@
 
   /* ── Type scale: modular, ratio 1.2 on 16px. Steps 11 · 13 · 16 · 19 · 23 · 28 · 33 · 40 · 48 · 57 · 69.
      One role per step (DESIGN.md › Typography). ── */
-  --text-wordmark: clamp(2.25rem, 4.7vw, 4.3125rem);  /* 69: the loudest text on the site */
+  --text-wordmark: clamp(2.25rem, 4.7vw, 5.1875rem);  /* 83: the loudest text on the site */
   --text-wordmark--line-height: 1;
   --text-wordmark--letter-spacing: 0.02em;
 
-  --text-display: clamp(2.5rem, 4vw, 3.5625rem);      /* 57: front lead */
+  --text-display: clamp(2.5rem, 4.4vw, 4.3125rem);    /* 69: front lead */
   --text-display--line-height: 1.04;
   --text-display--letter-spacing: -0.02em;
   --text-display--font-weight: 400;
@@ -67,6 +67,8 @@
 
   --text-dek: 1.4375rem;                               /* 23: standfirst, sans */
   --text-dek--line-height: 1.4;
+  --text-dek-lg: 1.75rem;                              /* 28: front lead standfirst */
+  --text-dek-lg--line-height: 1.35;
 
   --text-h4: 1.1875rem;                                /* 19: card headlines */
   --text-h4--line-height: 1.25;

@@ -78,19 +78,19 @@ typography:
   # Modular scale, ratio 1.2 on 16px: 11 · 13 · 16 · 19 · 23 · 28 · 33 · 40 · 48 · 57 · 69. One role per step.
   wordmark:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.25rem, 4.7vw, 4.3125rem)
+    fontSize: clamp(2.25rem, 4.7vw, 5.1875rem)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.02em
     textTransform: uppercase
-    role: the loudest text on the site (69px at desktop)
+    role: the loudest text on the site (83px at desktop)
   display:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.5rem, 4vw, 3.5625rem)
+    fontSize: clamp(2.5rem, 4.4vw, 4.3125rem)
     fontWeight: 400
     lineHeight: 1.04
     letterSpacing: -0.02em
-    role: front lead headline (57)
+    role: front lead headline (69)
   h1:
     fontFamily: Fraunces Variable
     fontSize: clamp(2rem, 2.9vw, 2.5rem)
@@ -126,6 +126,12 @@ typography:
     fontWeight: 400
     lineHeight: 1.4
     role: standfirst under a display or h1; one step above prose
+  dek-lg:
+    fontFamily: Inter Variable
+    fontSize: 28px
+    fontWeight: 400
+    lineHeight: 1.35
+    role: front lead standfirst
   h4:
     fontFamily: Fraunces Variable
     fontSize: 19px
