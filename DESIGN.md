@@ -86,11 +86,11 @@ typography:
     role: the loudest text on the site (83px at desktop)
   display:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.5rem, 4.4vw, 4.3125rem)
+    fontSize: clamp(2.75rem, 5vw, 5.1875rem)
     fontWeight: 400
-    lineHeight: 1.12
+    lineHeight: 1.08
     letterSpacing: -0.02em
-    role: front lead headline (69)
+    role: front lead headline (83)
   h1:
     fontFamily: Fraunces Variable
     fontSize: clamp(2rem, 2.9vw, 2.5rem)
