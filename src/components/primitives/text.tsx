@@ -1,7 +1,6 @@
 import { type ElementType, type ReactNode } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/cn";
-import { useSectionTone } from "./section-context";
 
 /** Body copy bound to the type scale. `size` selects the role; `tone` resolves
  *  against the ambient Section band so the same `tone="muted"` reads correctly on
@@ -27,11 +26,6 @@ const TONE_LIGHT: Record<Tone, string> = {
   muted: "text-slate-600",
   subtle: "text-slate-500",
 };
-const TONE_NAVY: Record<Tone, string> = {
-  default: "text-slate-100",
-  muted: "text-slate-300",
-  subtle: "text-slate-400",
-};
 
 type TextProps = VariantProps<typeof text> & {
   tone?: Tone;
@@ -47,7 +41,6 @@ export function Text({
   className,
   children,
 }: TextProps) {
-  const band = useSectionTone();
-  const color = band === "navy" ? TONE_NAVY[tone] : TONE_LIGHT[tone];
+  const color = TONE_LIGHT[tone];
   return <Tag className={cn(text({ size }), color, className)}>{children}</Tag>;
 }

@@ -1,6 +1,5 @@
 import { type ReactNode } from "react";
 import { cn } from "@/lib/cn";
-import { useSectionTone } from "./section-context";
 
 /** The copper kicker — one component for the label that was copy-pasted 16×.
  *  `text-eyebrow` carries size/tracking/weight; `uppercase` + family are applied
@@ -22,17 +21,7 @@ export function Eyebrow({
   className,
   children,
 }: EyebrowProps) {
-  const band = useSectionTone();
-  const resolved =
-    tone === "copper"
-      ? "text-copper-600"
-      : tone === "copper-light"
-        ? "text-copper-300"
-        : band === "navy"
-          ? "text-copper-300"
-          : band === "slate"
-            ? "text-copper-700"
-            : "text-copper-600";
+  const resolved = tone === "copper-light" ? "text-copper-300" : "text-copper-600";
   return (
     <Tag className={cn("text-eyebrow font-sans uppercase", resolved, className)}>
       {children}

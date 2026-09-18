@@ -1,15 +1,16 @@
-import Wordmark from "./Wordmark";
+import Wordmark from "./Wordmark"
+import { Band } from "./Band"
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-line bg-slate-100">
-      <div className="mx-auto max-w-7xl px-6 py-8">
+    <footer className="mt-16 border-t-2 border-navy-900 bg-background">
+      <Band as="div" className="py-8">
         <Wordmark />
-        <div className="mt-6 flex flex-col gap-2 border-t border-line pt-4 text-xs text-slate-600 md:flex-row md:items-center md:justify-between">
+        <div className="mt-6 flex flex-col gap-2 border-t border-line pt-4 font-mono text-mono-provenance text-foreground-subtle md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Government Contracted</p>
           <p>Independent. Not affiliated with SAM.gov, GSA, or any federal agency. <a href="/gallery" className="text-copper-600 hover:text-navy-900">Design gallery</a></p>
         </div>
-      </div>
+      </Band>
     </footer>
-  );
+  )
 }

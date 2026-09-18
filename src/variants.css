@@ -8,9 +8,6 @@ html[data-variant="broadsheet"] {
   --text-body-lg: 1.0625rem;
   --text-body-lg--line-height: 1.55;
   --w-prose: 52rem;
-  --section-y-sm: 3rem;
-  --section-y: 4rem;
-  --section-y-lg: 5rem;
 }
 html[data-variant="broadsheet"] .ledger-row { padding-top: 0.625rem; padding-bottom: 0.625rem; }
 
@@ -30,7 +27,7 @@ html[data-variant="ink"] .front-band .group-hover\:text-navy-600:hover,
 html[data-variant="ink"] .front-band .hover\:text-navy-900:hover { color: var(--color-copper-200); }
 html[data-variant="ink"] .masthead { background-color: var(--color-navy-900); border-color: var(--color-navy-700); }
 html[data-variant="ink"] .masthead .text-slate-500 { color: var(--color-slate-400); }
-html[data-variant="ink"] .masthead .text-navy-900,
+html[data-variant="ink"] .masthead .text-foreground,
 html[data-variant="ink"] .masthead .hover\:text-navy-900:hover { color: var(--color-slate-100); }
 
 /* ── quiet ──────────────────────────────────────────────────── */

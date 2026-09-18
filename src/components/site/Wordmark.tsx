@@ -29,7 +29,7 @@ export default function Wordmark({ className = "", href = "/" }: Props) {
           <path d="M14 8.5 L15.5 12.2 L19.4 12.5 L16.4 15.1 L17.3 18.9 L14 16.9 L10.7 18.9 L11.6 15.1 L8.6 12.5 L12.5 12.2 Z" />
         </svg>
       </span>
-      <span className="font-display text-[1.05rem] tracking-tight leading-none text-navy-900">
+      <span className="font-display text-body tracking-tight leading-none text-navy-900">
         Government<span className="text-copper-600"> · </span>Contracted
       </span>
     </Link>

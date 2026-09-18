@@ -1,7 +1,7 @@
 ---
 version: 1
 name: Government-Contracted-design-system
-description: "Government Contracted (GC) — a media property for federal procurement, in the register of Bloomberg Media for govcon. The identity is the 'Federal Register' language carried verbatim from gc-hq-new: warm document paper (#f7f5f0) as ground, deep navy ink (#0f1a2e) as authority, a fixed navy side rail, copper as the official-seal accent used only for markers and emphasis, Fraunces serif at weight 400 for display, Inter for UI, JetBrains Mono uppercase-tracked for labels and data provenance. Sharp corners by default. Structure comes from hairlines, register lines, and a 32px ledger grid, not from cards or shadows. Every value in this file is live in src/index.css; this file is the human-readable contract for them."
+description: "Government Contracted (GC) — a media property for federal procurement, in the register of Bloomberg Media for govcon. Own system (2026-09-17): the palette and three faces are the carried identity; type scale, rhythm, widths, and the page grid are designed for a news front. Identity: warm document paper (#f7f5f0) as ground, deep navy ink (#0f1a2e) as authority, a fixed navy side rail, copper as the official-seal accent used only for markers and emphasis, Fraunces serif at weight 400 for display, Inter for UI, JetBrains Mono uppercase-tracked for labels and data provenance. Sharp corners by default. Structure comes from hairlines, register lines, and a 32px ledger grid, not from cards or shadows. Every value in this file is live in src/index.css; this file is the human-readable contract for them."
 
 colors:
   # Ground and ink
@@ -77,81 +77,79 @@ colors:
 typography:
   display:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.75rem, 6vw, 4rem)
+    fontSize: clamp(2.5rem, 3.6vw, 3.5rem)
     fontWeight: 400
-    lineHeight: 1.02
+    lineHeight: 1.04
     letterSpacing: -0.02em
   h1:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.25rem, 4.5vw, 3.25rem)
+    fontSize: clamp(2rem, 2.8vw, 2.75rem)
     fontWeight: 400
-    lineHeight: 1.05
-    letterSpacing: -0.02em
+    lineHeight: 1.08
+    letterSpacing: -0.015em
   h2:
     fontFamily: Fraunces Variable
-    fontSize: clamp(1.75rem, 3.2vw, 2.5rem)
+    fontSize: 28px
     fontWeight: 400
-    lineHeight: 1.1
+    lineHeight: 1.15
     letterSpacing: -0.01em
   h3:
     fontFamily: Fraunces Variable
-    fontSize: 24px
+    fontSize: 22px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: -0.01em
   h4:
     fontFamily: Fraunces Variable
-    fontSize: 20px
+    fontSize: 18px
     fontWeight: 400
-    lineHeight: 1.3
-    letterSpacing: -0.01em
+    lineHeight: 1.25
+    letterSpacing: -0.005em
   body-lg:
     fontFamily: Inter Variable
     fontSize: 18px
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.55
   body:
     fontFamily: Inter Variable
     fontSize: 16px
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.5
   body-sm:
     fontFamily: Inter Variable
-    fontSize: 15px
+    fontSize: 14px
     fontWeight: 400
-    lineHeight: 1.55
+    lineHeight: 1.45
   caption:
     fontFamily: Inter Variable
-    fontSize: 13px
+    fontSize: 12px
     fontWeight: 500
     lineHeight: 1.4
   eyebrow:
-    fontFamily: JetBrains Mono Variable
-    fontSize: 13px
+    fontFamily: Inter Variable
+    fontSize: 11px
     fontWeight: 600
     lineHeight: 1.2
-    letterSpacing: 0.18em
+    letterSpacing: 0.14em
     textTransform: uppercase
   mono-label:
     fontFamily: JetBrains Mono Variable
     fontSize: 10px
     fontWeight: 600
     lineHeight: 1.3
-    letterSpacing: 0.16em
+    letterSpacing: 0.12em
     textTransform: uppercase
   mono-data:
     fontFamily: JetBrains Mono Variable
-    fontSize: 11.5px
+    fontSize: 12px
     fontWeight: 500
     lineHeight: 1.4
-    letterSpacing: 0.1em
-    textTransform: uppercase
+    letterSpacing: 0.02em
   mono-provenance:
     fontFamily: JetBrains Mono Variable
     fontSize: 11px
     fontWeight: 400
     lineHeight: 1.3
-    letterSpacing: -0.01em
   figures-display:
     fontFamily: Fraunces Variable
     fontWeight: 400
@@ -167,15 +165,12 @@ rounded:
 
 spacing:
   base: 4px
-  gutter: 24px
+  gutter: 32px
   rail-w: 72px
-  rail-w-mobile: 52px
-  section-y-sm: 64px
-  section-y: 80px
-  section-y-lg: 96px
-  w-prose: 768px
-  w-content: 1152px
+  band-y: 40px
   w-wide: 1600px
+  w-prose: 672px
+  card-gap: 24px / 32px
   ledger-grid: 32px
 
 motion:
@@ -241,6 +236,10 @@ Three signatures carry the identity everywhere:
 - Type roles are Tailwind utilities generated from the tokens: `text-display`, `text-h1` … `text-mono-provenance`. Ad hoc font sizes are not used.
 
 ## Layout
+
+- Page: rail (72px navy grid track at lg+) + document. Document column runs to `w-wide` (1600px) with a 32px gutter; no marketing bands. Vertical rhythm is 40px per front band.
+- Front (docs/design/FRONT_BRIEF.md): lead 8/12 with its data visual, secondaries 4/12 as rows, then rivers of 4-up cards per section. Every piece once.
+- Card contract: 5:3 art well, kicker, h4 headline, two-line dek.
 
 - Rail on the left at `--rail-w`; content offsets by it at lg+. The rail is painted into the html background so it reaches the physical screen edge on every device.
 - Widths: `w-prose` for reading columns, `w-content` for standard bands, `w-wide` for tables and charts. Gutter is `--spacing-gutter`.

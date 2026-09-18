@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
-import { Section, Eyebrow, Heading, Text } from "@/components/primitives"
+import { Eyebrow, Heading, Text } from "@/components/primitives"
+import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
 import { PIECES, bySection } from "@/content/pieces"
 import type { Piece } from "@/content/types"
 
 function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: string }) {
   return (
-    <div className="mb-6 flex items-end justify-between gap-6 border-b-2 border-navy-600 pb-3">
+    <div className="mb-6 flex items-end justify-between gap-6 border-b-2 border-navy-900 pb-3">
       <div>
         <Heading level={2} className="text-h3">{title}</Heading>
         <Text size="body-sm" tone="muted" className="mt-1">{blurb}</Text>
@@ -16,12 +17,11 @@ function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: s
   )
 }
 
-/** River: cards four-up at xl; fewer than two pieces renders as rows so no card stands alone. */
 function River({ pieces }: { pieces: Piece[] }) {
   if (pieces.length === 0) return null
   if (pieces.length < 2) return <div>{pieces.map((p) => <PieceCard key={p.slug} piece={p} variant="row" />)}</div>
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">
       {pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}
     </div>
   )
@@ -37,28 +37,26 @@ export default function Front() {
 
   return (
     <>
-      <Section spacing="sm" divide className="front-band">
+      <Band className="front-band py-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8"><PieceCard piece={lead} variant="lead" /></div>
-          <aside className="border-t-2 border-navy-600 pt-4 lg:col-span-4 lg:border-t-0 lg:border-l lg:border-line lg:pl-8 lg:pt-0">
+          <aside className="border-t-2 border-navy-900 pt-4 lg:col-span-4 lg:border-l lg:border-t-0 lg:border-line lg:pl-8 lg:pt-0">
             <Eyebrow>Latest</Eyebrow>
             <div className="mt-3">{secondaries.map((p) => <PieceCard key={p.slug} piece={p} variant="row" />)}</div>
           </aside>
         </div>
-      </Section>
-
+      </Band>
       {markets.length > 0 && (
-        <Section spacing="sm" divide>
+        <Band className="py-10">
           <SectionHead title="Markets" to="/markets" blurb="Obligations, flows, expirations, and sub-award demand, read from the public record." />
           <River pieces={markets} />
-        </Section>
+        </Band>
       )}
-
       {briefings.length > 0 && (
-        <Section spacing="sm">
+        <Band className="py-10">
           <SectionHead title="Briefings" to="/briefings" blurb="The month's largest awards, the wage floors behind service bids, and the primes that shape the market." />
           <River pieces={briefings} />
-        </Section>
+        </Band>
       )}
     </>
   )

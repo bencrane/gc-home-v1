@@ -1,5 +1,6 @@
 import { useParams, Navigate } from "react-router-dom"
-import { Section, Eyebrow, Heading, Text } from "@/components/primitives"
+import { Eyebrow, Heading, Text } from "@/components/primitives"
+import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
 import { bySection } from "@/content/pieces"
 
@@ -15,16 +16,16 @@ export default function SectionIndex() {
   const copy = COPY[section]
   return (
     <>
-      <Section spacing="sm" divide>
+      <Band className="border-b border-line py-10">
         <Eyebrow>Section</Eyebrow>
-        <Heading level={1} className="mt-4">{copy.title}</Heading>
-        <Text size="body-lg" tone="muted" className="mt-6 max-w-2xl">{copy.lede}</Text>
-      </Section>
-      <Section spacing="sm">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <Heading level={1} className="mt-3">{copy.title}</Heading>
+        <Text size="body-lg" tone="muted" className="mt-4 max-w-2xl">{copy.lede}</Text>
+      </Band>
+      <Band className="py-10">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">
           {pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}
         </div>
-      </Section>
+      </Band>
     </>
   )
 }
