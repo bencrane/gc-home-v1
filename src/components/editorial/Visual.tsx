@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import * as echarts from "echarts/core"
 import type { Piece, LedgerSpec, ChartSpec, FiguresSpec } from "@/content/types"
 import { ensureTheme } from "@/lib/echarts-theme"
-import { money, count, hourly, dateShort, pct } from "@/lib/format"
+import { money, count, hourly, dateShort } from "@/lib/format"
 import { MonoLabel } from "@/components/primitives"
 import { Art } from "./Art"
 import { activeVariant } from "@/lib/variant"
@@ -68,32 +68,12 @@ function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead"
 function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" }) {
   const rows = spec.data.rows.slice(0, size === "lead" ? 8 : 5)
   const f = fmt[spec.valueFormat] as (v: unknown) => string
-  const diverging = size === "lead" && !!spec.delta
-  const max = diverging
-    ? Math.max(...rows.map((r) => Math.abs(Number(r[spec.delta!]) || 0)))
-    : Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
+  const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (
     <figure>
-      <MonoLabel className="text-copper-600">{spec.heading}{diverging ? " · change on prior year" : ""}</MonoLabel>
+      <MonoLabel className="text-copper-600">{spec.heading}</MonoLabel>
       <ol className="mt-4">
         {rows.map((r, i) => {
-          if (diverging) {
-            const d = Number(r[spec.delta!]) || 0
-            const w = max ? (Math.abs(d) / max) * 50 : 0
-            return (
-              <li key={i} className="py-2">
-                <div className="flex items-baseline justify-between gap-4">
-                  <span className="truncate text-body text-foreground">{String(r[spec.label] ?? "—")}</span>
-                  <span className="shrink-0 font-mono text-mono-data tabular-nums text-foreground-subtle">{f(r[spec.value])}</span>
-                </div>
-                <div className="relative mt-1.5 h-2 w-full">
-                  <div className="absolute inset-y-0 left-1/2 w-px bg-line-strong" />
-                  <div className={"absolute inset-y-0 " + (d < 0 ? "right-1/2 bg-danger" : "left-1/2 bg-success")} style={{ width: `${w}%` }} />
-                  <span className={"absolute -top-0.5 font-mono text-mono-label tabular-nums " + (d < 0 ? "right-[calc(50%+0.5rem)] text-danger" : "left-[calc(50%+0.5rem)] text-success") } style={{ [d < 0 ? "marginRight" : "marginLeft"]: `${w}%` }}>{pct(d)}</span>
-                </div>
-              </li>
-            )
-          }
           const v = Number(r[spec.value]) || 0
           const w = max ? Math.max(1.5, (v / max) * 100) : 0
           return (
