@@ -66,7 +66,7 @@ function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead"
 }
 
 function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" }) {
-  const rows = spec.data.rows.slice(0, size === "lead" ? 8 : 5)
+  const rows = spec.data.rows.slice(0, size === "lead" ? 7 : 5)
   const f = fmt[spec.valueFormat] as (v: unknown) => string
   const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (
