@@ -70,14 +70,14 @@ function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" 
   const f = fmt[spec.valueFormat] as (v: unknown) => string
   const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (
-    <figure className={size === "lead" ? "flex h-full flex-col" : undefined}>
+    <figure>
       <MonoLabel className="text-copper-600">{spec.heading}</MonoLabel>
-      <ol className={size === "lead" ? "mt-4 flex flex-1 flex-col justify-between" : "mt-4"}>
+      <ol className="mt-4">
         {rows.map((r, i) => {
           const v = Number(r[spec.value]) || 0
           const w = max ? Math.max(1.5, (v / max) * 100) : 0
           return (
-            <li key={i} className={size === "lead" ? "py-0" : "py-2"}>
+            <li key={i} className="py-2.5">
               <div className="flex items-baseline justify-between gap-4">
                 <span className="truncate text-body text-foreground">{String(r[spec.label] ?? "—")}</span>
                 <span className="shrink-0 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
