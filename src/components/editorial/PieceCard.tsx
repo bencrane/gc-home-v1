@@ -16,7 +16,7 @@ export function PieceCard({ piece, variant = "card", well = "art", className }: 
 
   if (variant === "lead") {
     return (
-      <article className={cn("border-b border-line border-t-2 border-t-navy-900 py-10", className)}>
+      <article className={cn("border-b border-line py-10", className)}>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7">
             <MonoLabel className="text-copper-600"><a href={`/section/${piece.format}`} className="hover:text-navy-900">{piece.formatName}</a> · {dateShort(piece.publishedAt)} · <span className="text-foreground-subtle">{piece.byline}</span></MonoLabel>
