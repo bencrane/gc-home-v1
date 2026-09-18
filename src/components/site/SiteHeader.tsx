@@ -12,19 +12,10 @@ function Seal({ className }: { className?: string }) {
   )
 }
 
-const utilLink = ({ isActive }: { isActive: boolean }) => cn("text-eyebrow font-sans uppercase transition-colors", isActive ? "text-copper-600" : "text-foreground hover:text-navy-600")
-
-/** Masthead: utility strip · centered wordmark with the seal plate at left · section bar of formats. */
+/** Masthead: centered wordmark with the seal at left · section bar of formats. */
 export default function SiteHeader() {
   return (
     <header className="masthead bg-background">
-      <Band as="div" className="flex h-12 items-center justify-between border-b border-foreground">
-        <nav aria-label="Primary" className="flex items-center gap-6">
-          <NavLink to="/markets" className={utilLink}>Markets</NavLink>
-          <NavLink to="/briefings" className={utilLink}>Briefings</NavLink>
-        </nav>
-        <NavLink to="/about" className={utilLink}>About</NavLink>
-      </Band>
       <Band as="div" className="grid grid-cols-1 items-center gap-6 py-7 lg:grid-cols-[14rem_1fr_14rem]">
         <div className="hidden lg:block">
           <Seal className="h-11 w-11 text-copper-500" />
