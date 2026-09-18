@@ -5,6 +5,7 @@ const KEY = "gc.variant"
 /** Resolve the active variant: ?v= wins and is remembered; otherwise the remembered one; otherwise base. */
 export function applyVariant(): string {
   let id = DEFAULT_VARIANT
+  if (typeof window === "undefined") return id
   try {
     const params = new URLSearchParams(window.location.search)
     const q = params.get("v")
@@ -19,11 +20,12 @@ export function applyVariant(): string {
 }
 
 export function setVariant(id: string) {
+  if (typeof window === "undefined") return
   try { window.localStorage.setItem(KEY, id) } catch { /* ignore */ }
   document.documentElement.dataset.variant = id
 }
 
 export function activeVariant() {
-  const id = document.documentElement.dataset.variant ?? DEFAULT_VARIANT
+  const id = typeof document === "undefined" ? DEFAULT_VARIANT : document.documentElement.dataset.variant ?? DEFAULT_VARIANT
   return VARIANTS.find((v) => v.id === id) ?? VARIANTS[0]
 }

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom"
 
 function Seal({ className }: { className?: string }) {
   return (
@@ -15,7 +14,7 @@ export default function Rail() {
   return (
     <div className="hidden bg-navy-900 lg:block">
       <aside className="sticky top-0 flex h-dvh flex-col items-center justify-between py-6" aria-label="Sections">
-        <NavLink to="/" aria-label="Front page" className="text-copper-300 transition-colors hover:text-copper-100"><Seal className="h-7 w-7" /></NavLink>
+        <a href="/" aria-label="Front page" className="text-copper-300 transition-colors hover:text-copper-100"><Seal className="h-7 w-7" /></a>
         <span className="h-px w-6 bg-navy-700" aria-hidden />
         <Seal className="h-6 w-6 text-navy-700" />
       </aside>

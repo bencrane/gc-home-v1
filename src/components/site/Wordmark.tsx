@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 type Props = {
   className?: string;
@@ -7,7 +6,7 @@ type Props = {
 
 export default function Wordmark({ className = "", href = "/" }: Props) {
   return (
-    <Link to={href} className={`group inline-flex items-center gap-2.5 ${className}`}>
+    <a href={href} className={`group inline-flex items-center gap-2.5 ${className}`}>
       <span
         aria-hidden
         className="relative inline-flex h-7 w-7 items-center justify-center"
@@ -32,6 +31,6 @@ export default function Wordmark({ className = "", href = "/" }: Props) {
       <span className="font-display text-body tracking-tight leading-none text-navy-900">
         Government<span className="text-copper-600"> · </span>Contracted
       </span>
-    </Link>
+    </a>
   );
 }

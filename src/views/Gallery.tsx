@@ -31,7 +31,7 @@ export default function Gallery() {
   const [path, setPath] = useState("/")
   const toggle = (id: string) => setCompare((c) => (c.includes(id) ? c.filter((x) => x !== id) : [...c, id].slice(-2)))
   const open = (id: string) => { setVariant(id); window.location.assign(`/?v=${id}`) }
-  const active = (() => { try { return document.documentElement.dataset.variant } catch { return undefined } })()
+  const active = typeof document === "undefined" ? undefined : document.documentElement.dataset.variant
 
   return (
     <div className="min-h-dvh bg-background text-foreground">

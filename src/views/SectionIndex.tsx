@@ -1,4 +1,3 @@
-import { useParams, Navigate } from "react-router-dom"
 import { Eyebrow, Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
@@ -9,9 +8,7 @@ const COPY = {
   briefings: { title: "Briefings", lede: "The month's largest awards, the wage floors that set service-contract bids, and the primes that shape the market." },
 } as const
 
-export default function SectionIndex() {
-  const { section } = useParams()
-  if (section !== "markets" && section !== "briefings") return <Navigate to="/" replace />
+export default function SectionIndex({ section }: { section: "markets" | "briefings" }) {
   const pieces = bySection(section)
   const copy = COPY[section]
   return (

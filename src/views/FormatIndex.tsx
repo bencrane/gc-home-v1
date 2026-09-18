@@ -1,14 +1,11 @@
-import { useParams, Navigate } from "react-router-dom"
 import { Eyebrow, Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
 import { PIECES } from "@/content/pieces"
 import { formatById } from "@/content/formats"
 
-export default function FormatIndex() {
-  const { format } = useParams()
-  const f = format ? formatById(format) : undefined
-  if (!f) return <Navigate to="/" replace />
+export default function FormatIndex({ format }: { format: string }) {
+  const f = formatById(format)!
   const pieces = PIECES.filter((p) => p.format === f.id)
   return (
     <>

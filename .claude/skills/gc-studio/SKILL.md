@@ -14,7 +14,7 @@ Both are defined in `.claude/launch.json` at the repo root. The `preview_start` 
 | name   | command                | port | what                                  |
 |--------|------------------------|------|---------------------------------------|
 | studio | `npm run studio`       | 3333 | Sanity Studio (project 5e8csiu1, production) |
-| site   | `npm run dev`          | 5173 | Vite site                             |
+| site   | `npm run dev`          | 4321 | Astro site (static, React islands)    |
 
 ## Flow: start the studio
 

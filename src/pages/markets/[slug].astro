@@ -1,0 +1,13 @@
+---
+import Base from "@/layouts/Base.astro"
+import PiecePage from "@/views/PiecePage"
+import { bySection } from "@/content/pieces"
+export function getStaticPaths() {
+  return bySection("markets").map((p) => ({ params: { slug: p.slug }, props: { title: p.title, dek: p.dek } }))
+}
+const { slug } = Astro.params
+const { title, dek } = Astro.props
+---
+<Base title={title} description={dek}>
+  <PiecePage client:load slug={slug!} />
+</Base>

@@ -6,7 +6,7 @@ Government Contracted (GC): a media property covering federal procurement. Bloom
 web
 
 ## Stack
-Vite 8, React 19, TypeScript 6, Tailwind 4, shadcn/ui on Base UI with the gc-hq packages/ui component set, ECharts, GSAP, Remotion, hyperframes. Design authority: DESIGN.md, executed by src/index.css. Data: core-x query sidecar and Lance system of record.
+Astro 7 static site with React 19 islands, TypeScript 6, Tailwind 4, shadcn/ui on Base UI with the gc-hq packages/ui component set, ECharts, GSAP, Remotion, hyperframes. Design authority: DESIGN.md, executed by src/index.css. Data: core-x query sidecar and Lance system of record.
 
 ## Users
 - CEOs and principals of companies that have just won a federal award. GC reaches them directly; the site is what makes the outreach credible.

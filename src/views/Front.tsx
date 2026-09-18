@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
@@ -12,7 +11,7 @@ function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: s
         <Heading level={2}>{title}</Heading>
         <Text size="body-lg" tone="muted" className="mt-2 max-w-[60ch]">{blurb}</Text>
       </div>
-      <Link to={to} className="shrink-0 text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {title.toLowerCase()} →</Link>
+      <a href={to} className="shrink-0 text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {title.toLowerCase()} →</a>
     </div>
   )
 }

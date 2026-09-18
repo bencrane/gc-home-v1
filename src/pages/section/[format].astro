@@ -1,0 +1,13 @@
+---
+import Base from "@/layouts/Base.astro"
+import FormatIndex from "@/views/FormatIndex"
+import { FORMATS } from "@/content/formats"
+export function getStaticPaths() {
+  return FORMATS.map((f) => ({ params: { format: f.id }, props: { name: f.name, blurb: f.blurb } }))
+}
+const { format } = Astro.params
+const { name, blurb } = Astro.props
+---
+<Base title={name} description={blurb}>
+  <FormatIndex format={format!} />
+</Base>

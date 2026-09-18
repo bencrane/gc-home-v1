@@ -1,0 +1,43 @@
+---
+import "@/index.css"
+import Rail from "@/components/site/Rail"
+import SiteHeader from "@/components/site/SiteHeader"
+import SiteFooter from "@/components/site/SiteFooter"
+interface Props { title?: string; description?: string; shell?: boolean }
+const { title = "Government Contracted", description = "Federal procurement, read from the record.", shell = true } = Astro.props
+const currentPath = Astro.url.pathname
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title === "Government Contracted" ? title : `${title} · Government Contracted`}</title>
+    <meta name="description" content={description} />
+    <script is:inline>
+      // Design variant (see src/variants.ts): ?v= wins and is remembered; preview=1 never persists.
+      (function () {
+        try {
+          var p = new URLSearchParams(location.search), q = p.get("v"), prev = p.get("preview") === "1";
+          var id = q || localStorage.getItem("gc.variant") || "base";
+          if (q && !prev) localStorage.setItem("gc.variant", q);
+          document.documentElement.dataset.variant = id;
+        } catch (e) { document.documentElement.dataset.variant = "base"; }
+      })();
+    </script>
+  </head>
+  <body>
+    {shell ? (
+      <div id="top" class="grid min-h-dvh grid-cols-1 bg-background text-foreground lg:grid-cols-[4.5rem_1fr]">
+        <Rail />
+        <div class="min-w-0">
+          <SiteHeader currentPath={currentPath} />
+          <main><slot /></main>
+          <SiteFooter />
+        </div>
+      </div>
+    ) : (
+      <slot />
+    )}
+  </body>
+</html>
