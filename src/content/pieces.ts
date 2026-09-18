@@ -9,7 +9,7 @@ import wage from "@/fixtures/wage_tx_guard2.json"
 const F = (x: unknown) => x as Frozen
 const NAICS3: Record<string, string> = { "336": "Transportation equipment", "541": "Professional services", "236": "Building construction", "621": "Ambulatory health care", "524": "Insurance", "324": "Petroleum products", "325": "Chemicals & pharma", "523": "Securities & funds", "562": "Remediation", "561": "Facilities support", "237": "Heavy civil", "423": "Wholesale durables", "334": "Electronics" }
 /** Flows chart wants one label per agency × industry row. */
-const flowsLabeled: Frozen = { ...F(flows), rows: F(flows).rows.map((r) => ({ ...r, label: `${String(r.agency).replace("Department of ", "").replace("Agency for International Development", "USAID")} · ${NAICS3[String(r.naics3)] ?? r.naics3}` })) }
+const flowsLabeled: Frozen = { ...F(flows), rows: F(flows).rows.map((r) => ({ ...r, label: `${String(r.agency).replace("Department of ", "").replace("Agency for International Development", "USAID").replace("Health and Human Services", "HHS").replace("Homeland Security", "DHS").replace("Veterans Affairs", "VA").replace("General Services Administration", "GSA").replace("Housing and Urban Development", "HUD")} · ${NAICS3[String(r.naics3)] ?? r.naics3}` })) }
 const SRC = "USAspending FPDS via core-x query sidecar, snapshot 2026-08-02"
 
 export const PIECES: Piece[] = [
