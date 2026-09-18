@@ -195,7 +195,7 @@ rounded:
 spacing:
   base: 4px
   gutter: 32px
-  rail-w: 72px
+  rail-w: 96px
   band-y: 40px
   w-wide: 1920px
   w-prose: 736px
@@ -266,7 +266,7 @@ Three signatures carry the identity everywhere:
 
 ## Layout
 
-- Page: rail (72px navy grid track at lg+) + document. Document column runs to `w-wide` (1920px) with a 32px gutter; no marketing bands. Vertical rhythm is 40px per front band.
+- Page: rail (96px navy grid track at lg+, seal 48px at top) + document. Document column runs to `w-wide` (1920px) with a 32px gutter; no marketing bands. Vertical rhythm is 40px per front band.
 - Front (docs/design/FRONT_BRIEF.md): lead 8/12 with its data visual, secondaries 4/12 as rows, then rivers of 4-up cards per section. Every piece once.
 - Card contract: 5:3 art well, kicker, h4 headline, two-line dek.
 
