@@ -25,14 +25,15 @@ export default function SiteHeader() {
         </nav>
         <NavLink to="/about" className={utilLink}>About</NavLink>
       </Band>
-      <Band as="div" className="relative py-8">
-        <div className="hidden lg:absolute lg:left-[var(--spacing-gutter)] lg:top-1/2 lg:block lg:-translate-y-1/2">
-          <Seal className="h-12 w-12 text-copper-500" />
-          <p className="mt-3 max-w-[13rem] font-serif text-body leading-snug text-foreground">Federal procurement, read from the record.</p>
+      <Band as="div" className="grid grid-cols-1 items-center gap-6 py-7 lg:grid-cols-[14rem_1fr_14rem]">
+        <div className="hidden lg:block">
+          <Seal className="h-11 w-11 text-copper-500" />
+          <p className="mt-3 max-w-[12rem] font-serif text-body-sm leading-snug text-foreground">Federal procurement, read from the record.</p>
         </div>
-        <Link to="/" className="block text-center">
-          <span className="font-display block whitespace-nowrap text-[clamp(2rem,4.7vw,5.25rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
+        <Link to="/" className="block min-w-0 text-center">
+          <span className="font-display block whitespace-nowrap text-[clamp(1.75rem,4vw,4.5rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
         </Link>
+        <div className="hidden lg:block" />
       </Band>
       <div className="sticky top-0 z-50 border-y border-foreground bg-background">
         <Band as="nav" aria-label="Sections" className="flex h-12 items-center justify-center overflow-x-auto">
