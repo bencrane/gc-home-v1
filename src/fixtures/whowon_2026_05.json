@@ -1,0 +1,138 @@
+{
+ "queryId": "whowon_2026_05",
+ "artifact": "query-sidecar/query_sidecar_20260802T120425Z.duckdb",
+ "takenAt": "2026-09-17",
+ "elapsedMs": 1888.7,
+ "columns": [
+  "recipient",
+  "uei",
+  "agency",
+  "naics_code",
+  "psc_code",
+  "action_date",
+  "obligation",
+  "pop_state"
+ ],
+ "rows": [
+  {
+   "recipient": "SOUTHWEST VALLEY CONSTRUCTORS CO",
+   "uei": "W31DQKBPJCD3",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Y1PZ",
+   "action_date": "2026-05-11",
+   "obligation": 1720040000.0,
+   "pop_state": "TX"
+  },
+  {
+   "recipient": "FISHER SAND & GRAVEL CO",
+   "uei": "XAVBDA4D13N7",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Y1PZ",
+   "action_date": "2026-05-15",
+   "obligation": 605040000.0,
+   "pop_state": "CA"
+  },
+  {
+   "recipient": "SUNDT CONSTRUCTION, INC.",
+   "uei": "NEV1XR5H3FG5",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Y1PZ",
+   "action_date": "2026-05-28",
+   "obligation": 443095755.0,
+   "pop_state": "CA"
+  },
+  {
+   "recipient": "FISHER SAND & GRAVEL CO",
+   "uei": "XAVBDA4D13N7",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Z2AZ",
+   "action_date": "2026-05-04",
+   "obligation": 345040000.0,
+   "pop_state": "CA"
+  },
+  {
+   "recipient": "ALBERT B. SABIN VACCINE INSTITUTE, INC. (THE)",
+   "uei": "H5E8NU6N2HZ5",
+   "agency": "Department of Health and Human Services",
+   "naics_code": "541714",
+   "psc_code": "6505",
+   "action_date": "2026-05-05",
+   "obligation": 223798184.0,
+   "pop_state": "DC"
+  },
+  {
+   "recipient": "TEXTRON AVIATION INC",
+   "uei": "LH8RF2CKLWK5",
+   "agency": "Department of Transportation",
+   "naics_code": "336411",
+   "psc_code": "1510",
+   "action_date": "2026-05-21",
+   "obligation": 208393855.9,
+   "pop_state": "KS"
+  },
+  {
+   "recipient": "LMI CONSULTING, LLC",
+   "uei": "QVEKLLJUGHJ7",
+   "agency": "Department of Homeland Security",
+   "naics_code": "541611",
+   "psc_code": "R499",
+   "action_date": "2026-05-20",
+   "obligation": 171986331.34,
+   "pop_state": "IN"
+  },
+  {
+   "recipient": "G.S.E. CONSTRUCTION COMPANY, INC.",
+   "uei": "JS4MLNK3AFR9",
+   "agency": "Department of the Interior",
+   "naics_code": "237110",
+   "psc_code": "Y1ND",
+   "action_date": "2026-05-28",
+   "obligation": 109487800.0,
+   "pop_state": "WY"
+  },
+  {
+   "recipient": "DAVENPORT AVIATION INC",
+   "uei": "NJF3PMBA8SY7",
+   "agency": "Department of Homeland Security",
+   "naics_code": "339113",
+   "psc_code": "1520",
+   "action_date": "2026-05-19",
+   "obligation": 95507814.35,
+   "pop_state": "OH"
+  },
+  {
+   "recipient": "MEDLINE INDUSTRIES, LP",
+   "uei": "DMPAKJ9N9K66",
+   "agency": "Department of Veterans Affairs",
+   "naics_code": "423450",
+   "psc_code": "6515",
+   "action_date": "2026-05-26",
+   "obligation": 82490476.14,
+   "pop_state": "IL"
+  },
+  {
+   "recipient": "TUTOR PERINI CORPORATION",
+   "uei": "MT9AATHS7ZB5",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Y1FA",
+   "action_date": "2026-05-08",
+   "obligation": 81833273.0,
+   "pop_state": "AK"
+  },
+  {
+   "recipient": "TUTOR PERINI CORPORATION",
+   "uei": "MT9AATHS7ZB5",
+   "agency": "Department of Homeland Security",
+   "naics_code": "236220",
+   "psc_code": "Y1FA",
+   "action_date": "2026-05-08",
+   "obligation": 81833273.0,
+   "pop_state": "AK"
+  }
+ ]
+}

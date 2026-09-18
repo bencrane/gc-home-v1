@@ -1,0 +1,112 @@
+{
+ "queryId": "subunder_236",
+ "artifact": "query-sidecar/query_sidecar_20260802T120425Z.duckdb",
+ "takenAt": "2026-09-17",
+ "elapsedMs": 109.4,
+ "columns": [
+  "prime_awardee_uei",
+  "prime",
+  "sub_ct",
+  "distinct_subs",
+  "sub_amount",
+  "last_sub"
+ ],
+ "rows": [
+  {
+   "prime_awardee_uei": "NE61LN4FM1A5",
+   "prime": "RQ CONSTRUCTION, LLC",
+   "sub_ct": 339,
+   "distinct_subs": 235,
+   "sub_amount": 320137715.02000004,
+   "last_sub": "2026-04-13"
+  },
+  {
+   "prime_awardee_uei": "XXNJCWMAKNH8",
+   "prime": "BL HARBERT INTERNATIONAL LLC",
+   "sub_ct": 408,
+   "distinct_subs": 214,
+   "sub_amount": 274814347.33,
+   "last_sub": "2026-05-13"
+  },
+  {
+   "prime_awardee_uei": "GMJPZCJDUG24",
+   "prime": "HARPER CONSTRUCTION COMPANY, INC.",
+   "sub_ct": 176,
+   "distinct_subs": 95,
+   "sub_amount": 240976189.0,
+   "last_sub": "2026-05-06"
+  },
+  {
+   "prime_awardee_uei": "CMP8GS8XJC51",
+   "prime": "GRANITE-OBAYASHI 2, A JOINT VENTURE",
+   "sub_ct": 140,
+   "distinct_subs": 79,
+   "sub_amount": 141872303.18000004,
+   "last_sub": "2026-02-27"
+  },
+  {
+   "prime_awardee_uei": "E929DGJ4NSQ5",
+   "prime": "ABSHER CONSTRUCTION CO.",
+   "sub_ct": 41,
+   "distinct_subs": 38,
+   "sub_amount": 123591680.4,
+   "last_sub": "2026-01-23"
+  },
+  {
+   "prime_awardee_uei": "X3BYPXNZN8N1",
+   "prime": "KORTE CONSTRUCTION COMPANY",
+   "sub_ct": 44,
+   "distinct_subs": 43,
+   "sub_amount": 67660023.39,
+   "last_sub": "2026-04-08"
+  },
+  {
+   "prime_awardee_uei": "WHB7C12ADS35",
+   "prime": "GILBANE FEDERAL",
+   "sub_ct": 58,
+   "distinct_subs": 54,
+   "sub_amount": 63278907.17,
+   "last_sub": "2026-05-22"
+  },
+  {
+   "prime_awardee_uei": "PBCXB1D4K1C9",
+   "prime": "R.A. BURCH CONSTRUCTION CO., INC.",
+   "sub_ct": 101,
+   "distinct_subs": 72,
+   "sub_amount": 53540680.11000001,
+   "last_sub": "2026-03-11"
+  },
+  {
+   "prime_awardee_uei": "WA9LNGN2DPF4",
+   "prime": "BECHTEL NATIONAL, INC.",
+   "sub_ct": 172,
+   "distinct_subs": 73,
+   "sub_amount": 52847958.98999998,
+   "last_sub": "2026-04-15"
+  },
+  {
+   "prime_awardee_uei": "NZCHS2HHXKT9",
+   "prime": "RQ-AECOM 2 JV",
+   "sub_ct": 29,
+   "distinct_subs": 29,
+   "sub_amount": 52024825.239999995,
+   "last_sub": "2026-05-06"
+  },
+  {
+   "prime_awardee_uei": "Y4TKSMDNTRN6",
+   "prime": "J & J MAINTENANCE INC",
+   "sub_ct": 39,
+   "distinct_subs": 31,
+   "sub_amount": 51218936.97,
+   "last_sub": "2025-12-22"
+  },
+  {
+   "prime_awardee_uei": "KZ9MPMDLR5R4",
+   "prime": "PARSONS GOVERNMENT SERVICES INC",
+   "sub_ct": 7,
+   "distinct_subs": 7,
+   "sub_amount": 50818148.57000001,
+   "last_sub": "2025-04-04"
+  }
+ ]
+}
