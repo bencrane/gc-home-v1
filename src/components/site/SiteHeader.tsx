@@ -34,7 +34,7 @@ export default function SiteHeader() {
           <p className="mt-1 font-mono text-mono-label uppercase text-foreground-subtle">{today}</p>
         </div>
         <Link to="/" className="block text-center">
-          <span className="font-display block text-[clamp(2.75rem,6.4vw,7rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
+          <span className="font-display block whitespace-nowrap text-[clamp(2rem,4.7vw,5.25rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
         </Link>
       </Band>
       <div className="sticky top-0 z-50 border-y border-foreground bg-background">
