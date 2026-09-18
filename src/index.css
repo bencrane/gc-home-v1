@@ -106,6 +106,7 @@
 
   /* ── Page geometry ── */
   --spacing-gutter: 2rem;
+  --masthead-h: 8.75rem;   /* wordmark band; the rail's top slot matches it */
   --w-wide: 120rem;     /* page column, 1920px */
   --w-prose: 46rem;     /* reading column, 736px */
   --radius-pill: 9999px;

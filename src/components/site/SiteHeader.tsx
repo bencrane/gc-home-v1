@@ -6,8 +6,8 @@ import { FORMATS } from "@/content/formats"
 export default function SiteHeader({ currentPath = "/" }: { currentPath?: string }) {
   return (
     <header className="masthead bg-background">
-      <Band as="div" className="py-7">
-        <a href="/" className="block min-w-0 text-center">
+      <Band as="div" className="flex h-[var(--masthead-h)] items-center">
+        <a href="/" className="block w-full min-w-0 text-center">
           <span className="font-display block whitespace-nowrap text-wordmark uppercase text-foreground">Government Contracted</span>
         </a>
       </Band>
