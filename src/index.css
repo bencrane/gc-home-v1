@@ -41,8 +41,8 @@
   --text-wordmark--line-height: 1;
   --text-wordmark--letter-spacing: 0.02em;
 
-  --text-display: clamp(2.75rem, 5vw, 5.1875rem);      /* 83: front lead */
-  --text-display--line-height: 1.08;
+  --text-display: clamp(2.5rem, 4.4vw, 4.3125rem);    /* 69: front lead */
+  --text-display--line-height: 1.12;
   --text-display--letter-spacing: -0.02em;
   --text-display--font-weight: 400;
 

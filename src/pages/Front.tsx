@@ -37,7 +37,7 @@ export default function Front() {
 
   return (
     <>
-      <Band className="front-band pt-4">
+      <Band className="front-band pt-8">
         <PieceCard piece={lead} variant="lead" />
       </Band>
       <Band className="pb-12 pt-12">
