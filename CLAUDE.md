@@ -1,32 +1,32 @@
-# gc-home-v1 — Design Enforcement
+# gc-home-v1 — Government Contracted
+
+## What this is
+The public site for Government Contracted (GC): a media property covering federal procurement, in the register of Bloomberg Media for govcon. GC is one vehicle of Bazaar Global. Its job is credibility: GC reaches the CEOs of companies that win federal awards and connects them with specialized capital and equipment partners. It is read, not operated. It is not a terminal, not a dashboard product, and not the origination-desk site in gc-hq-new.
 
 ## Source of truth
-`DESIGN.md` (project root) is the ABSOLUTE authority for typography, spacing, and color tokens. No skill, preset, or model preference overrides it. Any token used in UI code must exist in DESIGN.md; if it does not, add it to DESIGN.md first, then use it.
-
-## Mandatory review gate (all UI generation)
-Every change that touches a UI file (`.tsx .jsx .html .vue .svelte .astro .css .scss .ts .js`) MUST pass the Impeccable reviewer before the turn ends:
-1. Load `impeccable` context once per session: `.claude/skills/impeccable/scripts/impeccable context`.
-2. Read `.claude/skills/impeccable/reference/craft-floor.md` before the first UI edit.
-3. The PostToolUse/Stop hooks in `.claude/settings.json` run the detector automatically. Fix every finding. Never add ignores to push a write through.
-4. Finish with `/impeccable audit` or `/impeccable critique` on the touched surface.
-
-## Aesthetic lock (hard bans)
-Ultra-matte, high-density financial terminal. Banned outright:
-- Purple/violet gradients, mesh gradients, any `linear-gradient` / `radial-gradient` / `conic-gradient`.
-- Glowing shadows, drop shadows, `box-shadow` beyond a 1px hairline, `filter: blur`, `backdrop-filter`, glassmorphism.
-- Hero sections, centered marketing layouts, rounded-xl+ blobs, emoji, decorative illustration.
-- Proportional numerals in data. All numbers: monospace, `font-variant-numeric: tabular-nums`, right-aligned.
-
-## Taste-skill dials (locked)
-`design-taste-frontend` (and `-v1`) run at `DESIGN_VARIANCE: 2 / MOTION_INTENSITY: 3 / VISUAL_DENSITY: 9`. The design read does not override these. Cockpit rules apply: no card boxes, 1px hairline separators, tight paddings.
-
-Active design skills: `impeccable`, `design-taste-frontend`, `web-design-guidelines`. The other bundled taste-skill presets (`gpt-taste`, `minimalist-ui`, `high-end-visual-design`, `brandkit`, `imagegen-*`, `industrial-brutalist-ui`, `stitch-design-taste`) are installed but NOT active for this project; do not load them unless explicitly asked.
+`DESIGN.md` (project root) is the binding contract for color, typography, spacing, motion, and component rules. `src/index.css` is its executable form: Part 1 is the brand token set from gc-hq-new `apps/marketing-next/src/index.css`, Part 2 is the shadcn semantic layer from gc-hq-new `packages/ui/src/styles/globals.css`. Change both in the same commit or change neither. No ad hoc hex values, font sizes, or radii in components.
 
 ## Stack
-Vite + React 18 + TypeScript. Tailwind 4 via `@tailwindcss/vite`. shadcn/ui components live in `src/components/ui` (Radix base, `@/` alias). ECharts for dense series; Tremor for telemetry primitives. React stays on 18 until Tremor supports 19.
+Vite 8, React 19, TypeScript 6. Tailwind 4 via `@tailwindcss/vite`. shadcn/ui on Base UI (`base-nova`), with the gc-hq `packages/ui` component set already in `src/components/ui` and the `@/` alias. Fonts via fontsource: Inter Variable, Fraunces Variable, JetBrains Mono Variable. ECharts for data graphics. GSAP for entry and data-change motion. Remotion and hyperframes for rendered media. No Tremor, no Recharts.
 
-## Animation and composition scope
-- `gsap` — data-visualization transitions only (value ticks, series draw-in, sort reorders). Duration ≤ 240ms, no easing overshoot, honor `prefers-reduced-motion`. Skills: `gsap-core`, `gsap-timeline`, `gsap-react`, `gsap-performance`.
-- `remotion` — programmatic video renders of terminal views (reports, replays). Skills: `remotion-best-practices` (router).
-- `hyperframes` — HTML composition and rendering of terminal panels/decks. Skills: `hyperframes` (router), `hyperframes-core`, `hyperframes-animation`.
-None of these are used for decorative page motion.
+## Mandatory review gate (all UI work)
+Every change touching `.tsx .css .html .ts` UI files passes the Impeccable reviewer before the turn ends:
+1. Run `.claude/skills/impeccable/scripts/impeccable context` once per session.
+2. Read `.claude/skills/impeccable/reference/craft-floor.md` before the first UI edit.
+3. Hooks in `.claude/settings.json` run the detector on Edit/Write and on Stop. Fix every finding. Never add ignores to push a write through.
+4. Finish with `/impeccable audit` or `/impeccable critique` on the touched surface.
+
+## Design rules that override skill defaults
+- Ground is paper (#f7f5f0), ink is navy (#0f1a2e), rail is navy-900, copper is the only accent and never a fill.
+- Fraunces at weight 400 for every heading and hero figure. Never bold serif. Never a second display face.
+- Mono uppercase tracked labels for eyebrows, axis labels, identifiers. Tabular numerals on every number.
+- Radius 0 except pills on badges. Hairlines and register lines separate content; cards are not the default container.
+- No glow, no colored shadow, no blur, no glass, no gradient other than `copper-rule` and `seal-wash`.
+- Motion is `ease-brand` at `dur-base`, entry and data change only, honors `prefers-reduced-motion`. The gc-hq-new opening animation is not recreated here.
+
+## Taste-skill dials (locked)
+`design-taste-frontend` and `-v1` run at `DESIGN_VARIANCE: 4 / MOTION_INTENSITY: 3 / VISUAL_DENSITY: 6`. Editorial, column-locked, structured. The design read does not override these.
+Active design skills: `impeccable`, `design-taste-frontend`, `web-design-guidelines`. Other bundled taste-skill presets (`gpt-taste`, `minimalist-ui`, `high-end-visual-design`, `brandkit`, `imagegen-*`, `image-to-code`, `industrial-brutalist-ui`, `stitch-design-taste`, `redesign-existing-projects`, `full-output-enforcement`) are installed but not active; do not load them unless asked.
+
+## Data
+Analytical reads (awards, obligations, recipients, expiring contracts, lookalikes) go to the core-x query sidecar first via the `sidecar-query` skill; map at `core-x/docs/reference/QUERY_SIDECAR_AGENT_GUIDE.md`. Lance under `s3://data-sink/active/` is the write-side system of record. No data pipelines live in this repo.

@@ -6,11 +6,11 @@ description: The original v1 taste-skill, preserved for projects depending on it
 # High-Agency Frontend Skill
 
 ## 1. ACTIVE BASELINE CONFIGURATION
-* DESIGN_VARIANCE: 2 (1=Perfect Symmetry, 10=Artsy Chaos)
+* DESIGN_VARIANCE: 4 (1=Perfect Symmetry, 10=Artsy Chaos)
 * MOTION_INTENSITY: 3 (1=Static/No movement, 10=Cinematic/Magic Physics)
-* VISUAL_DENSITY: 9 (1=Art Gallery/Airy, 10=Pilot Cockpit/Packed Data)
+* VISUAL_DENSITY: 6 (1=Art Gallery/Airy, 10=Pilot Cockpit/Packed Data)
 
-**AI Instruction:** The standard baseline for all generations is strictly set to these values (2, 3, 9) — PROJECT-LOCKED for a Bloomberg-terminal aesthetic. Do not ask the user to edit this file. Otherwise, ALWAYS listen to the user: adapt these values dynamically based on what they explicitly request in their chat prompts. Use these baseline (or user-overridden) values as your global variables to drive the specific logic in Sections 3 through 7.
+**AI Instruction:** The standard baseline for all generations is strictly set to these values (4, 3, 6) — PROJECT-LOCKED for an editorial media property. Do not ask the user to edit this file. Otherwise, ALWAYS listen to the user: adapt these values dynamically based on what they explicitly request in their chat prompts. Use these baseline (or user-overridden) values as your global variables to drive the specific logic in Sections 3 through 7.
 
 ## 2. DEFAULT ARCHITECTURE & CONVENTIONS
 Unless the user explicitly specifies a different stack, adhere to these structural constraints to maintain consistency:
