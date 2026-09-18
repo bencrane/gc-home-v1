@@ -4,7 +4,7 @@ Each format is a recurring piece with one question, one sidecar read, one presen
 Query ids below are the `dataBlock.queryId` values. Every query is ONE statement against
 the core-x query sidecar (`POST /api/v1/sql`), frozen at publish with the artifact stamp.
 
-Status 2026-09-17: all seven queries VALIDATED against artifact `query_sidecar_20260802T120425Z`
+Status 2026-09-17: six formats VALIDATED (Win-then-Borrow cut 2026-09-17: off-audience and CA/CO-thin) against artifact `query_sidecar_20260802T120425Z`
 (sidecar resumed). Every format returns a publishable figure in one statement, 0.03 s to 4.4 s.
 Snapshot is dated 2026-08-02; a sidecar rebuild refreshes it.
 
@@ -14,18 +14,16 @@ Snapshot is dated 2026-08-02; a sidecar rebuild refreshes it.
 | 2 | Expiring | Markets | Monthly | ledger | `expiring.sector_180d` |
 | 3 | Flows | Markets | Monthly | chart | `flows.agency_naics_delta` |
 | 4 | Sub-Under | Markets | Monthly | ledger | `subunder.prime_lane` |
-| 5 | Win-then-Borrow | Briefings | Quarterly | figures + ledger | `wtb.lender_class_after_award` |
-| 6 | Wage Floor | Briefings | Quarterly | ledger | `wage.floor_vs_market_county` |
-| 7 | Who Won | Briefings | Monthly | ledger | `whowon.largest_new_awards` |
+| 5 | Wage Floor (provisional) | Briefings | Quarterly | ledger | `wage.floor_vs_market_county` |
+| 6 | Who Won | Briefings | Monthly | ledger | `whowon.largest_new_awards` |
 
 Gists:
 1. **The Record** — "Every federal contract dollar is public." Obligations by awarding agency for a fiscal period, ranked, with prior-period delta.
 2. **Expiring** — "What ends in the next 180 days." Active awards by sector reaching period-of-performance end, incumbents named.
 3. **Flows** — "Where the money moved." Net change in obligations by agency × NAICS3 across two windows.
 4. **Sub-Under** — "The demand beneath the primes." Sub-award volume under the largest primes by work lane.
-5. **Win-then-Borrow** — "The award is the collateral." UCC financing filed within 180 days after a first award, by lender class.
-6. **Wage Floor** — "The rate the contract sets, and the rate the county pays." SCA floor vs OEWS market wage by county for a work lane.
-7. **Who Won** — "The month's largest new awards." The gorillas: the biggest base awards of the month, who took them, from which agency. Readers sub under these primes; nobody wants to read about a peer.
+5. **Wage Floor (provisional)** — "The rate the contract sets, and the rate the county pays." SCA floor vs OEWS market wage by county for a work lane.
+6. **Who Won** — "The month's largest new awards." The gorillas: the biggest base awards of the month, who took them, from which agency. Readers sub under these primes; nobody wants to read about a peer.
 
 ## Editorial line (binding)
 
@@ -40,3 +38,11 @@ analysis.
 ## Reader rules (2026-09-17)
 - Readers are companies in the market. They read about agencies, flows, recompetes, wages, financing patterns, and the big primes. They do not read about peer-sized competitors' wins in public.
 - A private, logged-in view (own award history, targetable recompetes) is parked; not built now.
+
+## Title register
+A title is one headline: subject, measured movement, period or named actor. Format names (The Record,
+Flows, Expiring, Sub-Under, Wage Floor, Who Won) are sections, never titles. Examples from the
+2026-08-02 snapshot: "Defense Spending Rose 10% in FY25 as HHS Fell by a Quarter"; "DHS Construction
+Spending Went From $430 Million to $5.9 Billion"; "$39 Billion of Savannah River Work Runs Out in
+September"; "RQ Construction Is the Largest Buyer of Subcontracted Federal Work"; "Southwest Valley
+Constructors Takes $1.7 Billion Border Award".

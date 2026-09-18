@@ -24,18 +24,12 @@ SELECT prime_awardee_uei, any_value(prime_awardee_name) AS prime, count(*) AS su
 FROM subaward_canonical_slim WHERE substr(prime_award_naics_code,1,3) = '{naics3}' AND subaward_action_date >= DATE '{since_date}'
 GROUP BY 1 ORDER BY sum(subaward_amount_num) DESC LIMIT 30;
 
--- 5 · wtb.lender_class_after_award  {since_date}  — 2.2 s  (CA/CO UCC coverage only; disclose)
-WITH first_win AS (SELECT uei, min(action_date) AS first_action FROM gtm_txn_events_slim GROUP BY 1 HAVING min(action_date) >= DATE '{since_date}'),
-borrow AS (SELECT lf.uei, lf.lender_key, lf.is_lease FROM ucc_lender_filings lf JOIN first_win w USING (uei) WHERE lf.filing_class = 'financing' AND lf.first_filing_date >= w.first_action AND lf.first_filing_date < w.first_action + INTERVAL 180 DAY)
-SELECT l.lender_class, count(DISTINCT b.uei) AS firms, count(*) AS filings, sum(CASE WHEN b.is_lease THEN 1 ELSE 0 END) AS leases, (SELECT count(*) FROM first_win) AS first_time_winners
-FROM borrow b JOIN ucc_lenders_all l USING (lender_key) GROUP BY 1 ORDER BY firms DESC;
-
--- 6 · wage.floor_vs_market_county  {classification} {state}  — 0.03 s
+-- 5 · wage.floor_vs_market_county  {classification} {state}  — 0.03 s
 SELECT r.county_name, r.county_fips, r.classification_title, r.wage_rate AS floor_hourly, w.h_median AS market_median, w.h_pct25, w.h_pct75, w.h_median - r.wage_rate AS market_minus_floor, x.soc_code
 FROM v_wd_county_rates r JOIN sca_soc_crosswalk x ON x.occupation_code = r.occupation_code JOIN soc_state_wage w ON w.soc_code = x.soc_code AND w.prim_state = r.state_code
 WHERE r.classification_title ILIKE '{classification}%' AND r.state_code = '{state}' AND r.wd_type ILIKE '%SCA%' ORDER BY market_minus_floor DESC LIMIT 60;
 
--- 7 · whowon.largest_new_awards  {month_start} {month_end}  — 4.4 s  (gorillas: largest base awards in the month)
+-- 6 · whowon.largest_new_awards  {month_start} {month_end}  — 4.4 s  (gorillas: largest base awards in the month)
 SELECT e.legal_business_name AS recipient, t.uei, v.name AS agency, t.naics_code, t.psc_code, t.action_date, t.obligation, t.award_key, t.pop_state, t.type_of_set_aside_code
 FROM txn_events_combo t LEFT JOIN gtm_sam_entities e USING (uei) LEFT JOIN agency_vocab v ON v.code = t.awarding_agency_code
 WHERE t.action_type_code IS NULL AND t.action_date >= DATE '{month_start}' AND t.action_date < DATE '{month_end}' ORDER BY t.obligation DESC LIMIT 25;
