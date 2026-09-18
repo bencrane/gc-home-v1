@@ -30,3 +30,6 @@ Active design skills: `impeccable`, `design-taste-frontend`, `web-design-guideli
 
 ## Data
 Analytical reads (awards, obligations, recipients, expiring contracts, lookalikes) go to the core-x query sidecar first via the `sidecar-query` skill; map at `core-x/docs/reference/QUERY_SIDECAR_AGENT_GUIDE.md`. Lance under `s3://data-sink/active/` is the write-side system of record. No data pipelines live in this repo.
+
+## Content (Sanity)
+Editorial pieces live in the Sanity content lake (project `5e8csiu1`, dataset `production`). The Studio is in `studio/` (`npm run studio`), schema in `studio/schemaTypes`, desk structure in `studio/structure.ts`. Every published page is a `piece`: prose plus `dataBlock`, `awardRef`, and `pullQuote` objects. Numbers in a data block are frozen at the moment they were taken from the sidecar (`result` + `takenAt`); refreshing is a deliberate editorial act, never a page-load behavior. The site reads through `src/lib/sanity.ts` with GROQ; Portable Text renders through a serializer mapped to the gc-hq components so DESIGN.md governs CMS content. Sanity is never a mirror of sidecar data. Tokens go in Doppler or a gitignored `.env`, never in source or chat.

@@ -4,3 +4,7 @@ node_modules/
 .impeccable/config.local.json
 dist/
 *.local
+studio/node_modules/
+studio/dist/
+.env
+.env.*.local
