@@ -17,12 +17,12 @@ function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: s
   )
 }
 
-function River({ pieces }: { pieces: Piece[] }) {
+function River({ pieces, figureWells = 0 }: { pieces: Piece[]; figureWells?: number }) {
   if (pieces.length === 0) return null
   if (pieces.length < 2) return <div>{pieces.map((p) => <PieceCard key={p.slug} piece={p} variant="row" />)}</div>
   return (
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
-      {pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}
+      {pieces.map((p, i) => <PieceCard key={p.slug} piece={p} well={i < figureWells ? "figure" : "art"} />)}
     </div>
   )
 }
@@ -42,7 +42,7 @@ export default function Front() {
       </Band>
       <Band className="pb-12 pt-12">
         <div className="mb-8 border-b-2 border-navy-900 pb-4"><Heading level={2}>Latest</Heading></div>
-        <River pieces={latest} />
+        <River pieces={latest} figureWells={3} />
       </Band>
       {markets.length > 0 && (
         <Band className="py-10">
