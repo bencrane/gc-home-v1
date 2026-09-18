@@ -30,21 +30,19 @@ function River({ pieces }: { pieces: Piece[] }) {
 /** Front page per docs/design/FRONT_BRIEF.md. Lead → secondaries → rivers by section. Every piece once. */
 export default function Front() {
   const [lead, ...rest] = PIECES
-  const secondaries = rest.slice(0, 4)
-  const used = new Set([lead, ...secondaries].map((p) => p.slug))
+  const latest = rest.slice(0, 4)
+  const used = new Set([lead, ...latest].map((p) => p.slug))
   const markets = bySection("markets").filter((p) => !used.has(p.slug)).slice(0, 8)
   const briefings = bySection("briefings").filter((p) => !used.has(p.slug)).slice(0, 8)
 
   return (
     <>
       <Band className="front-band py-10">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-8"><PieceCard piece={lead} variant="lead" /></div>
-          <aside className="border-t-2 border-navy-900 pt-4 lg:col-span-4 lg:border-l lg:border-t-0 lg:border-line lg:pl-8 lg:pt-0">
-            <Eyebrow>Latest</Eyebrow>
-            <div className="mt-3">{secondaries.map((p) => <PieceCard key={p.slug} piece={p} variant="row" />)}</div>
-          </aside>
-        </div>
+        <PieceCard piece={lead} variant="lead" />
+      </Band>
+      <Band className="pb-10">
+        <div className="mb-6 border-b-2 border-navy-900 pb-3"><Eyebrow>Latest</Eyebrow></div>
+        <River pieces={latest} />
       </Band>
       {markets.length > 0 && (
         <Band className="py-10">

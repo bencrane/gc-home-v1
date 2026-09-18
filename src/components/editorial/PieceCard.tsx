@@ -16,14 +16,14 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
 
   if (variant === "lead") {
     return (
-      <article className={cn("grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10", className)}>
-        <div className="order-2 lg:order-1 lg:col-span-6">
+      <article className={cn("grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12", className)}>
+        <div className="order-2 lg:order-1 lg:col-span-5">
           {meta}
-          <Link to={href} className="group mt-3 block"><Heading level={1} className="transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
+          <Link to={href} className="group mt-3 block"><Heading level={1} className="text-display transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
           <p className="mt-4 max-w-[60ch] text-body-lg text-foreground-muted">{piece.dek}</p>
           <MonoLabel className="mt-5 text-foreground-subtle">{piece.byline}</MonoLabel>
         </div>
-        <Link to={href} className="order-1 border-t-2 border-navy-600 pt-4 lg:order-2 lg:col-span-6"><Visual piece={piece} size="lead" /></Link>
+        <Link to={href} className="order-1 border-t-2 border-navy-900 pt-4 lg:order-2 lg:col-span-7"><Visual piece={piece} size="lead" /></Link>
       </article>
     )
   }
