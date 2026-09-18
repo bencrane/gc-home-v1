@@ -13,10 +13,10 @@ export default function SiteHeader({ currentPath = "/" }: { currentPath?: string
         </a>
       </Band>
       <div className="sticky top-0 z-50 border-y border-foreground bg-background">
-        <Band as="nav" aria-label="Sections" className="flex h-12 items-center justify-center overflow-x-auto">
+        <Band as="nav" aria-label="Sections" className="flex h-12 items-center justify-start gap-0 overflow-x-auto md:justify-center">
           {FORMATS.map((f, i) => (
             <span key={f.id} className="flex items-center">
-              {i > 0 && <span aria-hidden className="mx-4 h-4 w-px bg-foreground/60" />}
+              {i > 0 && <span aria-hidden className="mx-3 h-4 w-px bg-foreground/60 md:mx-4" />}
               <a href={href(`/section/${f.id}`)} aria-current={currentPath.startsWith(`/section/${f.id}`) ? "page" : undefined} className={cn("whitespace-nowrap font-serif text-body uppercase tracking-[0.06em] transition-colors", currentPath.startsWith(`/section/${f.id}`) ? "text-copper-600" : "text-foreground hover:text-navy-600")}>{f.name}</a>
             </span>
           ))}

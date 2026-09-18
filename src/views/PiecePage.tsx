@@ -23,7 +23,7 @@ export default function PiecePage({ slug }: { slug: string }) {
       </Band>
       {more.length > 1 && (
         <Band className="border-t border-line py-10">
-          <div className="mb-8 flex items-end justify-between border-b-2 border-navy-900 pb-4">
+          <div className="mb-8 flex flex-col gap-3 border-b-2 border-navy-900 pb-4 md:flex-row md:items-end md:justify-between">
             <Heading level={2}>More in {piece.section}</Heading>
             <a href={href(`/${piece.section}`)} className="text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {piece.section} →</a>
           </div>

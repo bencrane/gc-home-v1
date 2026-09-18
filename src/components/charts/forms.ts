@@ -14,14 +14,14 @@ function ranked(spec: Extract<ChartSpec, { form: "ranked" }>, width: number, row
   return renderPlot({
     width, height: data.length * ROW + 36, marginLeft: 0, marginRight: 72, marginTop: 4, marginBottom: 28,
     style: BASE_STYLE,
-    y: { domain: data.map((d) => d.label), padding: 0.35, axis: null },
+    y: { domain: data.map((d) => d.label), padding: 0.12, axis: null },
     x: { grid: true, ticks: 3, tickFormat: (v: number) => formatValue(spec.valueFormat, v), tickSize: 0, label: null },
     marks: [
-      Plot.gridX({ stroke: LINE, strokeOpacity: 1 }),
+      Plot.gridX({ stroke: LINE, strokeOpacity: 1, ticks: 3 }),
       Plot.barX(data, { y: "label", x: "value", fill: NAVY, insetTop: 22, insetBottom: 4 }),
       Plot.text(data, { y: "label", text: "label", frameAnchor: "left", dy: -12, textAnchor: "start", ...rowLabel }),
       Plot.text(data, { y: "label", x: "value", text: (d) => formatValue(spec.valueFormat, d.value), dx: 6, textAnchor: "start", fontFamily: MONO, fontSize: 12, fill: INK, fontVariant: "tabular-nums" }),
-      Plot.axisX({ ...axisText, tickSize: 0, label: null }),
+      Plot.axisX({ ...axisText, tickSize: 0, label: null, ticks: 3, tickFormat: (v: number) => formatValue(spec.valueFormat, v) }),
     ],
   })
 }
@@ -33,16 +33,16 @@ function change(spec: Extract<ChartSpec, { form: "change" }>, width: number, row
   return renderPlot({
     width, height: data.length * ROW + 36, marginLeft: 0, marginRight: 72, marginTop: 4, marginBottom: 28,
     style: BASE_STYLE,
-    y: { domain: data.map((d) => d.label), padding: 0.35, axis: null },
+    y: { domain: data.map((d) => d.label), padding: 0.12, axis: null },
     x: { grid: true, ticks: 3, domain: [-m, m], tickFormat: (v: number) => formatValue(spec.valueFormat, v), tickSize: 0, label: null },
     marks: [
-      Plot.gridX({ stroke: LINE }),
+      Plot.gridX({ stroke: LINE, ticks: 3 }),
       Plot.ruleX([0], { stroke: INK, strokeWidth: 1 }),
       Plot.barX(data, { y: "label", x: "value", fill: (d) => (d.value < 0 ? COPPER : NAVY), insetTop: 22, insetBottom: 4 }),
       Plot.text(data, { y: "label", text: "label", frameAnchor: "left", dy: -12, textAnchor: "start", ...rowLabel }),
       Plot.text(data.filter((d) => d.value >= 0), { y: "label", x: "value", text: (d) => formatValue(spec.valueFormat, d.value), dx: 6, textAnchor: "start", fontFamily: MONO, fontSize: 12, fill: INK }),
       Plot.text(data.filter((d) => d.value < 0), { y: "label", x: "value", text: (d) => formatValue(spec.valueFormat, d.value), dx: -6, textAnchor: "end", fontFamily: MONO, fontSize: 12, fill: INK }),
-      Plot.axisX({ ...axisText, tickSize: 0, label: null }),
+      Plot.axisX({ ...axisText, tickSize: 0, label: null, ticks: 3, tickFormat: (v: number) => formatValue(spec.valueFormat, v) }),
     ],
   })
 }
@@ -57,12 +57,12 @@ function timeline(spec: Extract<ChartSpec, { form: "timeline" }>, width: number,
     y: { domain: data.map((d) => d.label), axis: null },
     x: { grid: true, ticks: "month", tickSize: 0, label: null },
     marks: [
-      Plot.gridX({ stroke: LINE }),
+      Plot.gridX({ stroke: LINE, ticks: "month" }),
       Plot.ruleY(data, { y: "label", x1: () => data.reduce((a, d) => (d.date < a ? d.date : a), data[0].date), x2: "date", dy: 9, stroke: LINE, strokeWidth: 1 }),
       Plot.dot(data, { y: "label", x: "date", dy: 9, r: (d) => 4 + 5 * Math.sqrt(d.value / max), fill: NAVY, stroke: "#f7f5f0", strokeWidth: 2 }),
       Plot.text(data, { y: "label", text: "label", frameAnchor: "left", dy: -12, textAnchor: "start", ...rowLabel }),
       Plot.text(data, { y: "label", x: "date", text: (d) => formatValue(spec.valueFormat, d.value), dx: 14, dy: 9, textAnchor: "start", fontFamily: MONO, fontSize: 12, fill: INK }),
-      Plot.axisX({ ...axisText, tickSize: 0, label: null, tickFormat: "%b" }),
+      Plot.axisX({ ...axisText, tickSize: 0, label: null, ticks: "month", tickFormat: "%b" }),
     ],
   })
 }
@@ -76,13 +76,13 @@ function dumbbell(spec: Extract<ChartSpec, { form: "dumbbell" }>, width: number,
     y: { domain: data.map((d) => d.label), axis: null },
     x: { grid: true, ticks: 4, tickFormat: (v: number) => formatValue(spec.valueFormat, v), tickSize: 0, label: null, nice: true },
     marks: [
-      Plot.gridX({ stroke: LINE }),
+      Plot.gridX({ stroke: LINE, ticks: 4 }),
       Plot.ruleY(data, { y: "label", x1: "a", x2: "b", dy: 9, stroke: INK, strokeWidth: 2 }),
       Plot.dot(data, { y: "label", x: "a", dy: 9, r: 5, fill: COPPER, stroke: "#f7f5f0", strokeWidth: 2 }),
       Plot.dot(data, { y: "label", x: "b", dy: 9, r: 5, fill: NAVY, stroke: "#f7f5f0", strokeWidth: 2 }),
       Plot.text(data, { y: "label", text: "label", frameAnchor: "left", dy: -12, textAnchor: "start", ...rowLabel }),
       Plot.text(data, { y: "label", x: "a", text: (d) => formatValue(spec.valueFormat, d.a), dx: -10, dy: 9, textAnchor: "end", fontFamily: MONO, fontSize: 12, fill: INK }),
-      Plot.axisX({ ...axisText, tickSize: 0, label: null }),
+      Plot.axisX({ ...axisText, tickSize: 0, label: null, ticks: 3, tickFormat: (v: number) => formatValue(spec.valueFormat, v) }),
     ],
   })
 }

@@ -7,10 +7,12 @@ import { dateShort } from "@/lib/format"
 export function Chart({ spec, rows = 12, width = 720, bare = false }: { spec: ChartSpec; rows?: number; width?: number; bare?: boolean }) {
   const svg = renderChart(spec, width, rows)
   if (bare) return <div className="w-full [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: svg }} />
+  const mobile = renderChart(spec, 340, Math.min(rows, 8))
   return (
     <figure className="my-10 first:mt-0">
       <MonoLabel as="span" className="text-copper-600">{spec.heading}</MonoLabel>
-      <div className="mt-4 w-full border-t border-navy-900 pt-4 [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: svg }} />
+      <div className="mt-4 w-full border-t border-navy-900 pt-4 md:hidden [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: mobile }} />
+      <div className="mt-4 hidden w-full border-t border-navy-900 pt-4 md:block [&>svg]:h-auto [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: svg }} />
       <figcaption className="mt-3 text-mono-provenance font-mono text-foreground-subtle">{spec.source} · as of {dateShort(spec.data.takenAt)}</figcaption>
     </figure>
   )

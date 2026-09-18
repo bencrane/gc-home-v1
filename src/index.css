@@ -5,7 +5,6 @@
 @import "@fontsource-variable/fraunces";
 @import "@fontsource-variable/jetbrains-mono";
 @import "tailwindcss";
-@import "tw-animate-css";
 @import "./variants.css";
 
 @custom-variant dark (&:is(.dark *));

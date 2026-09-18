@@ -6,7 +6,7 @@ import type { Piece } from "@/content/types"
 
 function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: string }) {
   return (
-    <div className="mb-8 flex items-end justify-between gap-6 border-b-2 border-navy-900 pb-4">
+    <div className="mb-8 flex flex-col gap-3 border-b-2 border-navy-900 pb-4 md:flex-row md:items-end md:justify-between md:gap-6">
       <div>
         <Heading level={2}>{title}</Heading>
         <Text size="body-lg" tone="muted" className="mt-2 max-w-[60ch]">{blurb}</Text>

@@ -9,7 +9,8 @@ export function LeadVisual({ piece }: { piece: Piece }) {
   if (chart) return (
     <div>
       <MonoLabel className="text-copper-600">{chart.heading}</MonoLabel>
-      <div className="mt-3"><Chart spec={chart} rows={8} width={640} bare /></div>
+      <div className="mt-3 md:hidden"><Chart spec={chart} rows={6} width={340} bare /></div>
+      <div className="mt-3 hidden md:block"><Chart spec={chart} rows={8} width={560} bare /></div>
     </div>
   )
   const led = piece.body.find((b): b is LedgerSpec => b.kind === "ledger")
