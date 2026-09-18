@@ -10,7 +10,7 @@ colors:
   surface-muted: "#ede9df"
   foreground: "#0f1a2e"
   foreground-muted: "#3a4a64"
-  foreground-subtle: "#7c8aa1"
+  foreground-subtle: "#5b6b86"
   line: "#e1dccd"
   line-strong: "#c8c1ac"
   # Navy — federal-document authority (primary = navy-600, rail = navy-900)
@@ -134,7 +134,7 @@ typography:
     textTransform: uppercase
   mono-label:
     fontFamily: JetBrains Mono Variable
-    fontSize: 10px
+    fontSize: 11px
     fontWeight: 600
     lineHeight: 1.3
     letterSpacing: 0.12em

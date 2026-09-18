@@ -2,5 +2,20 @@
   "hook": {
     "enabled": true,
     "quiet": false
+  },
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "src/**"
+        ],
+        "createdAt": "2026-09-18T01:21:25.537Z",
+        "reason": "operator: paper ground is the Government Contracted identity carried from the brand, decided 2026-09-17"
+      }
+    ]
   }
 }
