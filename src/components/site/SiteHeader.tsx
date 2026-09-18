@@ -15,7 +15,7 @@ function navLinkClass({ isActive }: { isActive: boolean }) {
 /** Masthead: wordmark left, section nav right. Sticky, paper, hairline. No blur (DESIGN.md). */
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-background">
+    <header className="masthead sticky top-0 z-50 border-b border-line bg-background">
       <div className="mx-auto flex h-16 max-w-[var(--w-wide)] items-center justify-between gap-6 px-gutter">
         <Wordmark />
         <nav aria-label="Primary" className="flex items-center gap-6 sm:gap-8">

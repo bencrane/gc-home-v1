@@ -4,8 +4,10 @@ import Front from "@/pages/Front"
 import SectionIndex from "@/pages/SectionIndex"
 import PiecePage from "@/pages/PiecePage"
 import About from "@/pages/About"
+import Gallery from "@/pages/Gallery"
 
 const router = createBrowserRouter([
+  { path: "/gallery", element: <Gallery /> },
   {
     element: <AppShell />,
     children: [

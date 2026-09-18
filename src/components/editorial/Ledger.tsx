@@ -12,7 +12,7 @@ export function Ledger({ spec }: { spec: LedgerSpec }) {
       <MonoLabel as="span" className="text-copper-600">{spec.heading}</MonoLabel>
       <div className="mt-3 border-t border-navy-600">
         {spec.data.rows.map((r, i) => (
-          <div key={i} className="grid grid-cols-[1fr_auto] items-baseline gap-6 border-b border-line py-3">
+          <div key={i} className="ledger-row grid grid-cols-[1fr_auto] items-baseline gap-6 border-b border-line py-3">
             <div className="min-w-0">
               <p className="truncate text-body text-foreground">{String(r[spec.label] ?? "—")}</p>
               {spec.sub && <p className="truncate text-mono-provenance font-mono text-foreground-subtle">{String(r[spec.sub] ?? "")}</p>}

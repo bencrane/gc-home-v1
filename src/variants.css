@@ -1,0 +1,39 @@
+/* Design variants under comparison. Keyed by html[data-variant]. Registry: src/variants.ts.
+   Every block overrides tokens or the few structural classes only; components never branch on variant. */
+
+/* ── broadsheet ─────────────────────────────────────────────── */
+html[data-variant="broadsheet"] {
+  --text-display: clamp(2.25rem, 4vw, 3.25rem);
+  --text-h1: clamp(1.9rem, 3.4vw, 2.6rem);
+  --text-body-lg: 1.0625rem;
+  --text-body-lg--line-height: 1.55;
+  --w-prose: 52rem;
+  --section-y-sm: 3rem;
+  --section-y: 4rem;
+  --section-y-lg: 5rem;
+}
+html[data-variant="broadsheet"] .ledger-row { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+
+/* ── ink ────────────────────────────────────────────────────── */
+html[data-variant="ink"] .front-band {
+  background-color: var(--color-navy-900);
+  color: var(--color-slate-100);
+  border-color: var(--color-navy-700);
+}
+html[data-variant="ink"] .front-band .text-foreground { color: var(--color-slate-100); }
+html[data-variant="ink"] .front-band .text-foreground-muted,
+html[data-variant="ink"] .front-band .text-slate-600,
+html[data-variant="ink"] .front-band .text-slate-700 { color: var(--color-slate-300); }
+html[data-variant="ink"] .front-band .text-copper-600 { color: var(--color-copper-300); }
+html[data-variant="ink"] .front-band .border-line { border-color: var(--color-navy-700); }
+html[data-variant="ink"] .front-band .group-hover\:text-navy-600:hover,
+html[data-variant="ink"] .front-band .hover\:text-navy-900:hover { color: var(--color-copper-200); }
+html[data-variant="ink"] .masthead { background-color: var(--color-navy-900); border-color: var(--color-navy-700); }
+html[data-variant="ink"] .masthead .text-slate-500 { color: var(--color-slate-400); }
+html[data-variant="ink"] .masthead .text-navy-900,
+html[data-variant="ink"] .masthead .hover\:text-navy-900:hover { color: var(--color-slate-100); }
+
+/* ── quiet ──────────────────────────────────────────────────── */
+html[data-variant="quiet"] .text-copper-600 { color: var(--color-navy-600); }
+html[data-variant="quiet"] .text-copper-500 { color: var(--color-navy-600); }
+html[data-variant="quiet"] .hover\:text-copper-700:hover { color: var(--color-navy-900); }

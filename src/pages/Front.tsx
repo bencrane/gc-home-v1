@@ -10,7 +10,7 @@ export default function Front() {
   const briefings = bySection("briefings").filter((p) => p !== lead).slice(0, 4)
   return (
     <>
-      <Section spacing="lg" divide>
+      <Section spacing="lg" divide className="front-band">
         <Grid cols={12} align="start">
           <Cols spanLg={7}>
             <PieceCard piece={lead} lead level={2} />
@@ -24,7 +24,7 @@ export default function Front() {
         </Grid>
       </Section>
 
-      <Section divide>
+      <Section divide className="front-band">
         <Grid cols={12} align="start">
           <Cols spanLg={3}>
             <Eyebrow>Markets</Eyebrow>

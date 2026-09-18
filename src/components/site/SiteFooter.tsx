@@ -7,7 +7,7 @@ export default function SiteFooter() {
         <Wordmark />
         <div className="mt-6 flex flex-col gap-2 border-t border-line pt-4 text-xs text-slate-600 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Government Contracted</p>
-          <p>Independent. Not affiliated with SAM.gov, GSA, or any federal agency.</p>
+          <p>Independent. Not affiliated with SAM.gov, GSA, or any federal agency. <a href="/gallery" className="text-copper-600 hover:text-navy-900">Design gallery</a></p>
         </div>
       </div>
     </footer>
