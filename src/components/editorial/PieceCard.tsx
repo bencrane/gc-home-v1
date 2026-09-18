@@ -22,7 +22,7 @@ export function PieceCard({ piece, variant = "card", well = "art", className }: 
           <div className="lg:col-span-7">
             <MonoLabel className="text-copper-600"><Link to={`/section/${piece.format}`} className="hover:text-navy-900">{piece.formatName}</Link> · {dateShort(piece.publishedAt)} · <span className="text-foreground-subtle">{piece.byline}</span></MonoLabel>
             <Link to={href} className="group mt-6 block"><Heading level={1} className="text-display transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-            <p className="mt-7 max-w-[60ch] text-dek-lg text-foreground-muted">{piece.dek}</p>
+            <p className="mt-8 max-w-[60ch] text-dek-lg text-foreground-muted">{piece.dek}</p>
           </div>
           <Link to={href} className="block lg:col-span-5"><Visual piece={piece} size="lead" /></Link>
         </div>

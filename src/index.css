@@ -42,12 +42,12 @@
   --text-wordmark--letter-spacing: 0.02em;
 
   --text-display: clamp(2.5rem, 4.4vw, 4.3125rem);    /* 69: front lead */
-  --text-display--line-height: 1.04;
+  --text-display--line-height: 1.12;
   --text-display--letter-spacing: -0.02em;
   --text-display--font-weight: 400;
 
   --text-h1: clamp(2rem, 2.9vw, 2.5rem);              /* 40: piece and index titles */
-  --text-h1--line-height: 1.1;
+  --text-h1--line-height: 1.15;
   --text-h1--letter-spacing: -0.015em;
   --text-h1--font-weight: 400;
 
@@ -66,9 +66,9 @@
   --text-h3--font-weight: 400;
 
   --text-dek: 1.4375rem;                               /* 23: standfirst, sans */
-  --text-dek--line-height: 1.4;
+  --text-dek--line-height: 1.45;
   --text-dek-lg: 1.75rem;                              /* 28: front lead standfirst */
-  --text-dek-lg--line-height: 1.35;
+  --text-dek-lg--line-height: 1.45;
 
   --text-h4: 1.1875rem;                                /* 19: card headlines */
   --text-h4--line-height: 1.25;

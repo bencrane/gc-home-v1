@@ -88,14 +88,14 @@ typography:
     fontFamily: Fraunces Variable
     fontSize: clamp(2.5rem, 4.4vw, 4.3125rem)
     fontWeight: 400
-    lineHeight: 1.04
+    lineHeight: 1.12
     letterSpacing: -0.02em
     role: front lead headline (69)
   h1:
     fontFamily: Fraunces Variable
     fontSize: clamp(2rem, 2.9vw, 2.5rem)
     fontWeight: 400
-    lineHeight: 1.1
+    lineHeight: 1.15
     letterSpacing: -0.015em
     role: piece title, index title (40)
   figure:
@@ -124,13 +124,13 @@ typography:
     fontFamily: Inter Variable
     fontSize: 23px
     fontWeight: 400
-    lineHeight: 1.4
+    lineHeight: 1.45
     role: standfirst under a display or h1; one step above prose
   dek-lg:
     fontFamily: Inter Variable
     fontSize: 28px
     fontWeight: 400
-    lineHeight: 1.35
+    lineHeight: 1.45
     role: front lead standfirst
   h4:
     fontFamily: Fraunces Variable
