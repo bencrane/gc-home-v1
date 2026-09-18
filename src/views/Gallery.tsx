@@ -1,3 +1,4 @@
+import { href } from "@/lib/url"
 import { useState } from "react"
 import { VARIANTS } from "@/variants"
 import { setVariant } from "@/lib/variant"
@@ -13,7 +14,7 @@ function Preview({ id, path = "/", scale = SCALE }: { id: string; path?: string;
     <div className="relative overflow-hidden border border-line bg-background" style={{ height: PREVIEW_H * scale }}>
       <iframe
         title={`${id} preview`}
-        src={`${path}?v=${id}&preview=1`}
+        src={href(`${path}?v=${id}&preview=1`)}
         width={PREVIEW_W}
         height={PREVIEW_H}
         tabIndex={-1}
@@ -30,7 +31,7 @@ export default function Gallery() {
   const [compare, setCompare] = useState<string[]>([])
   const [path, setPath] = useState("/")
   const toggle = (id: string) => setCompare((c) => (c.includes(id) ? c.filter((x) => x !== id) : [...c, id].slice(-2)))
-  const open = (id: string) => { setVariant(id); window.location.assign(`/?v=${id}`) }
+  const open = (id: string) => { setVariant(id); window.location.assign(href(`/?v=${id}`)) }
   const active = typeof document === "undefined" ? undefined : document.documentElement.dataset.variant
 
   return (

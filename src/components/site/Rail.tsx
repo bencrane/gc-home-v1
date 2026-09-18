@@ -1,3 +1,4 @@
+import { href } from "@/lib/url"
 
 function Seal({ className }: { className?: string }) {
   return (
@@ -14,7 +15,7 @@ export default function Rail() {
   return (
     <div className="hidden bg-navy-900 lg:block">
       <aside className="sticky top-0 flex h-dvh flex-col items-center justify-between pb-8" aria-label="Site">
-        <a href="/" aria-label="Front page" className="flex h-[var(--masthead-h)] items-center text-copper-300 transition-colors hover:text-copper-100"><Seal className="h-12 w-12" /></a>
+        <a href={href("/")} aria-label="Front page" className="flex h-[var(--masthead-h)] items-center text-copper-300 transition-colors hover:text-copper-100"><Seal className="h-12 w-12" /></a>
         <span className="h-px w-6 bg-navy-700" aria-hidden />
         <Seal className="h-7 w-7 text-navy-700" />
       </aside>

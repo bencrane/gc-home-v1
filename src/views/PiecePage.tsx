@@ -1,3 +1,4 @@
+import { href } from "@/lib/url"
 import { Eyebrow, Heading, MonoLabel } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { Body } from "@/components/editorial/Body"
@@ -13,7 +14,7 @@ export default function PiecePage({ slug }: { slug: string }) {
     <>
       <Band as="article" className="py-10">
         <div className="max-w-[64rem]">
-          <Eyebrow><a href={`/${piece.section}`} className="hover:text-navy-900">{piece.section}</a> · {piece.formatName}</Eyebrow>
+          <Eyebrow><a href={href(`/${piece.section}`)} className="hover:text-navy-900">{piece.section}</a> · {piece.formatName}</Eyebrow>
           <Heading level={1} className="mt-3">{piece.title}</Heading>
           <p className="mt-5 max-w-[48ch] text-dek text-foreground-muted">{piece.dek}</p>
           <MonoLabel className="mt-6 border-b border-line pb-6 text-foreground-subtle">{piece.byline} · {dateLong(piece.publishedAt)}</MonoLabel>
@@ -24,7 +25,7 @@ export default function PiecePage({ slug }: { slug: string }) {
         <Band className="border-t border-line py-10">
           <div className="mb-8 flex items-end justify-between border-b-2 border-navy-900 pb-4">
             <Heading level={2}>More in {piece.section}</Heading>
-            <a href={`/${piece.section}`} className="text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {piece.section} →</a>
+            <a href={href(`/${piece.section}`)} className="text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {piece.section} →</a>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">{more.map((p) => <PieceCard key={p.slug} piece={p} />)}</div>
         </Band>

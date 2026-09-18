@@ -22,6 +22,9 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npx astro check
       - run: npx astro build
+        env:
+          SITE_URL: https://bencrane.github.io
+          SITE_BASE: /gc-home-v1
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
