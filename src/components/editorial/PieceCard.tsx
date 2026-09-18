@@ -12,7 +12,7 @@ type Props = { piece: Piece; variant?: "card" | "row" | "lead"; className?: stri
  *  row: hairline list entry for the secondaries column and small sections. lead: front-page lead. */
 export function PieceCard({ piece, variant = "card", className }: Props) {
   const href = `/${piece.section}/${piece.slug}`
-  const meta = <MonoLabel className="text-copper-600">{piece.formatName} · {dateShort(piece.publishedAt)}</MonoLabel>
+  const meta = <MonoLabel className="text-copper-600"><Link to={`/section/${piece.format}`} className="hover:text-navy-900">{piece.formatName}</Link> · {dateShort(piece.publishedAt)}</MonoLabel>
 
   if (variant === "lead") {
     return (

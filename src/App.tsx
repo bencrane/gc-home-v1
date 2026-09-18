@@ -5,6 +5,7 @@ import SectionIndex from "@/pages/SectionIndex"
 import PiecePage from "@/pages/PiecePage"
 import About from "@/pages/About"
 import Gallery from "@/pages/Gallery"
+import FormatIndex from "@/pages/FormatIndex"
 
 const router = createBrowserRouter([
   { path: "/gallery", element: <Gallery /> },
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Front /> },
       { path: "/about", element: <About /> },
+      { path: "/section/:format", element: <FormatIndex /> },
       { path: "/:section", element: <SectionIndex /> },
       { path: "/:section/:slug", element: <PiecePage /> },
     ],
