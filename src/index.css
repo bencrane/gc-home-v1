@@ -36,7 +36,7 @@
   --font-mono: "JetBrains Mono Variable", ui-monospace, Menlo, monospace;
 
   /* ── Type scale: news front. Headline-first, tight leading, dense text. ── */
-  --text-display: clamp(2.5rem, 3.6vw, 3.5rem);   /* front lead: 40–56px */
+  --text-display: clamp(2.75rem, 4.4vw, 4.75rem);  /* front lead: 44–76px */
   --text-display--line-height: 1.04;
   --text-display--letter-spacing: -0.02em;
   --text-display--font-weight: 400;
@@ -61,8 +61,8 @@
   --text-h4--letter-spacing: -0.005em;
   --text-h4--font-weight: 400;
 
-  --text-body-lg: 1.125rem;                          /* piece body: 18/1.55 */
-  --text-body-lg--line-height: 1.55;
+  --text-body-lg: 1.25rem;                           /* dek, piece body: 20/1.5 */
+  --text-body-lg--line-height: 1.5;
   --text-body: 1rem;                                 /* dek, general: 16/1.5 */
   --text-body--line-height: 1.5;
   --text-body-sm: 0.875rem;                          /* card dek, row dek: 14/1.45 */

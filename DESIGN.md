@@ -77,7 +77,7 @@ colors:
 typography:
   display:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.5rem, 3.6vw, 3.5rem)
+    fontSize: clamp(2.75rem, 4.4vw, 4.75rem)
     fontWeight: 400
     lineHeight: 1.04
     letterSpacing: -0.02em
@@ -107,9 +107,9 @@ typography:
     letterSpacing: -0.005em
   body-lg:
     fontFamily: Inter Variable
-    fontSize: 18px
+    fontSize: 20px
     fontWeight: 400
-    lineHeight: 1.55
+    lineHeight: 1.5
   body:
     fontFamily: Inter Variable
     fontSize: 16px

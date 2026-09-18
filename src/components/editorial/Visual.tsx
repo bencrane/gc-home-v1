@@ -36,10 +36,10 @@ export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" |
 
 function FigureStrip({ spec }: { spec: FiguresSpec }) {
   return (
-    <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-3 border-t border-line pt-4">
+    <dl className="mt-8 flex flex-wrap gap-x-12 gap-y-4 border-t border-line pt-5">
       {spec.figures.map((f) => (
         <div key={f.label} className="flex items-baseline gap-2">
-          <dd className="figures-display text-h3 text-foreground">{f.value}</dd>
+          <dd className="figures-display text-h2 text-foreground">{f.value}</dd>
           <dt className="font-mono text-mono-label uppercase text-foreground-subtle">{f.label}</dt>
         </div>
       ))}
@@ -72,17 +72,17 @@ function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" 
   return (
     <figure>
       <MonoLabel className="text-copper-600">{spec.heading}</MonoLabel>
-      <ol className="mt-3">
+      <ol className="mt-4">
         {rows.map((r, i) => {
           const v = Number(r[spec.value]) || 0
-          const w = max ? Math.max(2, (v / max) * 100) : 0
+          const w = max ? Math.max(1.5, (v / max) * 100) : 0
           return (
-            <li key={i} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-1">
-              <div className="relative h-7 min-w-0">
-                <div className={"absolute inset-y-0 left-0 " + (i === 0 ? "bg-navy-900" : "bg-navy-200")} style={{ width: `${w}%` }} />
-                <span className={"relative flex h-7 items-center truncate pl-2 text-body-sm " + (i === 0 ? "text-background" : "text-foreground")}>{String(r[spec.label] ?? "—")}</span>
+            <li key={i} className="py-2">
+              <div className="flex items-baseline justify-between gap-4">
+                <span className="truncate text-body text-foreground">{String(r[spec.label] ?? "—")}</span>
+                <span className="shrink-0 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
               </div>
-              <span className="w-16 text-right font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
+              <div className="mt-1.5 h-2 w-full"><div className={i === 0 ? "h-full bg-navy-900" : "h-full bg-navy-500"} style={{ width: `${w}%` }} /></div>
             </li>
           )
         })}
