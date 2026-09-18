@@ -16,7 +16,7 @@ export default function SiteHeader({ currentPath = "/" }: { currentPath?: string
           {FORMATS.map((f, i) => (
             <span key={f.id} className="flex items-center">
               {i > 0 && <span aria-hidden className="mx-4 h-4 w-px bg-foreground/60" />}
-              <a href={`/section/${f.id}/`} aria-current={currentPath.startsWith(`/section/${f.id}`) ? "page" : undefined} className={cn("whitespace-nowrap font-serif text-body uppercase tracking-[0.06em] transition-colors", currentPath.startsWith(`/section/${f.id}`) ? "text-copper-600" : "text-foreground hover:text-navy-600")}>{f.name}</a>
+              <a href={`/section/${f.id}`} aria-current={currentPath.startsWith(`/section/${f.id}`) ? "page" : undefined} className={cn("whitespace-nowrap font-serif text-body uppercase tracking-[0.06em] transition-colors", currentPath.startsWith(`/section/${f.id}`) ? "text-copper-600" : "text-foreground hover:text-navy-600")}>{f.name}</a>
             </span>
           ))}
         </Band>
