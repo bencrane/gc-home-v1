@@ -10,3 +10,4 @@ studio/dist/
 .env.*.local
 .gstack/
 .astro/
+dist/build-manifest.json

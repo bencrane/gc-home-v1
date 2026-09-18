@@ -13,12 +13,12 @@ export function money(n: number | null | undefined): string {
   if (a >= 1e3) return `${sign}$${(a / 1e3).toFixed(0)}K`
   return sign + usd0.format(a)
 }
-export function count(n: number | null | undefined): string { return n == null ? "—" : num0.format(n) }
+export function count(n: number | null | undefined): string { return n == null || Number.isNaN(n) ? "—" : num0.format(n) }
 export function pct(n: number | null | undefined): string {
   if (n == null) return "—"
   return `${n > 0 ? "+" : n < 0 ? "−" : ""}${Math.abs(n).toFixed(1)}%`
 }
-export function hourly(n: number | null | undefined): string { return n == null ? "—" : `$${n.toFixed(2)}` }
+export function hourly(n: number | null | undefined): string { return n == null || Number.isNaN(n) ? "—" : `$${n.toFixed(2)}` }
 export function dateLong(iso: string): string {
   return new Date(iso + (iso.length === 10 ? "T12:00:00Z" : "")).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
 }
@@ -27,6 +27,7 @@ export function dateShort(iso: string): string {
 }
 /** The one formatter map. Every value on the site goes through this. */
 export function formatValue(kind: ValueFormat, v: unknown): string {
+  if (v == null || v === "" || (typeof v === "number" && Number.isNaN(v))) return "—"
   switch (kind) {
     case "money": return money(Number(v))
     case "count": return count(Number(v))
