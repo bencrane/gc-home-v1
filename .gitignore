@@ -11,3 +11,4 @@ studio/dist/
 .gstack/
 .astro/
 dist/build-manifest.json
+.vercel
