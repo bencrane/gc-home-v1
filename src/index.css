@@ -157,7 +157,7 @@
   /* ─── Content widths ─── consumed by <Container>; replaces the 2xl/3xl/6xl/7xl mix. */
   --w-prose: 48rem;
   --w-content: 72rem;
-  --w-wide: 80rem;
+  --w-wide: 100rem;
 
   /* ─── Radii ─── brand is sharp-cornered by default (0); pill for dots/badges. */
   --radius-pill: 9999px;

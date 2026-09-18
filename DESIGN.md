@@ -175,7 +175,7 @@ spacing:
   section-y-lg: 96px
   w-prose: 768px
   w-content: 1152px
-  w-wide: 1280px
+  w-wide: 1600px
   ledger-grid: 32px
 
 motion:

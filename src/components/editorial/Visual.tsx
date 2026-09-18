@@ -35,14 +35,14 @@ export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" |
 function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead" }) {
   const [f, ...rest] = spec.figures
   return (
-    <div className={size === "lead" ? "grid grid-cols-3 gap-6" : ""}>
-      <div>
-        <p className={"figures-display text-foreground " + (size === "lead" ? "text-h1" : "text-h1")}>{f.value}</p>
+    <div className={size === "lead" ? "grid grid-cols-3 gap-4" : ""}>
+      <div className="min-w-0">
+        <p className={"figures-display text-foreground " + (size === "lead" ? "text-h2" : "text-h1")}>{f.value}</p>
         <MonoLabel className="mt-1 text-foreground-subtle">{f.label}</MonoLabel>
       </div>
       {size === "lead" && rest.map((r) => (
-        <div key={r.label}>
-          <p className="figures-display text-h1 text-foreground">{r.value}</p>
+        <div key={r.label} className="min-w-0">
+          <p className="figures-display text-h2 text-foreground">{r.value}</p>
           <MonoLabel className="mt-1 text-foreground-subtle">{r.label}</MonoLabel>
         </div>
       ))}
