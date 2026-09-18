@@ -10,9 +10,9 @@ function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: s
     <div className="mb-6 flex items-end justify-between gap-6 border-b-2 border-navy-900 pb-3">
       <div>
         <Heading level={2}>{title}</Heading>
-        <Text size="body-sm" tone="muted" className="mt-1 max-w-[65ch]">{blurb}</Text>
+        <Text size="body" tone="muted" className="mt-1 max-w-[65ch]">{blurb}</Text>
       </div>
-      <Link to={to} className="shrink-0 text-eyebrow font-sans uppercase text-copper-600 hover:text-navy-900">All {title.toLowerCase()} →</Link>
+      <Link to={to} className="shrink-0 text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {title.toLowerCase()} →</Link>
     </div>
   )
 }

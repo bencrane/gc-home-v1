@@ -60,7 +60,7 @@ export default function Gallery() {
           <div className="mx-auto max-w-[var(--w-wide)] px-gutter py-8">
             <div className="flex items-baseline justify-between">
               <Eyebrow>Compare</Eyebrow>
-              <button onClick={() => setCompare([])} className="text-eyebrow font-sans uppercase text-slate-500 hover:text-navy-900">Clear</button>
+              <button onClick={() => setCompare([])} className="text-mono-label font-mono uppercase text-slate-500 hover:text-navy-900">Clear</button>
             </div>
             <div className="mt-4 grid grid-cols-1 gap-6 lg:grid-cols-2">
               {compare.map((id) => {
@@ -92,8 +92,8 @@ export default function Gallery() {
                     <Heading level={3} className="mt-1">{v.name}</Heading>
                   </div>
                   <div className="flex shrink-0 gap-4 pt-1">
-                    <button onClick={() => toggle(v.id)} className={cn("text-eyebrow font-sans uppercase", picked ? "text-copper-600" : "text-slate-500 hover:text-navy-900")}>{picked ? "Picked" : "Compare"}</button>
-                    <button onClick={() => open(v.id)} className="text-eyebrow font-sans uppercase text-copper-600 hover:text-navy-900">Open →</button>
+                    <button onClick={() => toggle(v.id)} className={cn("text-mono-label font-mono uppercase", picked ? "text-copper-600" : "text-slate-500 hover:text-navy-900")}>{picked ? "Picked" : "Compare"}</button>
+                    <button onClick={() => open(v.id)} className="text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">Open →</button>
                   </div>
                 </div>
                 <Text size="body-sm" tone="muted" className="mt-3">{v.summary}</Text>

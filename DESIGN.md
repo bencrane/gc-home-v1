@@ -75,63 +75,94 @@ colors:
   dark-border: "#1a3658"
 
 typography:
+  # Modular scale, ratio 1.2 on 16px: 11 · 13 · 16 · 19 · 23 · 28 · 33 · 40 · 48 · 57 · 69. One role per step.
+  wordmark:
+    fontFamily: Fraunces Variable
+    fontSize: clamp(2.25rem, 4.7vw, 4.3125rem)
+    fontWeight: 400
+    lineHeight: 1
+    letterSpacing: 0.02em
+    textTransform: uppercase
+    role: the loudest text on the site (69px at desktop)
   display:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2.75rem, 4.4vw, 4.75rem)
+    fontSize: clamp(2.5rem, 4vw, 3.5625rem)
     fontWeight: 400
     lineHeight: 1.04
     letterSpacing: -0.02em
+    role: front lead headline (57)
   h1:
     fontFamily: Fraunces Variable
-    fontSize: clamp(2rem, 2.8vw, 2.75rem)
+    fontSize: clamp(2rem, 2.9vw, 2.5rem)
     fontWeight: 400
-    lineHeight: 1.08
+    lineHeight: 1.1
     letterSpacing: -0.015em
+    role: piece title, index title (40)
+  figure:
+    fontFamily: Fraunces Variable
+    fontSize: 33px
+    fontWeight: 400
+    lineHeight: 1.1
+    letterSpacing: -0.02em
+    fontVariantNumeric: lining-nums tabular-nums
+    role: hero figures
   h2:
     fontFamily: Fraunces Variable
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.15
     letterSpacing: -0.01em
+    role: section heads (Markets, Briefings, More in …)
   h3:
     fontFamily: Fraunces Variable
-    fontSize: 22px
+    fontSize: 23px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: -0.01em
+    role: row headlines, strip figures
+  dek:
+    fontFamily: Inter Variable
+    fontSize: 23px
+    fontWeight: 400
+    lineHeight: 1.4
+    role: standfirst under a display or h1; one step above prose
   h4:
     fontFamily: Fraunces Variable
-    fontSize: 18px
+    fontSize: 19px
     fontWeight: 400
     lineHeight: 1.25
     letterSpacing: -0.005em
+    role: card headlines
   body-lg:
     fontFamily: Inter Variable
-    fontSize: 20px
+    fontSize: 19px
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.55
+    role: piece prose
   body:
     fontFamily: Inter Variable
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
-  body-sm:
-    fontFamily: Inter Variable
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 1.45
+    role: card deks, ledger labels, section blurbs, nav
   caption:
     fontFamily: Inter Variable
-    fontSize: 12px
+    fontSize: 13px
     fontWeight: 500
     lineHeight: 1.4
-  eyebrow:
-    fontFamily: Inter Variable
-    fontSize: 11px
-    fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: 0.14em
-    textTransform: uppercase
+  mono-data:
+    fontFamily: JetBrains Mono Variable
+    fontSize: 13px
+    fontWeight: 500
+    lineHeight: 1.4
+    letterSpacing: 0.02em
+    role: table values, axis values
+  mono-provenance:
+    fontFamily: JetBrains Mono Variable
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.4
+    role: source lines under figures
   mono-label:
     fontFamily: JetBrains Mono Variable
     fontSize: 11px
@@ -139,22 +170,14 @@ typography:
     lineHeight: 1.3
     letterSpacing: 0.12em
     textTransform: uppercase
-  mono-data:
-    fontFamily: JetBrains Mono Variable
-    fontSize: 12px
-    fontWeight: 500
-    lineHeight: 1.4
-    letterSpacing: 0.02em
-  mono-provenance:
-    fontFamily: JetBrains Mono Variable
-    fontSize: 11px
-    fontWeight: 400
-    lineHeight: 1.3
-  figures-display:
+    role: THE micro label. Every kicker, eyebrow, figure label, axis label, section link. No second uppercase small voice exists.
+  nav:
     fontFamily: Fraunces Variable
+    fontSize: 16px
     fontWeight: 400
-    letterSpacing: -0.02em
-    fontVariantNumeric: lining-nums tabular-nums
+    letterSpacing: 0.06em
+    textTransform: uppercase
+    role: masthead section bar only
 
 rounded:
   default: 0px
@@ -233,7 +256,7 @@ Three signatures carry the identity everywhere:
 - Sans (`Inter Variable`) for body, captions, form values, table labels.
 - Mono (`JetBrains Mono Variable`) for eyebrow, mono-label, mono-data, mono-provenance. Uppercase belongs to the first three; provenance is mixed case and tight.
 - Numerals in any table, figure, or chart axis use `tabular-nums`. Hero figures use `lining-nums tabular-nums` in the serif.
-- Type roles are Tailwind utilities generated from the tokens: `text-display`, `text-h1` … `text-mono-provenance`. Ad hoc font sizes are not used.
+- Type roles are Tailwind utilities generated from the tokens: `text-wordmark`, `text-display`, `text-h1`, `text-figure`, `text-h2`, `text-h3`, `text-dek`, `text-h4`, `text-body-lg`, `text-body`, `text-caption`, `text-mono-data`, `text-mono-provenance`, `text-mono-label`. Ad hoc font sizes are not used. Every size on the site is a step of the 1.2 scale; a new size means a new step with a named role, never a one-off.
 
 ## Layout
 
