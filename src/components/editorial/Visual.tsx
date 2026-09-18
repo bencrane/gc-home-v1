@@ -36,11 +36,11 @@ export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" |
 
 function FigureStrip({ spec }: { spec: FiguresSpec }) {
   return (
-    <dl className="mt-8 flex flex-wrap gap-x-12 gap-y-4 border-t border-line pt-5">
+    <dl className="mt-8 grid grid-cols-3 gap-6 border-t border-line pt-5">
       {spec.figures.map((f) => (
-        <div key={f.label} className="flex items-baseline gap-2">
-          <dd className="figures-display text-h3 text-foreground">{f.value}</dd>
-          <dt className="font-mono text-mono-label uppercase text-foreground-subtle">{f.label}</dt>
+        <div key={f.label} className="min-w-0">
+          <dd className="figures-display text-h2 text-foreground">{f.value}</dd>
+          <dt className="mt-1 font-mono text-mono-label uppercase text-foreground-subtle">{f.label}</dt>
         </div>
       ))}
     </dl>
@@ -66,7 +66,7 @@ function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead"
 }
 
 function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" }) {
-  const rows = spec.data.rows.slice(0, size === "lead" ? 8 : 5)
+  const rows = spec.data.rows.slice(0, size === "lead" ? 7 : 5)
   const f = fmt[spec.valueFormat] as (v: unknown) => string
   const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (
@@ -77,12 +77,12 @@ function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" 
           const v = Number(r[spec.value]) || 0
           const w = max ? Math.max(1.5, (v / max) * 100) : 0
           return (
-            <li key={i} className="py-2">
+            <li key={i} className="py-1.5">
               <div className="flex items-baseline justify-between gap-4">
                 <span className="truncate text-body text-foreground">{String(r[spec.label] ?? "—")}</span>
                 <span className="shrink-0 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
               </div>
-              <div className="mt-1.5 h-2 w-full"><div className={i === 0 ? "h-full bg-navy-900" : "h-full bg-navy-500"} style={{ width: `${w}%` }} /></div>
+              <div className="mt-1 h-1.5 w-full bg-surface-muted"><div className={i === 0 ? "h-full bg-navy-900" : "h-full bg-navy-500"} style={{ width: `${w}%` }} /></div>
             </li>
           )
         })}

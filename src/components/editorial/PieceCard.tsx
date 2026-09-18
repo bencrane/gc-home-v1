@@ -19,11 +19,10 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
       <article className={cn("border-t-2 border-navy-900 pt-8", className)}>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            {meta}
+            <MonoLabel className="text-copper-600"><Link to={`/section/${piece.format}`} className="hover:text-navy-900">{piece.formatName}</Link> · {dateShort(piece.publishedAt)} · <span className="text-foreground-subtle">{piece.byline}</span></MonoLabel>
             <Link to={href} className="group mt-4 block"><Heading level={1} className="text-display max-w-[22ch] transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
             <p className="mt-6 max-w-[48ch] text-dek text-foreground-muted">{piece.dek}</p>
             <Visual piece={piece} size="strip" />
-            <MonoLabel className="mt-8 text-foreground-subtle">{piece.byline}</MonoLabel>
           </div>
           <Link to={href} className="block lg:col-span-5 lg:pt-1"><Visual piece={piece} size="lead" /></Link>
         </div>
