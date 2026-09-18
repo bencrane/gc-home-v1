@@ -268,7 +268,7 @@ Three signatures carry the identity everywhere:
 
 - Page: rail (72px navy grid track at lg+) + document. Document column runs to `w-wide` (1920px) with a 32px gutter; no marketing bands. Vertical rhythm is 40px per front band.
 - Front (docs/design/FRONT_BRIEF.md): lead 8/12 with its data visual, secondaries 4/12 as rows, then rivers of 4-up cards per section. Every piece once.
-- Card contract: 5:3 figure well (the piece's key figure set large; ink field for Markets, paper for Briefings; copper rule), kicker, h3 headline, three-line dek.
+- Card contract: 5:3 art well, kicker, h4 headline, two-line dek.
 
 - Rail on the left at `--rail-w`; content offsets by it at lg+. The rail is painted into the html background so it reaches the physical screen edge on every device.
 - Widths: `w-prose` for reading columns, `w-content` for standard bands, `w-wide` for tables and charts. Gutter is `--spacing-gutter`.
@@ -324,6 +324,6 @@ The base component set is the copied gc-hq `packages/ui` in `src/components/ui`:
 
 ## Known Gaps
 
-- Media-specific components (pull quote, ticker strip) are not yet defined. They inherit the rules above until specified.
+- Media-specific components (article layout, byline, pull quote, briefing card, ticker strip) are not yet defined. They inherit the rules above until specified.
 - Chart typography and gridline tokens are stated here but not yet encoded as an ECharts theme object.
 - The opening animation from gc-hq-new is intentionally not carried over.

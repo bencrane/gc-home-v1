@@ -3,7 +3,7 @@ import type { Piece } from "@/content/types"
 import { Heading, MonoLabel } from "@/components/primitives"
 import { dateShort } from "@/lib/format"
 import { Visual } from "./Visual"
-import { FigureWell } from "./FigureWell"
+import { Art } from "./Art"
 import { cn } from "@/lib/cn"
 
 type Props = { piece: Piece; variant?: "card" | "row" | "lead"; className?: string }
@@ -41,7 +41,7 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
 
   return (
     <article className={cn("flex flex-col border border-line bg-surface", className)}>
-      <Link to={href} aria-hidden tabIndex={-1} className="block aspect-[5/3] overflow-hidden border-b border-line"><FigureWell piece={piece} /></Link>
+      <Link to={href} aria-hidden tabIndex={-1} className="block aspect-[5/3] overflow-hidden border-b border-line"><Art piece={piece} className="block h-full w-full" /></Link>
       <div className="flex flex-1 flex-col p-6">
         {meta}
         <Link to={href} className="group mt-3 block"><Heading level={3} className="transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>

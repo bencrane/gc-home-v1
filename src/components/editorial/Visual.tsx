@@ -4,12 +4,16 @@ import type { Piece, LedgerSpec, ChartSpec, FiguresSpec } from "@/content/types"
 import { ensureTheme } from "@/lib/echarts-theme"
 import { money, count, hourly, dateShort } from "@/lib/format"
 import { MonoLabel } from "@/components/primitives"
+import { Art } from "./Art"
+import { activeVariant } from "@/lib/variant"
 
 const fmt = { money, count, hourly, date: (v: unknown) => dateShort(String(v)) } as const
 
 /** The card visual: derived from the piece's first data block, never a stock image.
  *  figures → the lead figure large; ledger → top rows as a compact bar list; chart → small bars. */
 export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" | "lead" | "strip" }) {
+  const mode = piece.visual ?? activeVariant().cardVisual ?? "data"
+  if (size === "card" && mode === "art") return <Art piece={piece} className="block h-full w-full" />
   const blocks = piece.body.filter((b): b is LedgerSpec | ChartSpec | FiguresSpec => b.kind === "ledger" || b.kind === "chart" || b.kind === "figures")
   const block = blocks[0]
   if (!block) return null
