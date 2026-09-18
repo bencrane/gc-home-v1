@@ -92,8 +92,8 @@
 
   /* ── Page geometry ── */
   --spacing-gutter: 2rem;
-  --w-wide: 100rem;     /* page column, 1600px */
-  --w-prose: 42rem;     /* reading column, 672px */
+  --w-wide: 120rem;     /* page column, 1920px */
+  --w-prose: 46rem;     /* reading column, 736px */
   --radius-pill: 9999px;
 
   /* ── Motion ── */

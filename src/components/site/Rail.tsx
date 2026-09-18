@@ -1,10 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { cn } from "@/lib/cn"
-
-const SECTIONS = [
-  { to: "/markets", label: "Markets" },
-  { to: "/briefings", label: "Briefings" },
-] as const
 
 function Seal({ className }: { className?: string }) {
   return (
@@ -15,18 +9,14 @@ function Seal({ className }: { className?: string }) {
   )
 }
 
-/** The navy rail: seal at top, section names set vertically, seal at the foot. The page's spine.
+/** The navy rail: the seal at top, a mark at the foot. The page's spine; navigation lives in the masthead.
  *  A real grid track (see AppShell) so it runs the full page height; its content is viewport-sticky. */
 export default function Rail() {
   return (
     <div className="hidden bg-navy-900 lg:block">
       <aside className="sticky top-0 flex h-dvh flex-col items-center justify-between py-6" aria-label="Sections">
         <NavLink to="/" aria-label="Front page" className="text-copper-300 transition-colors hover:text-copper-100"><Seal className="h-7 w-7" /></NavLink>
-        <nav className="flex flex-col items-center gap-10">
-          {SECTIONS.map((s) => (
-            <NavLink key={s.to} to={s.to} className={({ isActive }) => cn("font-mono text-eyebrow uppercase transition-colors [writing-mode:vertical-rl]", isActive ? "text-copper-300" : "text-slate-400 hover:text-copper-200")}>{s.label}</NavLink>
-          ))}
-        </nav>
+        <span className="h-px w-6 bg-navy-700" aria-hidden />
         <Seal className="h-6 w-6 text-navy-700" />
       </aside>
     </div>

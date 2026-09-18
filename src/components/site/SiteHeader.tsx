@@ -11,7 +11,7 @@ const NAV = [
 
 const today = new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })
 
-/** Masthead: dateline strip and wordmark. Section nav lives in the rail at lg+, inline below it. */
+/** Masthead: dateline strip, wordmark, section nav. */
 export default function SiteHeader() {
   return (
     <header className="masthead border-b border-line bg-background">
@@ -23,7 +23,7 @@ export default function SiteHeader() {
         <Wordmark />
         <nav aria-label="Primary" className="flex items-center gap-6">
           {NAV.map((item) => (
-            <NavLink key={item.to} to={item.to} className={({ isActive }) => cn("text-eyebrow font-sans uppercase transition-colors", item.to !== "/about" && "lg:hidden", isActive ? "text-copper-600" : "text-foreground hover:text-navy-600")}>{item.label}</NavLink>
+            <NavLink key={item.to} to={item.to} className={({ isActive }) => cn("text-eyebrow font-sans uppercase transition-colors", isActive ? "text-copper-600" : "text-foreground hover:text-navy-600")}>{item.label}</NavLink>
           ))}
         </nav>
       </Band>
