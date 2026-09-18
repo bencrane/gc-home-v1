@@ -23,7 +23,7 @@ export function Eyebrow({
 }: EyebrowProps) {
   const resolved = tone === "copper-light" ? "text-copper-300" : "text-copper-600";
   return (
-    <Tag className={cn("text-eyebrow font-sans uppercase", resolved, className)}>
+    <Tag className={cn("text-mono-label font-mono uppercase", resolved, className)}>
       {children}
     </Tag>
   );

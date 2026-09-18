@@ -21,7 +21,7 @@ export default function SiteHeader() {
           <Seal className="h-11 w-11 text-copper-500" />
         </div>
         <Link to="/" className="block min-w-0 text-center">
-          <span className="font-display block whitespace-nowrap text-[clamp(1.75rem,4vw,4.5rem)] uppercase leading-none tracking-[0.02em] text-foreground">Government Contracted</span>
+          <span className="font-display block whitespace-nowrap text-wordmark uppercase text-foreground">Government Contracted</span>
         </Link>
         <div className="hidden lg:block" />
       </Band>

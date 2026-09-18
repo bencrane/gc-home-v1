@@ -39,7 +39,7 @@ function FigureStrip({ spec }: { spec: FiguresSpec }) {
     <dl className="mt-8 flex flex-wrap gap-x-12 gap-y-4 border-t border-line pt-5">
       {spec.figures.map((f) => (
         <div key={f.label} className="flex items-baseline gap-2">
-          <dd className="figures-display text-h2 text-foreground">{f.value}</dd>
+          <dd className="figures-display text-h3 text-foreground">{f.value}</dd>
           <dt className="font-mono text-mono-label uppercase text-foreground-subtle">{f.label}</dt>
         </div>
       ))}
@@ -52,12 +52,12 @@ function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead"
   return (
     <div className={size === "lead" ? "grid grid-cols-3 gap-4" : ""}>
       <div className="min-w-0">
-        <p className={"figures-display text-foreground " + (size === "lead" ? "text-h2" : "text-h1")}>{f.value}</p>
+        <p className="figures-display text-figure text-foreground">{f.value}</p>
         <MonoLabel className="mt-1 text-foreground-subtle">{f.label}</MonoLabel>
       </div>
       {size === "lead" && rest.map((r) => (
         <div key={r.label} className="min-w-0">
-          <p className="figures-display text-h2 text-foreground">{r.value}</p>
+          <p className="figures-display text-figure text-foreground">{r.value}</p>
           <MonoLabel className="mt-1 text-foreground-subtle">{r.label}</MonoLabel>
         </div>
       ))}

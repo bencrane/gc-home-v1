@@ -8,7 +8,7 @@ export function Figures({ spec }: { spec: FiguresSpec }) {
       <div className="grid grid-cols-1 divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {spec.figures.map((f) => (
           <div key={f.label} className="py-5 sm:px-6 sm:first:pl-0 sm:last:pr-0">
-            <p className="figures-display text-h2 text-foreground">{f.value}</p>
+            <p className="figures-display text-figure text-foreground">{f.value}</p>
             <MonoLabel className="mt-2 text-foreground-subtle">{f.label}</MonoLabel>
             {f.sub && <p className="mt-1 text-caption text-foreground-muted">{f.sub}</p>}
           </div>

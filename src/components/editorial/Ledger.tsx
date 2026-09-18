@@ -23,7 +23,7 @@ export function Ledger({ spec }: { spec: LedgerSpec }) {
                   {pct(Number(r[spec.delta]))}
                 </span>
               )}
-              <span className="w-20 font-mono text-body tabular-nums text-foreground">{f(r[spec.value])}</span>
+              <span className="w-20 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
             </div>
           </div>
         ))}

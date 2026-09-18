@@ -21,7 +21,7 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
           <div className="lg:col-span-7">
             {meta}
             <Link to={href} className="group mt-4 block"><Heading level={1} className="text-display max-w-[22ch] transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-            <p className="mt-6 max-w-[56ch] text-body-lg text-foreground-muted">{piece.dek}</p>
+            <p className="mt-6 max-w-[48ch] text-dek text-foreground-muted">{piece.dek}</p>
             <Visual piece={piece} size="strip" />
             <MonoLabel className="mt-8 text-foreground-subtle">{piece.byline}</MonoLabel>
           </div>
@@ -35,8 +35,8 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
     return (
       <article className={cn("border-b border-line py-4 first:pt-0", className)}>
         {meta}
-        <Link to={href} className="group mt-1.5 block"><Heading level={2} className="text-h4 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-        <p className="mt-1.5 line-clamp-2 text-body-sm text-foreground-muted">{piece.dek}</p>
+        <Link to={href} className="group mt-1.5 block"><Heading level={2} className="text-h3 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
+        <p className="mt-2 line-clamp-2 text-body text-foreground-muted">{piece.dek}</p>
       </article>
     )
   }
@@ -47,7 +47,7 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
       <div className="flex flex-1 flex-col p-4">
         {meta}
         <Link to={href} className="group mt-2 block"><Heading level={3} className="text-h4 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-        <p className="mt-2 line-clamp-2 text-body-sm text-foreground-muted">{piece.dek}</p>
+        <p className="mt-2 line-clamp-2 text-body text-foreground-muted">{piece.dek}</p>
       </div>
     </article>
   )
