@@ -65,18 +65,7 @@ JOIN soc_state_wage w ON w.soc_code = x.soc_code AND w.prim_state = r.state_code
 WHERE r.occupation_code = '{occupation_code}' AND r.state_code = '{state}'
 ORDER BY market_minus_floor DESC LIMIT 60;
 
--- 7 · vignette.award_by_key  {award_key}
--- One award, full state, via the award-key point-read copy. Combo profile joined on (naics, psc).
-SELECT s.contract_award_unique_key, s.recipient_name, s.recipient_uei, s.awarding_agency_code, s.awarding_sub_agency_code,
-       s.naics_code, s.psc_code, s.life_to_date_obligated, s.current_end_date, s.type_of_set_aside_code,
-       s.latest_pricing_code, s.latest_financing_code, s.latest_business_size,
-       e.primary_bucket AS equipment_bucket, e.proposed_equipment_needs, p.work_summary
-FROM prime_award_state_by_key s
-LEFT JOIN naics_psc_equipment_needs e ON e.naics_code = s.naics_code AND e.psc_code = s.psc_code
-LEFT JOIN naics_psc_labor_profile p ON p.naics_code = s.naics_code AND p.psc_code = s.psc_code
-WHERE s.award_key_pfx = substr('{award_key}', 10, 12) AND s.contract_award_unique_key = '{award_key}';
-
--- 8 · whowon.structural_change_30d
+-- 7 · whowon.structural_change_30d
 -- Recipients whose CAGE first transacted in the last 30 days (demonstrated net-new entrants), with obligations.
 SELECT e.uei, s.legal_business_name, s.physical_state, s.primary_naics,
        e.signal_value AS cage, e.first_action_date, e.action_ct, e.obl_sum
