@@ -1,7 +1,7 @@
 /** Design variants under comparison. Each id maps to `html[data-variant="<id>"]` overrides in
  *  src/variants.css. "base" is the committed world in DESIGN.md with no overrides. Add a variant
  *  here and a CSS block there; the gallery picks it up. */
-export type Variant = { id: string; name: string; summary: string; changes: string[] }
+export type Variant = { id: string; name: string; summary: string; changes: string[]; cardVisual?: "data" | "art" }
 
 export const VARIANTS: Variant[] = [
   {
@@ -9,6 +9,13 @@ export const VARIANTS: Variant[] = [
     name: "Federal Register",
     summary: "The committed world from DESIGN.md. Paper ground, navy rail, Fraunces at 400, copper kickers, 18px Inter body.",
     changes: ["No overrides"],
+  },
+  {
+    id: "art",
+    name: "Art Cards",
+    summary: "Same tokens as Federal Register, but cards carry abstract art generated per piece (motif by format, seeded by slug) instead of a data visual. The lead keeps its figures.",
+    changes: ["Card visual: abstract SVG art", "Lead visual unchanged"],
+    cardVisual: "art",
   },
   {
     id: "broadsheet",

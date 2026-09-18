@@ -45,5 +45,7 @@ export type Piece = {
   formatName: string
   publishedAt: string
   byline: string
+  /** Card visual override; default follows the active variant. */
+  visual?: "data" | "art"
   body: Block[]
 }

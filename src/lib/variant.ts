@@ -22,3 +22,8 @@ export function setVariant(id: string) {
   try { window.localStorage.setItem(KEY, id) } catch { /* ignore */ }
   document.documentElement.dataset.variant = id
 }
+
+export function activeVariant() {
+  const id = document.documentElement.dataset.variant ?? DEFAULT_VARIANT
+  return VARIANTS.find((v) => v.id === id) ?? VARIANTS[0]
+}

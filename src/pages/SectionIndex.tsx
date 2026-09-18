@@ -1,5 +1,5 @@
 import { useParams, Navigate } from "react-router-dom"
-import { Section, Eyebrow, Heading, Text, Grid, Cols } from "@/components/primitives"
+import { Section, Eyebrow, Heading, Text } from "@/components/primitives"
 import { PieceCard } from "@/components/editorial/PieceCard"
 import { bySection } from "@/content/pieces"
 
@@ -20,12 +20,10 @@ export default function SectionIndex() {
         <Heading level={1} className="mt-4">{copy.title}</Heading>
         <Text size="body-lg" tone="muted" className="mt-6 max-w-2xl">{copy.lede}</Text>
       </Section>
-      <Section>
-        <Grid cols={12} align="start">
-          <Cols spanLg={8}>
-            <div className="space-y-6">{pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}</div>
-          </Cols>
-        </Grid>
+      <Section spacing="sm">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}
+        </div>
       </Section>
     </>
   )

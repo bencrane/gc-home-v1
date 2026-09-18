@@ -26,7 +26,7 @@ export default function PiecePage() {
       {more.length > 0 && (
         <Section spacing="sm" tone="slate" containerWidth="content">
           <Eyebrow>More in {piece.section}</Eyebrow>
-          <div className="mt-4 space-y-5">{more.map((p) => <PieceCard key={p.slug} piece={p} level={4} />)}</div>
+          <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-3">{more.map((p) => <PieceCard key={p.slug} piece={p} />)}</div>
         </Section>
       )}
     </>
