@@ -1,7 +1,6 @@
 import reference from "@/data/reference.json"
 import agencies from "@/data/agencies.json"
 import naics3 from "@/data/naics3.json"
-import { PIECES } from "@/content/pieces"
 import type { Piece } from "@/content/types"
 
 type Ref = { takenAt: string; agencyFy: { code: string; fy: number; obl: number; recipients: number; actions: number }[]; naicsFy: { naics3: string; fy: number; obl: number; recipients: number; actions: number }[]; topRecipients: { code: string; uei: string; name: string; obl: number }[] }
@@ -14,7 +13,7 @@ export type AgencyPage = { code: string; name: string; fy: Ref["agencyFy"]; reci
 export type SectorPage = { naics3: string; name: string; fy: Ref["naicsFy"]; pieces: Piece[] }
 
 /** Universe: agencies with FY25 data and (a tagged piece or ≥5 large recipients). Thin-content floor from the plan. */
-export function agencyPages(): AgencyPage[] {
+export function agencyPages(PIECES: Piece[]): AgencyPage[] {
   const codes = new Set(ref.agencyFy.filter((r) => r.fy === 2025).map((r) => r.code))
   return [...codes].map((code) => {
     const fy = ref.agencyFy.filter((r) => r.code === code).sort((a, b) => b.fy - a.fy)
@@ -25,7 +24,7 @@ export function agencyPages(): AgencyPage[] {
     return { code, name: AGENCY_NAMES[code] ?? code, fy, recipients, pieces }
   }).filter((a) => AGENCY_NAMES[a.code] && (a.pieces.length > 0 || a.recipients.length >= 5)).sort((a, b) => (b.fy[0]?.obl ?? 0) - (a.fy[0]?.obl ?? 0))
 }
-export function sectorPages(): SectorPage[] {
+export function sectorPages(PIECES: Piece[]): SectorPage[] {
   const codes = new Set(ref.naicsFy.filter((r) => r.fy === 2025).map((r) => r.naics3))
   return [...codes].map((n) => {
     const fy = ref.naicsFy.filter((r) => r.naics3 === n).sort((a, b) => b.fy - a.fy)

@@ -3,14 +3,12 @@ import { Eyebrow, Heading, MonoLabel } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { Body } from "@/components/editorial/Body"
 import { PieceCard } from "@/components/editorial/PieceCard"
-import { bySlug, bySection } from "@/content/pieces"
+import type { Piece } from "@/content/types"
 import { dateLong } from "@/lib/format"
 import { AGENCY_NAMES, NAICS3_NAMES } from "@/lib/reference"
 
 /** Piece: one article column. Prose at the reading measure, data blocks to the article width. Related pieces below. */
-export default function PiecePage({ slug }: { slug: string }) {
-  const piece = bySlug(slug)!
-  const more = bySection(piece.section).filter((p) => p.slug !== piece.slug).slice(0, 4)
+export default function PiecePage({ piece, more }: { piece: Piece; more: Piece[] }) {
   return (
     <>
       <Band as="article" className="py-10">

@@ -1,13 +1,13 @@
 ---
 import Base from "@/layouts/Base.astro"
 import PiecePage from "@/views/PiecePage"
-import { bySection } from "@/content/pieces"
-export function getStaticPaths() {
-  return bySection("briefings").map((p) => ({ params: { slug: p.slug }, props: { title: p.title, dek: p.dek } }))
+import { getPieces, bySection } from "@/lib/content"
+export async function getStaticPaths() {
+  const all = await getPieces()
+  return bySection(all, "briefings").map((p) => ({ params: { slug: p.slug }, props: { piece: p, more: bySection(all, "briefings").filter((x) => x.slug !== p.slug).slice(0, 4) } }))
 }
-const { slug } = Astro.params
-const { title, dek } = Astro.props
+const { piece, more } = Astro.props
 ---
-<Base title={title} description={dek} image={`/og/${slug}.png`}>
-  <PiecePage slug={slug!} />
+<Base title={piece.title} description={piece.dek} image={`/og/${piece.slug}.png`}>
+  <PiecePage piece={piece} more={more} />
 </Base>

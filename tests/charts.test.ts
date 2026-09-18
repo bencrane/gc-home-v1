@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest"
 import { renderChart } from "@/components/charts/forms"
-import { PIECES } from "@/content/pieces"
+import snapshot from "@/data/pieces.snapshot.json"
+import type { Piece } from "@/content/types"
+const PIECES = snapshot as unknown as Piece[]
 import type { ChartSpec } from "@/content/types"
 
 describe("chart forms render at build", () => {

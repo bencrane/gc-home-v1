@@ -1,32 +1,9 @@
 import { createClient } from "@sanity/client"
 
-/**
- * Read-only client for the Government Contracted content lake.
- * Pieces are read at build or request time; frozen data blocks come with them.
- * No token is needed for published content on a public dataset. A token, if
- * ever required (drafts, private dataset), comes from VITE_SANITY_READ_TOKEN
- * via Doppler or a gitignored .env, never from source.
- */
-export const sanity = createClient({
-  projectId: import.meta.env.VITE_SANITY_PROJECT_ID ?? "5e8csiu1",
-  dataset: import.meta.env.VITE_SANITY_DATASET ?? "production",
-  apiVersion: "2026-09-01",
-  useCdn: true,
-  token: import.meta.env.VITE_SANITY_READ_TOKEN,
-})
+/** Build-time read client. Public dataset, no token, no CDN (a webhook rebuild must never read a stale copy). */
+export const sanity = createClient({ projectId: "5e8csiu1", dataset: "production", apiVersion: "2026-09-01", useCdn: false })
 
-export const PIECE_FIELDS = `
-  _id, title, "slug": slug.current, dek, section, status, publishedAt, correction,
-  "series": series->{title, "slug": slug.current},
-  "byline": byline->{name, role},
-  body
-`
-
-export const pieceBySlug = (slug: string) =>
-  sanity.fetch(`*[_type == "piece" && slug.current == $slug && status in ["published","corrected"]][0]{${PIECE_FIELDS}}`, { slug })
-
-export const piecesInSection = (section: "markets" | "briefings") =>
-  sanity.fetch(
-    `*[_type == "piece" && section == $section && status in ["published","corrected"]] | order(publishedAt desc){${PIECE_FIELDS}}`,
-    { section },
-  )
+export const PIECE_QUERY = `*[_type == "piece" && status in ["published","corrected"]] | order(publishedAt desc){
+  _id, title, "slug": slug.current, dek, section, format, status, publishedAt, byline, correction, agencies, naics3, ogFigure,
+  body[]{ ..., _type == "dataBlock" => { presentation, form, heading, label, value, valueFormat, sub, delta, date, a, b, aName, bName, figures, source, result } }
+}`

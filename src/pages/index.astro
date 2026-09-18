@@ -1,7 +1,9 @@
 ---
 import Base from "@/layouts/Base.astro"
 import Front from "@/views/Front"
+import { getPieces } from "@/lib/content"
+const pieces = await getPieces()
 ---
 <Base>
-  <Front />
+  <Front pieces={pieces} />
 </Base>

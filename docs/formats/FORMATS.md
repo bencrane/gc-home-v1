@@ -46,3 +46,7 @@ Flows, Expiring, Sub-Under, Wage Floor, Who Won) are sections, never titles. Exa
 Spending Went From $430 Million to $5.9 Billion"; "$39 Billion of Savannah River Work Runs Out in
 September"; "RQ Construction Is the Largest Buyer of Subcontracted Federal Work"; "Southwest Valley
 Constructors Takes $1.7 Billion Border Award".
+
+## Source of truth
+
+Pieces live in Sanity (project `5e8csiu1`, dataset `production`, public). The build fetches them once via `getPieces()` in `src/lib/content.ts`, serializes Portable Text and `dataBlock` objects through `src/lib/serialize.ts`, and validates with `parsePiece`. Internal provenance fields on a dataBlock (`queryId`, `params`, `artifact`) never leave the serializer; `scripts/postbuild.mjs` fails the build if any reach the HTML. The build refuses zero pieces and any live format with fewer than three. `scripts/export-pieces.ts` refreshes `src/data/pieces.snapshot.json`, the committed snapshot the tests run against.

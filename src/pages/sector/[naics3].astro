@@ -2,7 +2,8 @@
 import Base from "@/layouts/Base.astro"
 import { SectorView } from "@/views/ReferencePage"
 import { sectorPages } from "@/lib/reference"
-export function getStaticPaths() { return sectorPages().map((p) => ({ params: { naics3: p.naics3 }, props: { page: p } })) }
+import { getPieces } from "@/lib/content"
+export async function getStaticPaths() { return sectorPages(await getPieces()).map((p) => ({ params: { naics3: p.naics3 }, props: { page: p } })) }
 const { page } = Astro.props
 ---
 <Base title={page.name} description={`Federal contract obligations and coverage for NAICS ${page.naics3}, ${page.name}.`}>

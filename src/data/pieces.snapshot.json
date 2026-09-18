@@ -1,0 +1,3019 @@
+[
+ {
+  "slug": "defense-up-10-hhs-down-a-quarter-fy25",
+  "title": "Defense Spending Rose 10% in FY25 as HHS Fell by a Quarter",
+  "dek": "The Pentagon added $45.8 billion to its contract book while Health and Human Services gave back $10 billion. Nine of the fifteen largest buyers shrank.",
+  "section": "markets",
+  "format": "record",
+  "formatName": "The Record",
+  "publishedAt": "2026-09-17",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "figures",
+    "figures": [
+     {
+      "label": "Obligated · FY25",
+      "value": "$719.1B",
+      "sub": "all agencies"
+     },
+     {
+      "label": "Defense share",
+      "value": "68.4%",
+      "sub": "$491.8B"
+     },
+     {
+      "label": "Agencies that shrank",
+      "value": "9 of 15",
+      "sub": "largest buyers"
+     }
+    ],
+    "source": "Source: USAspending, FPDS contract actions"
+   },
+   {
+    "kind": "p",
+    "text": "Federal contract obligations in fiscal 2025 concentrated further in the Department of Defense. The department obligated $491.8 billion, up $45.8 billion or 10.3% on the prior year, across 47,511 recipients. No other agency added more than $12 billion."
+   },
+   {
+    "kind": "p",
+    "text": "Veterans Affairs was the second-largest buyer at $78.3 billion, growing 17%. Homeland Security grew fastest among the large agencies at 20%, reaching $28.4 billion. Energy and NASA grew in the mid single digits."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Obligations by awarding agency · FY25",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "agency",
+      "obl",
+      "delta",
+      "pct",
+      "recipients",
+      "actions"
+     ],
+     "rows": [
+      {
+       "agency": "Department of Defense",
+       "obl": 491809760074.04065,
+       "delta": 45781790519.122375,
+       "pct": 10.3,
+       "recipients": 47511,
+       "actions": 4489803
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "obl": 78317658363.64972,
+       "delta": 11414015324.279724,
+       "pct": 17.1,
+       "recipients": 13047,
+       "actions": 122796
+      },
+      {
+       "agency": "Department of Energy",
+       "obl": 50261963271.379974,
+       "delta": 2591092921.3499603,
+       "pct": 5.4,
+       "recipients": 1814,
+       "actions": 12717
+      },
+      {
+       "agency": "Department of Homeland Security",
+       "obl": 28399838054.629814,
+       "delta": 4752405862.379974,
+       "pct": 20.1,
+       "recipients": 9000,
+       "actions": 59823
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "obl": 26765166776.93995,
+       "delta": -9995108393.6801,
+       "pct": -27.2,
+       "recipients": 7870,
+       "actions": 54337
+      },
+      {
+       "agency": "General Services Administration",
+       "obl": 24259007398.529533,
+       "delta": -2704809971.181717,
+       "pct": -10,
+       "recipients": 18432,
+       "actions": 1471280
+      },
+      {
+       "agency": "National Aeronautics and Space Administration",
+       "obl": 21331761747.880013,
+       "delta": 1276899474.6400223,
+       "pct": 6.4,
+       "recipients": 3211,
+       "actions": 25192
+      },
+      {
+       "agency": "Department of State",
+       "obl": 9898961234.349974,
+       "delta": -1972509546.8600616,
+       "pct": -16.6,
+       "recipients": 6777,
+       "actions": 64715
+      },
+      {
+       "agency": "Department of Transportation",
+       "obl": 9890055144.069977,
+       "delta": 605792011.6499825,
+       "pct": 6.5,
+       "recipients": 3806,
+       "actions": 33893
+      },
+      {
+       "agency": "Department of Agriculture",
+       "obl": 9637725975.41997,
+       "delta": -1978516046.3900661,
+       "pct": -17,
+       "recipients": 10320,
+       "actions": 65046
+      },
+      {
+       "agency": "Department of Justice",
+       "obl": 8761081099.519962,
+       "delta": -834304573.9801006,
+       "pct": -8.7,
+       "recipients": 7376,
+       "actions": 98534
+      },
+      {
+       "agency": "Department of the Treasury",
+       "obl": 8576309239.240025,
+       "delta": -725288415.2599659,
+       "pct": -7.8,
+       "recipients": 3097,
+       "actions": 20586
+      },
+      {
+       "agency": "Department of the Interior",
+       "obl": 6517722807.7699795,
+       "delta": -1608465954.550024,
+       "pct": -19.8,
+       "recipients": 10121,
+       "actions": 41012
+      },
+      {
+       "agency": "Department of Commerce",
+       "obl": 4174442859.6399937,
+       "delta": -1020848496.8700161,
+       "pct": -19.6,
+       "recipients": 3628,
+       "actions": 15052
+      },
+      {
+       "agency": "Agency for International Development",
+       "obl": 4163432862.010001,
+       "delta": -3335153580.5300064,
+       "pct": -44.5,
+       "recipients": 992,
+       "actions": 6690
+      }
+     ]
+    },
+    "label": "agency",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obl"
+   },
+   {
+    "kind": "p",
+    "text": "The contraction was broad below the top four. Health and Human Services fell 27% to $26.8 billion. State, Agriculture, Interior, and Commerce each lost between 17% and 20%. The Agency for International Development lost nearly half its book, from $7.5 billion to $4.2 billion."
+   },
+   {
+    "kind": "p",
+    "text": "For contractors the picture is two markets. Defense, VA, and DHS are expanding demand. Civilian agencies outside those three are recompeting smaller books, and incumbents there face pressure on renewal."
+   }
+  ]
+ },
+ {
+  "slug": "defense-shifted-43-billion-into-aircraft-and-vehicles",
+  "title": "Defense Shifted $43 Billion Into Aircraft and Vehicles in One Year",
+  "dek": "Transportation equipment absorbed nearly all of the Pentagon's growth. Construction and petroleum lost ground, and HHS professional services fell $6 billion.",
+  "section": "markets",
+  "format": "flows",
+  "formatName": "Flows",
+  "publishedAt": "2026-09-16",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "The largest single movement in the FY25 record is Defense obligations in NAICS 336, transportation equipment manufacturing, which rose from $129.1 billion to $171.9 billion. That $42.8 billion increase is almost the entire year-over-year growth of the department."
+   },
+   {
+    "kind": "chart",
+    "form": "change",
+    "heading": "Largest obligation movements by agency and industry · FY24 to FY25",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "agency",
+      "naics3",
+      "obl_cur",
+      "obl_prev",
+      "delta"
+     ],
+     "rows": [
+      {
+       "agency": "Department of Defense",
+       "naics3": "336",
+       "obl_cur": 171895021228.98114,
+       "obl_prev": 129089710560.34166,
+       "delta": 42805310668.63948,
+       "label": "Defense · Transportation equipment"
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "naics3": "541",
+       "obl_cur": 14103371155.299992,
+       "obl_prev": 20300136111.189926,
+       "delta": -6196764955.889935,
+       "label": "HHS · Professional services"
+      },
+      {
+       "agency": "Department of Homeland Security",
+       "naics3": "236",
+       "obl_cur": 5884938745.78,
+       "obl_prev": 434099395.1600002,
+       "delta": 5450839350.62,
+       "label": "DHS · Building construction"
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "naics3": "621",
+       "obl_cur": 10549262647.350048,
+       "obl_prev": 5744464334.530001,
+       "delta": 4804798312.820047,
+       "label": "VA · Ambulatory health care"
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "naics3": "524",
+       "obl_cur": 32629690506.809998,
+       "obl_prev": 28772009050.11999,
+       "delta": 3857681456.6900063,
+       "label": "VA · Insurance"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "236",
+       "obl_cur": 18157883115.870018,
+       "obl_prev": 21951139600.940002,
+       "delta": -3793256485.0699844,
+       "label": "Defense · Building construction"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "541",
+       "obl_cur": 118784258046.96954,
+       "obl_prev": 115122394845.05975,
+       "delta": 3661863201.90979,
+       "label": "Defense · Professional services"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "324",
+       "obl_cur": 8402553581.44013,
+       "obl_prev": 11927096699.270023,
+       "delta": -3524543117.829893,
+       "label": "Defense · Petroleum products"
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "naics3": "325",
+       "obl_cur": 11838036169.659943,
+       "obl_prev": 8945635950.23,
+       "delta": 2892400219.429943,
+       "label": "VA · Chemicals & pharma"
+      },
+      {
+       "agency": "Agency for International Development",
+       "naics3": "541",
+       "obl_cur": 3864682345.63,
+       "obl_prev": 6716927165.680002,
+       "delta": -2852244820.050002,
+       "label": "USAID · Professional services"
+      },
+      {
+       "agency": "Department of Housing and Urban Development",
+       "naics3": "523",
+       "obl_cur": -1873342226.3000002,
+       "obl_prev": 774180387.3700002,
+       "delta": -2647522613.6700006,
+       "label": "HUD · Securities & funds"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "562",
+       "obl_cur": 7085168653.450012,
+       "obl_prev": 4459882117.710005,
+       "delta": 2625286535.7400074,
+       "label": "Defense · Remediation"
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "naics3": "325",
+       "obl_cur": 6610407222.610001,
+       "obl_prev": 8930746459.549997,
+       "delta": -2320339236.9399967,
+       "label": "HHS · Chemicals & pharma"
+      },
+      {
+       "agency": "Department of Energy",
+       "naics3": "561",
+       "obl_cur": 24312611831.539997,
+       "obl_prev": 22526605731.23,
+       "delta": 1786006100.3099976,
+       "label": "Energy · Facilities support"
+      },
+      {
+       "agency": "Department of Homeland Security",
+       "naics3": "541",
+       "obl_cur": 9784446662.90001,
+       "obl_prev": 11560875337.669968,
+       "delta": -1776428674.7699585,
+       "label": "DHS · Professional services"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "237",
+       "obl_cur": 11198058068.889996,
+       "obl_prev": 12612685658.860006,
+       "delta": -1414627589.9700108,
+       "label": "Defense · Heavy civil"
+      }
+     ]
+    },
+    "label": "label",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "delta"
+   },
+   {
+    "kind": "p",
+    "text": "Two civilian movements stand out against it. Health and Human Services professional services (NAICS 541) fell $6.2 billion, and Homeland Security construction (NAICS 236) went from $430 million to $5.9 billion, a thirteen-fold increase driven by border infrastructure awards."
+   },
+   {
+    "kind": "p",
+    "text": "Within Defense, construction fell $3.8 billion and petroleum products fell $3.5 billion while professional services grew $3.7 billion and remediation grew $2.6 billion. Veterans Affairs grew in ambulatory care, insurance, and pharmaceuticals."
+   },
+   {
+    "kind": "p",
+    "text": "Read together, demand moved toward hardware and border construction and away from civilian services. A services contractor whose book leans on HHS, USAID, or GSA saw the market shrink underneath it in FY25."
+   }
+  ]
+ },
+ {
+  "slug": "savannah-river-39-billion-runs-out-in-september",
+  "title": "$39 Billion of Savannah River Work Runs Out in September",
+  "dek": "The largest facilities-support contract in the federal record ends on the last day of the fiscal year. Behind it, $5.4 billion of Texas base operations expires in December.",
+  "section": "markets",
+  "format": "expiring",
+  "formatName": "Expiring",
+  "publishedAt": "2026-09-15",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "Savannah River Nuclear Solutions' management and operations contract with the Department of Energy, valued at $38.8 billion with $27.1 billion obligated, reaches its current end date on September 30. It is the largest award in facilities support (NAICS 561) ending within 180 days, and by a wide margin the largest in the sector."
+   },
+   {
+    "kind": "chart",
+    "form": "timeline",
+    "heading": "Facilities support awards ending within 180 days · by end date",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "obligated",
+      "current_value",
+      "current_end_date",
+      "days_to_expiry",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "SAVANNAH RIVER NUCLEAR SOLUTIONS LLC",
+       "uei": "XLQ7CKUSQSD5",
+       "agency": "Department of Energy",
+       "naics_code": "561210",
+       "psc_code": "M159",
+       "obligated": 27139821087.22998,
+       "current_value": 38783206806.63,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "SC"
+      },
+      {
+       "recipient": "LEIDOS, INC.",
+       "uei": "X38JVP4R72E1",
+       "agency": "National Science Foundation",
+       "naics_code": "561210",
+       "psc_code": "M1HA",
+       "obligated": 3088721029.930001,
+       "current_value": 3152938433.27,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": null
+      },
+      {
+       "recipient": "MAXIMUS FEDERAL SERVICES, INC.",
+       "uei": "TREKW6J3QSF5",
+       "agency": "Department of Health and Human Services",
+       "naics_code": "561422",
+       "psc_code": "R499",
+       "obligated": 2779736793,
+       "current_value": 2793630348,
+       "current_end_date": "2026-09-10",
+       "days_to_expiry": 68,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "NELSON REFRIGERATION INC",
+       "uei": "N9AHJ7L78287",
+       "agency": "Department of Defense",
+       "naics_code": "561210",
+       "psc_code": "Z1JZ",
+       "obligated": 126643116.59000002,
+       "current_value": 1643546936.17,
+       "current_end_date": "2026-12-31",
+       "days_to_expiry": 180,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "JONES LANG LASALLE AMERICAS, INC.",
+       "uei": "RJ7MF1XTJN88",
+       "agency": "Department of Defense",
+       "naics_code": "561210",
+       "psc_code": "Z1JZ",
+       "obligated": 83875874.73999998,
+       "current_value": 1594658266.51,
+       "current_end_date": "2026-12-31",
+       "days_to_expiry": 180,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "CSI AVIATION, INC",
+       "uei": "D5BNEHB3UL89",
+       "agency": "Department of Homeland Security",
+       "naics_code": "561599",
+       "psc_code": "V211",
+       "obligated": 837608821.91,
+       "current_value": 1500000000,
+       "current_end_date": "2026-10-31",
+       "days_to_expiry": 119,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "J & J MAINTENANCE INC",
+       "uei": "Y4TKSMDNTRN6",
+       "agency": "Department of Defense",
+       "naics_code": "561210",
+       "psc_code": "Z1JZ",
+       "obligated": 77900628.12,
+       "current_value": 1079130020.29,
+       "current_end_date": "2026-12-31",
+       "days_to_expiry": 180,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "NELSON REFRIGERATION INC",
+       "uei": "N9AHJ7L78287",
+       "agency": "Department of Defense",
+       "naics_code": "561210",
+       "psc_code": "Z1JZ",
+       "obligated": 85593483.12,
+       "current_value": 1076837923.35,
+       "current_end_date": "2026-12-31",
+       "days_to_expiry": 180,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "VECTRUS SYSTEMS LLC",
+       "uei": "RRFJZGASZJ41",
+       "agency": "Department of Defense",
+       "naics_code": "561210",
+       "psc_code": "R706",
+       "obligated": 833098780.8799998,
+       "current_value": 856551086.95,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "MH"
+      },
+      {
+       "recipient": "PAE GOVERNMENT SERVICES, INC.",
+       "uei": "JENBF1KKWZ93",
+       "agency": "Department of State",
+       "naics_code": "561210",
+       "psc_code": "S203",
+       "obligated": 770308766.05,
+       "current_value": 779663702.52,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": null
+      },
+      {
+       "recipient": "COVENANT AVIATION SECURITY, LLC",
+       "uei": "C8GANE5B4W83",
+       "agency": "Department of Homeland Security",
+       "naics_code": "561612",
+       "psc_code": "S206",
+       "obligated": 772980050.11,
+       "current_value": 772980050.11,
+       "current_end_date": "2026-10-31",
+       "days_to_expiry": 119,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "AMENTUM SPACEPORT LLC",
+       "uei": "KA18WLGL1NQ5",
+       "agency": "National Aeronautics and Space Administration",
+       "naics_code": "561210",
+       "psc_code": "S216",
+       "obligated": 608219286.3100003,
+       "current_value": 667316180.9,
+       "current_end_date": "2026-07-31",
+       "days_to_expiry": 27,
+       "pop_state": "FL"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "current_value",
+    "date": "current_end_date"
+   },
+   {
+    "kind": "p",
+    "text": "Two more September expirations follow: Leidos' $3.2 billion National Science Foundation award and Maximus' $2.8 billion HHS contact-center contract. Vectrus and PAE hold Defense and State base-operations work of $850 million and $780 million ending the same day."
+   },
+   {
+    "kind": "p",
+    "text": "The December cluster is Texas. Nelson Refrigeration, Jones Lang LaSalle, and J&J Maintenance hold Defense facilities-maintenance awards worth $5.4 billion combined, all ending December 31, with less than 10% of ceiling obligated. These are vehicles with headroom, and the question is whether they are re-awarded or replaced."
+   },
+   {
+    "kind": "p",
+    "text": "Amentum's spaceport operations contract for NASA is the nearest expiration on the list, ending July 31 with $608 million obligated of $667 million."
+   }
+  ]
+ },
+ {
+  "slug": "rq-construction-largest-buyer-of-subcontracted-federal-work",
+  "title": "RQ Construction Is the Largest Buyer of Subcontracted Federal Work",
+  "dek": "Fifteen builders placed $1.6 billion of sub-awards on federal construction over two years. Three of them account for half of it.",
+  "section": "markets",
+  "format": "subunder",
+  "formatName": "Sub-Under",
+  "publishedAt": "2026-09-14",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "In federal building construction (NAICS 236), the primes that buy the most subcontracted capacity are not the largest primes. RQ Construction of Carlsbad, California placed $320 million across 339 sub-awards to 235 distinct subcontractors since August 2024, the most of any federal builder."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Sub-award volume under construction primes · trailing 24 months",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "prime_awardee_uei",
+      "prime",
+      "sub_ct",
+      "distinct_subs",
+      "sub_amount",
+      "last_sub"
+     ],
+     "rows": [
+      {
+       "prime_awardee_uei": "NE61LN4FM1A5",
+       "prime": "RQ CONSTRUCTION, LLC",
+       "sub_ct": 339,
+       "distinct_subs": 235,
+       "sub_amount": 320137715.02000004,
+       "last_sub": "2026-04-13"
+      },
+      {
+       "prime_awardee_uei": "XXNJCWMAKNH8",
+       "prime": "BL HARBERT INTERNATIONAL LLC",
+       "sub_ct": 408,
+       "distinct_subs": 214,
+       "sub_amount": 274814347.33,
+       "last_sub": "2026-05-13"
+      },
+      {
+       "prime_awardee_uei": "GMJPZCJDUG24",
+       "prime": "HARPER CONSTRUCTION COMPANY, INC.",
+       "sub_ct": 176,
+       "distinct_subs": 95,
+       "sub_amount": 240976189,
+       "last_sub": "2026-05-06"
+      },
+      {
+       "prime_awardee_uei": "CMP8GS8XJC51",
+       "prime": "GRANITE-OBAYASHI 2, A JOINT VENTURE",
+       "sub_ct": 140,
+       "distinct_subs": 79,
+       "sub_amount": 141872303.18000004,
+       "last_sub": "2026-02-27"
+      },
+      {
+       "prime_awardee_uei": "E929DGJ4NSQ5",
+       "prime": "ABSHER CONSTRUCTION CO.",
+       "sub_ct": 41,
+       "distinct_subs": 38,
+       "sub_amount": 123591680.4,
+       "last_sub": "2026-01-23"
+      },
+      {
+       "prime_awardee_uei": "X3BYPXNZN8N1",
+       "prime": "KORTE CONSTRUCTION COMPANY",
+       "sub_ct": 44,
+       "distinct_subs": 43,
+       "sub_amount": 67660023.39,
+       "last_sub": "2026-04-08"
+      },
+      {
+       "prime_awardee_uei": "WHB7C12ADS35",
+       "prime": "GILBANE FEDERAL",
+       "sub_ct": 58,
+       "distinct_subs": 54,
+       "sub_amount": 63278907.17,
+       "last_sub": "2026-05-22"
+      },
+      {
+       "prime_awardee_uei": "PBCXB1D4K1C9",
+       "prime": "R.A. BURCH CONSTRUCTION CO., INC.",
+       "sub_ct": 101,
+       "distinct_subs": 72,
+       "sub_amount": 53540680.11000001,
+       "last_sub": "2026-03-11"
+      },
+      {
+       "prime_awardee_uei": "WA9LNGN2DPF4",
+       "prime": "BECHTEL NATIONAL, INC.",
+       "sub_ct": 172,
+       "distinct_subs": 73,
+       "sub_amount": 52847958.98999998,
+       "last_sub": "2026-04-15"
+      },
+      {
+       "prime_awardee_uei": "NZCHS2HHXKT9",
+       "prime": "RQ-AECOM 2 JV",
+       "sub_ct": 29,
+       "distinct_subs": 29,
+       "sub_amount": 52024825.239999995,
+       "last_sub": "2026-05-06"
+      },
+      {
+       "prime_awardee_uei": "Y4TKSMDNTRN6",
+       "prime": "J & J MAINTENANCE INC",
+       "sub_ct": 39,
+       "distinct_subs": 31,
+       "sub_amount": 51218936.97,
+       "last_sub": "2025-12-22"
+      },
+      {
+       "prime_awardee_uei": "KZ9MPMDLR5R4",
+       "prime": "PARSONS GOVERNMENT SERVICES INC",
+       "sub_ct": 7,
+       "distinct_subs": 7,
+       "sub_amount": 50818148.57000001,
+       "last_sub": "2025-04-04"
+      }
+     ]
+    },
+    "label": "prime",
+    "source": "Source: USAspending, FSRS sub-award reports",
+    "valueFormat": "money",
+    "value": "sub_amount"
+   },
+   {
+    "kind": "p",
+    "text": "BL Harbert International placed $275 million across 408 sub-awards and Harper Construction $241 million across 176. Together the top three account for $836 million, half the total for the fifteen largest buyers."
+   },
+   {
+    "kind": "p",
+    "text": "Bechtel National, the largest of these firms by revenue, placed $53 million across 73 subs. Parsons placed $51 million across seven. The volume of subcontracting a prime reports is a function of its project mix and its reporting discipline, not its size."
+   },
+   {
+    "kind": "p",
+    "text": "For a subcontractor, the list is the demand side of the market: the primes with active federal building programs and a demonstrated habit of buying capacity. RQ's 235 distinct subs in two years is a wider door than Parsons' seven."
+   }
+  ]
+ },
+ {
+  "slug": "fisher-sand-and-gravel-takes-2-6-billion-in-june",
+  "title": "Fisher Sand & Gravel Takes $2.6 Billion in June's Largest Award",
+  "dek": "Homeland Security border construction produced the two biggest awards of the month. Veterans Affairs placed $3.8 billion in community care with TriWest and Optum.",
+  "section": "briefings",
+  "format": "whowon",
+  "formatName": "Who Won",
+  "publishedAt": "2026-09-13",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "Fisher Sand & Gravel's $2.6 billion Homeland Security task order in Texas, awarded June 2, was the largest new federal contract award of the month and the largest border construction award in the record. SLS Federal Services took $1.3 billion in Arizona under the same program on June 26."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Largest new awards · June 2026",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "action_date",
+      "obligation",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "FISHER SAND & GRAVEL CO",
+       "uei": "XAVBDA4D13N7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-06-02",
+       "obligation": 2594040000,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "SLS FEDERAL SERVICES LLC",
+       "uei": "VLDKT27H2AG1",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-06-26",
+       "obligation": 1313227200,
+       "pop_state": "AZ"
+      },
+      {
+       "recipient": "TRIWEST HEALTHCARE ALLIANCE CORP",
+       "uei": "J7M9HPTGJ1S9",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "G007",
+       "action_date": "2026-06-25",
+       "obligation": 902853622.76,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "TRIWEST HEALTHCARE ALLIANCE CORP",
+       "uei": "J7M9HPTGJ1S9",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "G007",
+       "action_date": "2026-06-25",
+       "obligation": 873917489.62,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-06-17",
+       "obligation": 772553116.22,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-06-17",
+       "obligation": 640516696.14,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-06-17",
+       "obligation": 597579045.58,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "BRASFIELD & GORRIE LLC",
+       "uei": "TWVGJRMK6Z78",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1JZ",
+       "action_date": "2026-06-16",
+       "obligation": 230000000,
+       "pop_state": "SC"
+      },
+      {
+       "recipient": "KIEWIT INFRASTRUCTURE WEST CO.",
+       "uei": "KGG6RMJ7D9P8",
+       "agency": "Department of the Interior",
+       "naics_code": "237990",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-06-11",
+       "obligation": 103310000,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "JAG KETCHIKAN, LLC",
+       "uei": "LUY5YJCFUB33",
+       "agency": "Department of Commerce",
+       "naics_code": "336611",
+       "psc_code": "1910",
+       "action_date": "2026-06-09",
+       "obligation": 99637544,
+       "pop_state": "AK"
+      },
+      {
+       "recipient": "ELBITAMERICA, INC.",
+       "uei": "TBLKC12FCDH8",
+       "agency": "Department of Homeland Security",
+       "naics_code": "334511",
+       "psc_code": "Y1BG",
+       "action_date": "2026-06-01",
+       "obligation": 86139425.71,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "MEDLINE INDUSTRIES, LP",
+       "uei": "DMPAKJ9N9K66",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "423450",
+       "psc_code": "6515",
+       "action_date": "2026-06-26",
+       "obligation": 83813946.74,
+       "pop_state": "IL"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obligation"
+   },
+   {
+    "kind": "p",
+    "text": "Veterans Affairs community care dominated the rest of the list. TriWest Healthcare Alliance took two awards worth $1.78 billion and Optum Public Sector Solutions three worth $2.01 billion, all under the department's insurance and health-services codes and all on June 17 and 25."
+   },
+   {
+    "kind": "p",
+    "text": "Below the top seven, Brasfield & Gorrie took $230 million of DHS construction in South Carolina, Kiewit $103 million from Interior in California, and JAG Ketchikan $99.6 million from Commerce for shipbuilding in Alaska. Elbit America's $86 million DHS award in Texas is border surveillance equipment."
+   }
+  ]
+ },
+ {
+  "slug": "southwest-valley-constructors-takes-1-7-billion-border-award",
+  "title": "Southwest Valley Constructors Takes $1.7 Billion Border Award",
+  "dek": "Homeland Security construction produced four of May's five largest new awards, $3.1 billion combined, all in Texas and California.",
+  "section": "briefings",
+  "format": "whowon",
+  "formatName": "Who Won",
+  "publishedAt": "2026-09-12",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "The largest new federal contract award in May 2026 was a $1.72 billion task order to Southwest Valley Constructors from the Department of Homeland Security for construction in Texas. Fisher Sand & Gravel took the second and fourth largest, $605 million and $345 million, both in California, and Sundt Construction took $443 million."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Largest new awards · May 2026",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "action_date",
+      "obligation",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "SOUTHWEST VALLEY CONSTRUCTORS CO",
+       "uei": "W31DQKBPJCD3",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-05-11",
+       "obligation": 1720040000,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "FISHER SAND & GRAVEL CO",
+       "uei": "XAVBDA4D13N7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-05-15",
+       "obligation": 605040000,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "SUNDT CONSTRUCTION, INC.",
+       "uei": "NEV1XR5H3FG5",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-05-28",
+       "obligation": 443095755,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "FISHER SAND & GRAVEL CO",
+       "uei": "XAVBDA4D13N7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Z2AZ",
+       "action_date": "2026-05-04",
+       "obligation": 345040000,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "ALBERT B. SABIN VACCINE INSTITUTE, INC. (THE)",
+       "uei": "H5E8NU6N2HZ5",
+       "agency": "Department of Health and Human Services",
+       "naics_code": "541714",
+       "psc_code": "6505",
+       "action_date": "2026-05-05",
+       "obligation": 223798184,
+       "pop_state": "DC"
+      },
+      {
+       "recipient": "TEXTRON AVIATION INC",
+       "uei": "LH8RF2CKLWK5",
+       "agency": "Department of Transportation",
+       "naics_code": "336411",
+       "psc_code": "1510",
+       "action_date": "2026-05-21",
+       "obligation": 208393855.9,
+       "pop_state": "KS"
+      },
+      {
+       "recipient": "LMI CONSULTING, LLC",
+       "uei": "QVEKLLJUGHJ7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "541611",
+       "psc_code": "R499",
+       "action_date": "2026-05-20",
+       "obligation": 171986331.34,
+       "pop_state": "IN"
+      },
+      {
+       "recipient": "G.S.E. CONSTRUCTION COMPANY, INC.",
+       "uei": "JS4MLNK3AFR9",
+       "agency": "Department of the Interior",
+       "naics_code": "237110",
+       "psc_code": "Y1ND",
+       "action_date": "2026-05-28",
+       "obligation": 109487800,
+       "pop_state": "WY"
+      },
+      {
+       "recipient": "DAVENPORT AVIATION INC",
+       "uei": "NJF3PMBA8SY7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "339113",
+       "psc_code": "1520",
+       "action_date": "2026-05-19",
+       "obligation": 95507814.35,
+       "pop_state": "OH"
+      },
+      {
+       "recipient": "MEDLINE INDUSTRIES, LP",
+       "uei": "DMPAKJ9N9K66",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "423450",
+       "psc_code": "6515",
+       "action_date": "2026-05-26",
+       "obligation": 82490476.14,
+       "pop_state": "IL"
+      },
+      {
+       "recipient": "TUTOR PERINI CORPORATION",
+       "uei": "MT9AATHS7ZB5",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1FA",
+       "action_date": "2026-05-08",
+       "obligation": 81833273,
+       "pop_state": "AK"
+      },
+      {
+       "recipient": "TUTOR PERINI CORPORATION",
+       "uei": "MT9AATHS7ZB5",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1FA",
+       "action_date": "2026-05-08",
+       "obligation": 81833273,
+       "pop_state": "AK"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obligation"
+   },
+   {
+    "kind": "p",
+    "text": "All four are border infrastructure awards under DHS vehicles, and together they explain most of the department's thirteen-fold increase in construction obligations for the year. Tutor Perini added three Alaska task orders under the same agency worth $225 million combined."
+   },
+   {
+    "kind": "p",
+    "text": "Outside construction, the Sabin Vaccine Institute took a $224 million HHS research award, Textron Aviation a $208 million FAA aircraft order, and LMI Consulting a $172 million DHS professional-services task."
+   },
+   {
+    "kind": "p",
+    "text": "The month belonged to heavy civil. For anyone in earthwork, concrete, steel, or haul in Texas, Arizona, and California, the primes above are where the sub-award volume will appear over the next eighteen months."
+   }
+  ]
+ },
+ {
+  "slug": "defense-fell-2-percent-in-fy24-as-gsa-and-va-grew",
+  "title": "Defense Fell 2% in FY24 While GSA and VA Grew Fastest",
+  "dek": "The year before the rebound, the Pentagon gave back $10.8 billion. General Services grew 10.5% and Veterans Affairs 8.4%. Treasury and Justice shrank most.",
+  "section": "markets",
+  "format": "record",
+  "formatName": "The Record",
+  "publishedAt": "2026-09-11",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "Fiscal 2024 was the down year in the Defense record. The department obligated $446.0 billion, $10.8 billion or 2.4% less than FY23, across 47,666 recipients. The FY25 rebound to $491.8 billion started from that base."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Obligations by awarding agency · FY24",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "agency",
+      "obl",
+      "delta",
+      "pct",
+      "recipients",
+      "actions"
+     ],
+     "rows": [
+      {
+       "agency": "Department of Defense",
+       "obl": 446027969554.90393,
+       "delta": -10807111130.439087,
+       "pct": -2.4,
+       "recipients": 47666,
+       "actions": 4420430
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "obl": 66903643039.369934,
+       "delta": 5203301113.79068,
+       "pct": 8.4,
+       "recipients": 13733,
+       "actions": 126204
+      },
+      {
+       "agency": "Department of Energy",
+       "obl": 47670870350.02998,
+       "delta": 1397343873.8999405,
+       "pct": 3,
+       "recipients": 1738,
+       "actions": 11725
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "obl": 36760275170.61978,
+       "delta": -1740095215.0302582,
+       "pct": -4.5,
+       "recipients": 9025,
+       "actions": 66799
+      },
+      {
+       "agency": "General Services Administration",
+       "obl": 26963817369.710274,
+       "delta": 2554970272.4994545,
+       "pct": 10.5,
+       "recipients": 18074,
+       "actions": 1551831
+      },
+      {
+       "agency": "Department of Homeland Security",
+       "obl": 23647432192.249855,
+       "delta": -412510385.900074,
+       "pct": -1.7,
+       "recipients": 8795,
+       "actions": 60812
+      },
+      {
+       "agency": "National Aeronautics and Space Administration",
+       "obl": 20054862273.24002,
+       "delta": -888629599.7900009,
+       "pct": -4.2,
+       "recipients": 3112,
+       "actions": 23159
+      },
+      {
+       "agency": "Department of State",
+       "obl": 11871470781.210022,
+       "delta": 846782.420042038,
+       "pct": 0,
+       "recipients": 6963,
+       "actions": 68080
+      },
+      {
+       "agency": "Department of Agriculture",
+       "obl": 11616242021.810057,
+       "delta": 95103972.15003777,
+       "pct": 0.8,
+       "recipients": 11694,
+       "actions": 75854
+      },
+      {
+       "agency": "Department of Justice",
+       "obl": 9595385673.50007,
+       "delta": -733944148.7898731,
+       "pct": -7.1,
+       "recipients": 7987,
+       "actions": 103698
+      },
+      {
+       "agency": "Department of the Treasury",
+       "obl": 9301597654.499983,
+       "delta": -971331017.0600128,
+       "pct": -9.5,
+       "recipients": 3162,
+       "actions": 18632
+      },
+      {
+       "agency": "Department of Transportation",
+       "obl": 9284263132.419983,
+       "delta": -172620196.4199829,
+       "pct": -1.8,
+       "recipients": 4261,
+       "actions": 33687
+      },
+      {
+       "agency": "Department of the Interior",
+       "obl": 8126188762.320018,
+       "delta": 481047449.45000553,
+       "pct": 6.3,
+       "recipients": 11246,
+       "actions": 48807
+      },
+      {
+       "agency": "Agency for International Development",
+       "obl": 7498586442.54001,
+       "delta": 675882762.2000065,
+       "pct": 9.9,
+       "recipients": 1656,
+       "actions": 9674
+      },
+      {
+       "agency": "Department of Commerce",
+       "obl": 5195291356.510007,
+       "delta": 167714227.70000648,
+       "pct": 3.3,
+       "recipients": 4019,
+       "actions": 16597
+      }
+     ]
+    },
+    "label": "agency",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obl"
+   },
+   {
+    "kind": "p",
+    "text": "The growth in FY24 was civilian. General Services Administration rose 10.5% to $27.0 billion and Veterans Affairs rose 8.4% to $66.9 billion. Energy added 3%. Health and Human Services, at $36.8 billion, was already down 4.5% before its 27% fall the following year."
+   },
+   {
+    "kind": "p",
+    "text": "Treasury lost 9.5% and Justice 7.1%. State and Agriculture were flat. Read against FY25, the two years describe a market that rotated from civilian services toward Defense hardware in a single fiscal cycle."
+   }
+  ]
+ },
+ {
+  "slug": "border-counties-set-guard-wages-2-50-under-the-texas-market",
+  "title": "Border Counties Set Guard Wages $2.50 Under the Texas Market",
+  "dek": "The Service Contract Act floor for a Guard II runs from $14.73 in Webb County to $16.10 in East Texas. The state's market median is $17.30.",
+  "section": "briefings",
+  "format": "wage",
+  "formatName": "Wage Floor",
+  "publishedAt": "2026-09-10",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "A security contractor bidding federal guard work in Texas prices labor against two numbers: the wage determination floor the contract sets, and the wage the county's market actually pays. In twelve counties the gap is more than a dollar an hour, and along the border it exceeds two."
+   },
+   {
+    "kind": "chart",
+    "form": "dumbbell",
+    "heading": "Guard II · SCA floor vs Texas market median, by county",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "county_name",
+      "county_fips",
+      "classification_title",
+      "floor_hourly",
+      "market_median",
+      "h_pct25",
+      "h_pct75",
+      "market_minus_floor"
+     ],
+     "rows": [
+      {
+       "county_name": "Webb",
+       "county_fips": "48479",
+       "classification_title": "Guard II",
+       "floor_hourly": 14.73,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 2.5700000000000003
+      },
+      {
+       "county_name": "Hudspeth",
+       "county_fips": "48229",
+       "classification_title": "Guard II",
+       "floor_hourly": 14.84,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 2.460000000000001
+      },
+      {
+       "county_name": "El Paso",
+       "county_fips": "48141",
+       "classification_title": "Guard II",
+       "floor_hourly": 14.84,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 2.460000000000001
+      },
+      {
+       "county_name": "Cameron",
+       "county_fips": "48061",
+       "classification_title": "Guard II",
+       "floor_hourly": 15.09,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 2.210000000000001
+      },
+      {
+       "county_name": "Hidalgo",
+       "county_fips": "48215",
+       "classification_title": "Guard II",
+       "floor_hourly": 15.61,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.6900000000000013
+      },
+      {
+       "county_name": "Orange",
+       "county_fips": "48361",
+       "classification_title": "Guard II",
+       "floor_hourly": 15.68,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.620000000000001
+      },
+      {
+       "county_name": "Jefferson",
+       "county_fips": "48245",
+       "classification_title": "Guard II",
+       "floor_hourly": 15.68,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.620000000000001
+      },
+      {
+       "county_name": "Hardin",
+       "county_fips": "48199",
+       "classification_title": "Guard II",
+       "floor_hourly": 15.68,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.620000000000001
+      },
+      {
+       "county_name": "Maverick",
+       "county_fips": "48323",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.05,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.25
+      },
+      {
+       "county_name": "Upshur",
+       "county_fips": "48459",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.1,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.1999999999999993
+      },
+      {
+       "county_name": "Rusk",
+       "county_fips": "48401",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.1,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.1999999999999993
+      },
+      {
+       "county_name": "Gregg",
+       "county_fips": "48183",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.1,
+       "market_median": 17.3,
+       "h_pct25": 14.08,
+       "h_pct75": 20.98,
+       "market_minus_floor": 1.1999999999999993
+      }
+     ]
+    },
+    "label": "county_name",
+    "source": "Source: SAM.gov wage determinations; BLS OEWS state wages",
+    "valueFormat": "hourly",
+    "a": "floor_hourly",
+    "b": "market_median",
+    "aName": "SCA floor",
+    "bName": "Market median"
+   },
+   {
+    "kind": "p",
+    "text": "Webb County's floor is $14.73 against a statewide market median of $17.30 for security guards (SOC 33-9032). El Paso and Hudspeth sit at $14.84. Cameron and Hidalgo are $15.09 and $15.61. The Beaumont counties of Jefferson, Orange, and Hardin share a $15.68 floor."
+   },
+   {
+    "kind": "p",
+    "text": "A floor below market means the contract minimum does not clear the rate needed to staff the post. The bid has to price above the determination or the contract runs short-staffed. A floor above market, which appears in a smaller set of counties, means the contract wage is the local premium and recruiting is easier than the determination implies."
+   }
+  ]
+ },
+ {
+  "slug": "set-aside-dollars-flat-since-fy23-hubzone-fell-13-percent",
+  "title": "Set-Aside Dollars Are Flat Since FY23 and HUBZone Fell 13%",
+  "dek": "Small-business set-asides obligated $33.6 billion in FY25, up 2% on two years. 8(a) sole-source and service-disabled veteran programs both shrank. Women-owned grew 10%.",
+  "section": "markets",
+  "format": "record",
+  "formatName": "The Record",
+  "publishedAt": "2026-09-09",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "figures",
+    "figures": [
+     {
+      "label": "Small business set-aside · FY25",
+      "value": "$33.6B",
+      "sub": "38,832 recipients"
+     },
+     {
+      "label": "HUBZone · two-year change",
+      "value": "−13.1%",
+      "sub": "$1.0B to $869M"
+     },
+     {
+      "label": "Women-owned · two-year change",
+      "value": "+10.0%",
+      "sub": "1,597 recipients"
+     }
+    ],
+    "source": "Source: USAspending, FPDS contract actions"
+   },
+   {
+    "kind": "p",
+    "text": "Across the three fiscal years since FY23, the socioeconomic set-aside programs moved little in aggregate and unevenly by program. The small-business set-aside itself grew from $32.9 billion to $33.6 billion while its recipient count fell from 40,431 to 38,832: fewer firms, slightly more dollars each."
+   },
+   {
+    "kind": "ledger",
+    "heading": "Set-aside obligations by program · FY25 with change since FY23",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "set_aside",
+      "fy",
+      "obl",
+      "recipients"
+     ],
+     "rows": [
+      {
+       "set_aside": "SBA",
+       "fy": 2025,
+       "obl": 33644055685.829613,
+       "recipients": 38832,
+       "name": "Small business set-aside",
+       "pct": 2.4
+      },
+      {
+       "set_aside": "8AN",
+       "fy": 2025,
+       "obl": 9817798298.739979,
+       "recipients": 3753,
+       "name": "8(a) sole source",
+       "pct": -4
+      },
+      {
+       "set_aside": "SDVOSBC",
+       "fy": 2025,
+       "obl": 8321092650.420021,
+       "recipients": 3301,
+       "name": "Service-disabled veteran-owned",
+       "pct": -4.9
+      },
+      {
+       "set_aside": "8A",
+       "fy": 2025,
+       "obl": 4134822393.9099994,
+       "recipients": 2791,
+       "name": "8(a) competed",
+       "pct": -8.7
+      },
+      {
+       "set_aside": "WOSB",
+       "fy": 2025,
+       "obl": 1145229982.9799993,
+       "recipients": 1597,
+       "name": "Women-owned",
+       "pct": 10.9
+      },
+      {
+       "set_aside": "SBP",
+       "fy": 2025,
+       "obl": 959636410.7100011,
+       "recipients": 869,
+       "name": "Partial small business",
+       "pct": -23
+      },
+      {
+       "set_aside": "HZC",
+       "fy": 2025,
+       "obl": 869408263.9099996,
+       "recipients": 752,
+       "name": "HUBZone",
+       "pct": -14.1
+      },
+      {
+       "set_aside": "EDWOSB",
+       "fy": 2025,
+       "obl": 29212113.560000002,
+       "recipients": 99,
+       "name": "Economically disadvantaged WOSB",
+       "pct": -28.7
+      },
+      {
+       "set_aside": "VSA",
+       "fy": 2025,
+       "obl": 15128602.5,
+       "recipients": 122,
+       "name": "Veteran-owned",
+       "pct": -46.8
+      }
+     ]
+    },
+    "label": "name",
+    "value": "obl",
+    "valueFormat": "money",
+    "delta": "pct",
+    "source": "Source: USAspending, FPDS contract actions"
+   },
+   {
+    "kind": "p",
+    "text": "8(a) sole-source awards fell from $10.2 billion to $9.8 billion and competed 8(a) from $4.5 billion to $4.1 billion. Service-disabled veteran-owned set-asides fell 5% to $8.3 billion even as recipients rose to 3,301. HUBZone lost 13%."
+   },
+   {
+    "kind": "p",
+    "text": "Women-owned small business set-asides are the exception, up 10% to $1.1 billion with 1,597 recipients. At one seventh of a percent of total obligations, the program remains small against the $700 billion competed without a set-aside."
+   }
+  ]
+ },
+ {
+  "slug": "virginia-took-120-billion-of-fy25-obligations-texas-86",
+  "title": "Virginia Took $120.6 Billion of FY25 Work, Texas $86.3 Billion",
+  "dek": "Place of performance concentrates in five states. Virginia, Texas, California, Maryland, and Connecticut carry $344 billion, nearly half of all obligations with a stated location.",
+  "section": "markets",
+  "format": "flows",
+  "formatName": "Flows",
+  "publishedAt": "2026-09-08",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "By place of performance, federal contract dollars in FY25 landed first in Virginia at $120.6 billion across 11,144 recipients. Texas followed at $86.3 billion and California at $62.0 billion, the latter with the most recipients of any state at 13,672."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Obligations by place of performance · FY25",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "pop_state",
+      "obl",
+      "recipients"
+     ],
+     "rows": [
+      {
+       "pop_state": "VA",
+       "obl": 120573197630.5919,
+       "recipients": 11144,
+       "name": "Virginia"
+      },
+      {
+       "pop_state": "TX",
+       "obl": 86313358867.68217,
+       "recipients": 8319,
+       "name": "Texas"
+      },
+      {
+       "pop_state": "CA",
+       "obl": 62034482611.15181,
+       "recipients": 13672,
+       "name": "California"
+      },
+      {
+       "pop_state": "MD",
+       "obl": 39695254650.45021,
+       "recipients": 9506,
+       "name": "Maryland"
+      },
+      {
+       "pop_state": "CT",
+       "obl": 35140285220.83001,
+       "recipients": 1640,
+       "name": "Connecticut"
+      },
+      {
+       "pop_state": "FL",
+       "obl": 32435047896.870674,
+       "recipients": 7429,
+       "name": "Florida"
+      },
+      {
+       "pop_state": "DC",
+       "obl": 31421448288.57968,
+       "recipients": 10037,
+       "name": "District of Columbia"
+      },
+      {
+       "pop_state": "PA",
+       "obl": 26954078071.27922,
+       "recipients": 5032,
+       "name": "Pennsylvania"
+      },
+      {
+       "pop_state": "AZ",
+       "obl": 23317985389.62002,
+       "recipients": 3996,
+       "name": "Arizona"
+      },
+      {
+       "pop_state": "MA",
+       "obl": 19327769107.04033,
+       "recipients": 3514,
+       "name": "Massachusetts"
+      },
+      {
+       "pop_state": "AL",
+       "obl": 18144011275.97004,
+       "recipients": 3081,
+       "name": "Alabama"
+      },
+      {
+       "pop_state": "CO",
+       "obl": 16103979828.030033,
+       "recipients": 4358,
+       "name": "Colorado"
+      },
+      {
+       "pop_state": "WA",
+       "obl": 15816419062.750132,
+       "recipients": 4401,
+       "name": "Washington"
+      },
+      {
+       "pop_state": "MO",
+       "obl": 14015326793.740189,
+       "recipients": 2535,
+       "name": "Missouri"
+      },
+      {
+       "pop_state": "NM",
+       "obl": 13498266250.309994,
+       "recipients": 3037,
+       "name": "NM"
+      }
+     ]
+    },
+    "label": "name",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obl"
+   },
+   {
+    "kind": "p",
+    "text": "Connecticut is the outlier: $35.1 billion across only 1,640 recipients, a concentration produced by submarine construction at Electric Boat. Maryland's $39.7 billion and the District's $31.4 billion round out the Washington region at $191.7 billion including Virginia."
+   },
+   {
+    "kind": "p",
+    "text": "Arizona, Alabama, and Colorado each carry between $16 billion and $24 billion, largely on aerospace and defense installations. A contractor's addressable market is a function of where it can perform, and these fifteen states hold most of it."
+   }
+  ]
+ },
+ {
+  "slug": "california-janitor-floor-sits-2-under-market-in-central-valley",
+  "title": "California's Janitor Floor Sits $2.24 Under Market in the Central Valley",
+  "dek": "The Service Contract Act rate for janitors runs from $17.51 in Fresno to $18.32 in San Bernardino against a state market median of $19.75. Every listed county is below market.",
+  "section": "briefings",
+  "format": "wage",
+  "formatName": "Wage Floor",
+  "publishedAt": "2026-09-07",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "In California, the Service Contract Act wage determination for janitors is below the state's market median in every county on the list. Fresno and Madera set the floor at $17.51 against a $19.75 median for janitors and cleaners (SOC 37-2011), a $2.24 gap."
+   },
+   {
+    "kind": "chart",
+    "form": "dumbbell",
+    "heading": "Janitor · SCA floor vs California market median, by county",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "county_name",
+      "county_fips",
+      "classification_title",
+      "floor_hourly",
+      "market_median",
+      "h_pct25",
+      "h_pct75",
+      "market_minus_floor"
+     ],
+     "rows": [
+      {
+       "county_name": "Fresno",
+       "county_fips": "06019",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.51,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.2399999999999984
+      },
+      {
+       "county_name": "Madera",
+       "county_fips": "06039",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.51,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.2399999999999984
+      },
+      {
+       "county_name": "Imperial",
+       "county_fips": "06025",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.56,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.1900000000000013
+      },
+      {
+       "county_name": "Tulare",
+       "county_fips": "06107",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.56,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.1900000000000013
+      },
+      {
+       "county_name": "Los Angeles",
+       "county_fips": "06037",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.73,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.0199999999999996
+      },
+      {
+       "county_name": "Orange",
+       "county_fips": "06059",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.73,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 2.0199999999999996
+      },
+      {
+       "county_name": "San Diego",
+       "county_fips": "06073",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.79,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.9600000000000009
+      },
+      {
+       "county_name": "Shasta",
+       "county_fips": "06089",
+       "classification_title": "Janitor",
+       "floor_hourly": 17.91,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.8399999999999999
+      },
+      {
+       "county_name": "Santa Barbara",
+       "county_fips": "06083",
+       "classification_title": "Janitor",
+       "floor_hourly": 18.06,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.6900000000000013
+      },
+      {
+       "county_name": "San Luis Obispo",
+       "county_fips": "06079",
+       "classification_title": "Janitor",
+       "floor_hourly": 18.21,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.5399999999999991
+      },
+      {
+       "county_name": "Butte",
+       "county_fips": "06007",
+       "classification_title": "Janitor",
+       "floor_hourly": 18.23,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.5199999999999996
+      },
+      {
+       "county_name": "San Bernardino",
+       "county_fips": "06071",
+       "classification_title": "Janitor",
+       "floor_hourly": 18.32,
+       "market_median": 19.75,
+       "h_pct25": 17.71,
+       "h_pct75": 23.2,
+       "market_minus_floor": 1.4299999999999997
+      }
+     ]
+    },
+    "label": "county_name",
+    "source": "Source: SAM.gov wage determinations; BLS OEWS state wages",
+    "valueFormat": "hourly",
+    "a": "floor_hourly",
+    "b": "market_median",
+    "aName": "SCA floor",
+    "bName": "Market median"
+   },
+   {
+    "kind": "p",
+    "text": "Imperial and Tulare sit at $17.56. Los Angeles and Orange, the largest labor markets in the state, share a $17.73 floor, $2.02 under market. San Diego is $17.79. The gap narrows in the north and the coast: Butte $18.23, San Bernardino $18.32."
+   },
+   {
+    "kind": "p",
+    "text": "A facilities contractor bidding federal janitorial work in California prices above the determination in every one of these counties or fails to staff. The floor is not the wage; it is the amount below the wage that the bid must make up."
+   }
+  ]
+ },
+ {
+  "slug": "hensel-phelps-650-million-florida-contract-ends-in-days",
+  "title": "Hensel Phelps' $650 Million Florida Build Ends This Month",
+  "dek": "Federal building construction has $4.4 billion in awards ending within 180 days. Two end in July, six in September and November, and State Department embassy work accounts for a third.",
+  "section": "markets",
+  "format": "expiring",
+  "formatName": "Expiring",
+  "publishedAt": "2026-09-06",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "The nearest large expiration in building construction (NAICS 236) is Hensel Phelps' $651.9 million Defense award in Florida, fully obligated and ending July 26. American International Contractors' $241 million State Department project ends the same day."
+   },
+   {
+    "kind": "chart",
+    "form": "timeline",
+    "heading": "Building construction awards ending within 180 days · by end date",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "obligated",
+      "current_value",
+      "current_end_date",
+      "days_to_expiry",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "BAH - ICM JV",
+       "uei": "M8S7BSXSJZS4",
+       "agency": "Department of Defense",
+       "naics_code": "236220",
+       "psc_code": "Y1JZ",
+       "obligated": 658621930.4400003,
+       "current_value": 660344045.69,
+       "current_end_date": "2026-11-05",
+       "days_to_expiry": 124,
+       "pop_state": null
+      },
+      {
+       "recipient": "HENSEL PHELPS CONSTRUCTION CO",
+       "uei": "ZWYCAA5Z8M45",
+       "agency": "Department of Defense",
+       "naics_code": "236220",
+       "psc_code": "Y1JZ",
+       "obligated": 650086183.3199999,
+       "current_value": 651863141.32,
+       "current_end_date": "2026-07-26",
+       "days_to_expiry": 22,
+       "pop_state": "FL"
+      },
+      {
+       "recipient": "CORE TECH-HDCC-KAJIMA LLC",
+       "uei": "H3PJV2J2DAA2",
+       "agency": "Department of Defense",
+       "naics_code": "236116",
+       "psc_code": "Y1FC",
+       "obligated": 582020750.42,
+       "current_value": 584144314.67,
+       "current_end_date": "2026-09-09",
+       "days_to_expiry": 67,
+       "pop_state": "GU"
+      },
+      {
+       "recipient": "BL HARBERT INTERNATIONAL LLC",
+       "uei": "XXNJCWMAKNH8",
+       "agency": "Department of State",
+       "naics_code": "236220",
+       "psc_code": "Y1AA",
+       "obligated": 442260483.69,
+       "current_value": 442441114.45,
+       "current_end_date": "2026-09-15",
+       "days_to_expiry": 73,
+       "pop_state": null
+      },
+      {
+       "recipient": "BRASFIELD & GORRIE LLC",
+       "uei": "TWVGJRMK6Z78",
+       "agency": "Department of Justice",
+       "naics_code": "236220",
+       "psc_code": "Y1AA",
+       "obligated": 409447556,
+       "current_value": 409447556,
+       "current_end_date": "2026-09-11",
+       "days_to_expiry": 69,
+       "pop_state": "AL"
+      },
+      {
+       "recipient": "BL HARBERT INTERNATIONAL LLC",
+       "uei": "XXNJCWMAKNH8",
+       "agency": "Department of Defense",
+       "naics_code": "236220",
+       "psc_code": "Y1AZ",
+       "obligated": 269100507.14,
+       "current_value": 270422958.78,
+       "current_end_date": "2026-11-09",
+       "days_to_expiry": 128,
+       "pop_state": "LA"
+      },
+      {
+       "recipient": "AMERICAN INTERNATIONAL CONTRACTORS (SPECIAL PROJECTS) INC.",
+       "uei": "EK55FUQ4VBM5",
+       "agency": "Department of State",
+       "naics_code": "236220",
+       "psc_code": "Y1AA",
+       "obligated": 241203860.4,
+       "current_value": 241203860.4,
+       "current_end_date": "2026-07-26",
+       "days_to_expiry": 22,
+       "pop_state": null
+      },
+      {
+       "recipient": "WALSH FEDERAL LLC",
+       "uei": "DMFWBVTL9324",
+       "agency": "Department of Defense",
+       "naics_code": "236210",
+       "psc_code": "Y1JZ",
+       "obligated": 239936113.83999997,
+       "current_value": 239936113.84,
+       "current_end_date": "2026-10-15",
+       "days_to_expiry": 103,
+       "pop_state": "NC"
+      },
+      {
+       "recipient": "CADDELL CONSTRUCTION CO. (DE), LLC",
+       "uei": "ELJMJND6DDF3",
+       "agency": "Department of State",
+       "naics_code": "236220",
+       "psc_code": "Y1AA",
+       "obligated": 232178873.14,
+       "current_value": 232178873.14,
+       "current_end_date": "2026-12-31",
+       "days_to_expiry": 180,
+       "pop_state": null
+      },
+      {
+       "recipient": "HENSEL PHELPS CONSTRUCTION CO",
+       "uei": "H1KPDZLCMNR8",
+       "agency": "Department of Defense",
+       "naics_code": "236220",
+       "psc_code": "Y1JZ",
+       "obligated": 111012849,
+       "current_value": 227302986,
+       "current_end_date": "2026-10-03",
+       "days_to_expiry": 91,
+       "pop_state": "WY"
+      },
+      {
+       "recipient": "BL HARBERT INTERNATIONAL LLC",
+       "uei": "XXNJCWMAKNH8",
+       "agency": "Department of State",
+       "naics_code": "236220",
+       "psc_code": "Y1AA",
+       "obligated": 227007508.37,
+       "current_value": 227007508.37,
+       "current_end_date": "2026-11-27",
+       "days_to_expiry": 146,
+       "pop_state": null
+      },
+      {
+       "recipient": "CORE TECH INTERNATIONAL CORPORATION",
+       "uei": "KQA2SKNFLL26",
+       "agency": "Department of Defense",
+       "naics_code": "236116",
+       "psc_code": "Y1FA",
+       "obligated": 218383177.31,
+       "current_value": 218383177.31,
+       "current_end_date": "2026-11-13",
+       "days_to_expiry": 132,
+       "pop_state": "GU"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "current_value",
+    "date": "current_end_date"
+   },
+   {
+    "kind": "p",
+    "text": "The largest on the list is the BAH-ICM joint venture's $660.3 million Defense award ending November 5, followed by Core Tech-HDCC-Kajima's $584.1 million Guam project ending September 9. Guam appears twice; Core Tech International holds a second $218.4 million award ending November 13."
+   },
+   {
+    "kind": "p",
+    "text": "State Department embassy construction is a distinct market inside this list: BL Harbert holds three awards worth $939 million ending between September and November, and Caddell holds $232 million ending December 31. These are fixed-scope projects that complete rather than recompete, and the firms will be bidding the next embassy."
+   }
+  ]
+ },
+ {
+  "slug": "barnard-construction-1-6-billion-border-award-leads-april",
+  "title": "Barnard Construction's $1.6 Billion Border Award Led April",
+  "dek": "Three DHS construction awards and four VA health awards made up April's top ten. McKesson's $1.2 billion pharmaceutical order was the largest non-construction, non-care award.",
+  "section": "briefings",
+  "format": "whowon",
+  "formatName": "Who Won",
+  "publishedAt": "2026-09-05",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "Barnard Construction Company's $1.6 billion Homeland Security award in Texas on April 24 was the month's largest, the first of the border construction awards that would dominate May and June. Fisher Sand & Gravel took $847 million in California two days later, and Whiting-Turner $400 million in New Jersey."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Largest new awards · April 2026",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "action_date",
+      "obligation",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "BARNARD CONSTRUCTION COMPANY, INCORPORATED",
+       "uei": "LEGGW1TNMVC9",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1LB",
+       "action_date": "2026-04-24",
+       "obligation": 1585324926,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "MCKESSON CORPORATION",
+       "uei": "S1RUKWWRYFL6",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "325412",
+       "psc_code": "6505",
+       "action_date": "2026-04-01",
+       "obligation": 1191348080.87,
+       "pop_state": "TX"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-04-15",
+       "obligation": 1102850655.28,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "TRIWEST HEALTHCARE ALLIANCE CORP",
+       "uei": "J7M9HPTGJ1S9",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "G007",
+       "action_date": "2026-04-16",
+       "obligation": 928900085.55,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "ORANO FEDERAL SERVICES LLC",
+       "uei": "DLG7K4HPVT43",
+       "agency": "Department of Energy",
+       "naics_code": "325180",
+       "psc_code": "6850",
+       "action_date": "2026-04-30",
+       "obligation": 900000000,
+       "pop_state": "MD"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-04-15",
+       "obligation": 894515798.08,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "FISHER SAND & GRAVEL CO",
+       "uei": "XAVBDA4D13N7",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1PZ",
+       "action_date": "2026-04-26",
+       "obligation": 847040000,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+       "uei": "XMUZGJN98231",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "524114",
+       "psc_code": "Q201",
+       "action_date": "2026-04-15",
+       "obligation": 782102376.52,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "WHITING-TURNER CONTRACTING COMPANY, THE",
+       "uei": "VEP4UN7LDMK5",
+       "agency": "Department of Homeland Security",
+       "naics_code": "236220",
+       "psc_code": "Y1JZ",
+       "action_date": "2026-04-29",
+       "obligation": 400000000,
+       "pop_state": "NJ"
+      },
+      {
+       "recipient": "BOOZ ALLEN HAMILTON INC",
+       "uei": "JCBMLGPE6Z71",
+       "agency": "Department of Veterans Affairs",
+       "naics_code": "541512",
+       "psc_code": "DA01",
+       "action_date": "2026-04-17",
+       "obligation": 170623805.76,
+       "pop_state": "DC"
+      },
+      {
+       "recipient": "RECORD STEEL AND CONSTRUCTION, INC.",
+       "uei": "G47MZHXDUE63",
+       "agency": "Department of the Interior",
+       "naics_code": "237110",
+       "psc_code": "Y1ND",
+       "action_date": "2026-04-22",
+       "obligation": 129150000,
+       "pop_state": "WY"
+      },
+      {
+       "recipient": "SHIONOGI INC",
+       "uei": "V8H8DT6RCHW6",
+       "agency": "Department of Health and Human Services",
+       "naics_code": "541714",
+       "psc_code": "AN13",
+       "action_date": "2026-04-06",
+       "obligation": 119160691,
+       "pop_state": "NJ"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "obligation"
+   },
+   {
+    "kind": "p",
+    "text": "Veterans Affairs placed $3.7 billion in four awards to Optum and TriWest on April 15 and 16, the start of a pattern that repeated in June. McKesson's $1.2 billion pharmaceutical distribution award and Orano Federal Services' $900 million Department of Energy award in Maryland were the largest outside construction and care."
+   },
+   {
+    "kind": "p",
+    "text": "Booz Allen's $171 million VA information technology award, Record Steel's $129 million Interior project in Wyoming, and Shionogi's $119 million HHS research award close the list."
+   }
+  ]
+ },
+ {
+  "slug": "defense-cut-24-billion-of-aircraft-and-vehicles-in-fy24",
+  "title": "Defense Cut $24 Billion of Aircraft and Vehicle Buying in FY24",
+  "dek": "The year before the rebound, transportation equipment absorbed the Pentagon's entire decline. Professional services and VA community care grew; HHS services fell.",
+  "section": "markets",
+  "format": "flows",
+  "formatName": "Flows",
+  "publishedAt": "2026-09-05",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "The largest single movement in the FY24 record ran the other way from FY25. Defense obligations in transportation equipment manufacturing (NAICS 336) fell $24.0 billion from FY23, more than the department's total decline of $10.8 billion. The hardware line that would rise $42.8 billion a year later was the line that fell first."
+   },
+   {
+    "kind": "chart",
+    "form": "change",
+    "heading": "Largest obligation movements by agency and industry · FY23 to FY24",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "agency",
+      "naics3",
+      "obl_cur",
+      "obl_prev",
+      "delta"
+     ],
+     "rows": [
+      {
+       "agency": "Department of Defense",
+       "naics3": "336",
+       "obl_cur": 129089710560.3425,
+       "obl_prev": 153128600939.77945,
+       "delta": -24038890379.43695,
+       "label": "Defense · Transportation equipment"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "541",
+       "obl_cur": 115122394845.05959,
+       "obl_prev": 108794019421.99062,
+       "delta": 6328375423.06897,
+       "label": "Defense · Professional services"
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "naics3": "524",
+       "obl_cur": 28772009050.11999,
+       "obl_prev": 24314440741.06,
+       "delta": 4457568309.05999,
+       "label": "VA · Insurance"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "332",
+       "obl_cur": 17501660666.8195,
+       "obl_prev": 14266261125.989798,
+       "delta": 3235399540.8297024,
+       "label": "Defense · Fabricated metal products"
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "naics3": "541",
+       "obl_cur": 20300136111.189926,
+       "obl_prev": 22648104892.39997,
+       "delta": -2347968781.210045,
+       "label": "HHS · Professional services"
+      },
+      {
+       "agency": "Department of Homeland Security",
+       "naics3": "236",
+       "obl_cur": 434099395.15999997,
+       "obl_prev": 2392048422.2999988,
+       "delta": -1957949027.139999,
+       "label": "DHS · Building construction"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "237",
+       "obl_cur": 12612685658.859997,
+       "obl_prev": 10750257086.540003,
+       "delta": 1862428572.319994,
+       "label": "Defense · Heavy civil"
+      },
+      {
+       "agency": "Department of Veterans Affairs",
+       "naics3": "621",
+       "obl_cur": 5744464334.530001,
+       "obl_prev": 4228159942.1699963,
+       "delta": 1516304392.3600044,
+       "label": "VA · Ambulatory health care"
+      },
+      {
+       "agency": "General Services Administration",
+       "naics3": "541",
+       "obl_cur": 16736651499.519958,
+       "obl_prev": 15334659671.169819,
+       "delta": 1401991828.3501396,
+       "label": "GSA · Professional services"
+      },
+      {
+       "agency": "Department of the Treasury",
+       "naics3": "331",
+       "obl_cur": 2248626140.1500006,
+       "obl_prev": 3598764861.0299997,
+       "delta": -1350138720.8799992,
+       "label": "the Treasury · 331"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "325",
+       "obl_cur": 6034113299.090326,
+       "obl_prev": 7364208054.509926,
+       "delta": -1330094755.4195995,
+       "label": "Defense · Chemicals & pharma"
+      },
+      {
+       "agency": "Department of Health and Human Services",
+       "naics3": "325",
+       "obl_cur": 8930746459.55,
+       "obl_prev": 7643630538.419992,
+       "delta": 1287115921.1300068,
+       "label": "HHS · Chemicals & pharma"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "561",
+       "obl_cur": 15194934943.240002,
+       "obl_prev": 16369922844.300007,
+       "delta": -1174987901.0600052,
+       "label": "Defense · Facilities support"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "334",
+       "obl_cur": 29804593749.7798,
+       "obl_prev": 28681480013.22979,
+       "delta": 1123113736.5500107,
+       "label": "Defense · Electronics"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "236",
+       "obl_cur": 21951139600.94001,
+       "obl_prev": 22922414763.260025,
+       "delta": -971275162.320015,
+       "label": "Defense · Building construction"
+      },
+      {
+       "agency": "Department of Defense",
+       "naics3": "562",
+       "obl_cur": 4459882117.710008,
+       "obl_prev": 3490433362.2500014,
+       "delta": 969448755.4600062,
+       "label": "Defense · Remediation"
+      }
+     ]
+    },
+    "label": "label",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "delta"
+   },
+   {
+    "kind": "p",
+    "text": "Against that, Defense professional services grew $6.3 billion and fabricated metal products $3.2 billion. Veterans Affairs added $4.5 billion in insurance and community-care codes, the first year of a run that continued into FY25."
+   },
+   {
+    "kind": "p",
+    "text": "Health and Human Services professional services fell $2.3 billion in FY24, then $6.2 billion in FY25. Read together, the two years show the same rotation, hardware and care up, civilian services down, with FY24 as the trough for aircraft and vehicles."
+   }
+  ]
+ },
+ {
+  "slug": "argonne-17-billion-lab-contract-ends-september-30",
+  "title": "Argonne's $17.9 Billion Lab Contract Ends September 30",
+  "dek": "Professional and technical services has $47 billion in awards ending within 180 days. Two national laboratory contracts, two USAID programs, and five Defense engineering awards lead the list.",
+  "section": "markets",
+  "format": "expiring",
+  "formatName": "Expiring",
+  "publishedAt": "2026-09-04",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "UChicago Argonne's management and operating contract for Argonne National Laboratory, valued at $17.9 billion with $17.3 billion obligated, reaches its current end date on September 30. Oak Ridge Associated Universities' $3.5 billion Department of Energy award ends the same day."
+   },
+   {
+    "kind": "chart",
+    "form": "timeline",
+    "heading": "Professional services awards ending within 180 days · by end date",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "recipient",
+      "uei",
+      "agency",
+      "naics_code",
+      "psc_code",
+      "obligated",
+      "current_value",
+      "current_end_date",
+      "days_to_expiry",
+      "pop_state"
+     ],
+     "rows": [
+      {
+       "recipient": "UCHICAGO ARGONNE, LLC",
+       "uei": "JA8EP8EKX8Y9",
+       "agency": "Department of Energy",
+       "naics_code": "541710",
+       "psc_code": "M181",
+       "obligated": 17318912548.91001,
+       "current_value": 17912730847.26,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "IL"
+      },
+      {
+       "recipient": "CHEMONICS INTERNATIONAL, INC.",
+       "uei": "DSUSFJFR9A33",
+       "agency": "Agency for International Development",
+       "naics_code": "541611",
+       "psc_code": "R425",
+       "obligated": 6723916684.790001,
+       "current_value": 7560230299,
+       "current_end_date": "2026-11-28",
+       "days_to_expiry": 147,
+       "pop_state": "DC"
+      },
+      {
+       "recipient": "OAK RIDGE ASSOCIATED UNIVERSITIES, INCORPORATED",
+       "uei": "JW7MLW3RRK34",
+       "agency": "Department of Energy",
+       "naics_code": "541990",
+       "psc_code": "U099",
+       "obligated": 3083020287.149997,
+       "current_value": 3512632890.91,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "TN"
+      },
+      {
+       "recipient": "CHEMONICS INTERNATIONAL, INC.",
+       "uei": "DSUSFJFR9A33",
+       "agency": "Agency for International Development",
+       "naics_code": "541611",
+       "psc_code": "R425",
+       "obligated": 2925878093.79,
+       "current_value": 3295901478,
+       "current_end_date": "2026-11-28",
+       "days_to_expiry": 147,
+       "pop_state": "DC"
+      },
+      {
+       "recipient": "VSOLVIT LLC",
+       "uei": "GKSKWF5HL5H8",
+       "agency": "Department of Justice",
+       "naics_code": "541512",
+       "psc_code": "DA01",
+       "obligated": 34709613.96,
+       "current_value": 3084621261.06,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "BAE SYSTEMS TECHNOLOGY SOLUTIONS & SERVICES INC.",
+       "uei": "LX3BSV6NNW58",
+       "agency": "Department of Defense",
+       "naics_code": "541330",
+       "psc_code": "L014",
+       "obligated": 2204783173.7599998,
+       "current_value": 2371399670.24,
+       "current_end_date": "2026-07-31",
+       "days_to_expiry": 27,
+       "pop_state": "MD"
+      },
+      {
+       "recipient": "AMENTUM TECHNOLOGY, INC.",
+       "uei": "H2RGSKWXKHQ5",
+       "agency": "National Aeronautics and Space Administration",
+       "naics_code": "541715",
+       "psc_code": "R425",
+       "obligated": 1930675316.56,
+       "current_value": 2268147838,
+       "current_end_date": "2026-11-30",
+       "days_to_expiry": 149,
+       "pop_state": "AL"
+      },
+      {
+       "recipient": "RAYTHEON COMPANY",
+       "uei": "NBSLHP77ZJQ1",
+       "agency": "Department of Defense",
+       "naics_code": "541712",
+       "psc_code": "AC14",
+       "obligated": 1795489000,
+       "current_value": 1807450946,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "CA"
+      },
+      {
+       "recipient": "JT4 LLC",
+       "uei": "JKCNBX9J66E6",
+       "agency": "Department of Defense",
+       "naics_code": "541330",
+       "psc_code": "R425",
+       "obligated": 2619915501.21,
+       "current_value": 1746786717.69,
+       "current_end_date": "2026-09-30",
+       "days_to_expiry": 88,
+       "pop_state": "NV"
+      },
+      {
+       "recipient": "ELECTRIC BOAT CORPORATION",
+       "uei": "E7BEKJ4V9528",
+       "agency": "Department of Defense",
+       "naics_code": "541330",
+       "psc_code": "AC35",
+       "obligated": 1468509369,
+       "current_value": 1572251644,
+       "current_end_date": "2026-11-30",
+       "days_to_expiry": 149,
+       "pop_state": "CT"
+      },
+      {
+       "recipient": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+       "uei": "MMLKPW9JLX64",
+       "agency": "General Services Administration",
+       "naics_code": "541512",
+       "psc_code": "DA01",
+       "obligated": 1195945730.89,
+       "current_value": 1398126540,
+       "current_end_date": "2026-11-27",
+       "days_to_expiry": 146,
+       "pop_state": "VA"
+      },
+      {
+       "recipient": "BOOZ ALLEN HAMILTON INC",
+       "uei": "JCBMLGPE6Z71",
+       "agency": "General Services Administration",
+       "naics_code": "541330",
+       "psc_code": "R499",
+       "obligated": 1161919267.4500003,
+       "current_value": 1390387699,
+       "current_end_date": "2026-09-05",
+       "days_to_expiry": 63,
+       "pop_state": "VA"
+      }
+     ]
+    },
+    "label": "recipient",
+    "source": "Source: USAspending, FPDS contract actions",
+    "valueFormat": "money",
+    "value": "current_value",
+    "date": "current_end_date"
+   },
+   {
+    "kind": "p",
+    "text": "Chemonics International holds two USAID awards worth $10.9 billion combined, both ending November 28, in a year when the agency's obligations nearly halved. Whether those programs are extended is the largest open question on the list."
+   },
+   {
+    "kind": "p",
+    "text": "Defense engineering rounds it out: BAE Systems' $2.4 billion award in Maryland ends July 31, Raytheon's $1.8 billion in California and JT4's $1.7 billion in Nevada end September 30, and Electric Boat's $1.6 billion in Connecticut ends November 30. Booz Allen and SAIC each have $1.4 billion GSA vehicles ending in the window."
+   }
+  ]
+ },
+ {
+  "slug": "hanford-primes-bought-400-million-of-cleanup-capacity",
+  "title": "Two Hanford Primes Bought $409 Million of Cleanup Capacity",
+  "dek": "Remediation sub-awards concentrate at Department of Energy sites. Hanford Tank Waste Operations and Central Plateau Cleanup placed 742 sub-awards to 210 firms in two years.",
+  "section": "markets",
+  "format": "subunder",
+  "formatName": "Sub-Under",
+  "publishedAt": "2026-09-03",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "In remediation services (NAICS 562), the largest buyers of subcontracted work are the Department of Energy's site contractors. Hanford Tank Waste Operations & Closure placed $277.5 million across 385 sub-awards to 117 firms since August 2024, and Central Plateau Cleanup Company $131.1 million across 357 sub-awards to 93 firms."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Sub-award volume under remediation primes · trailing 24 months",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "prime_awardee_uei",
+      "prime",
+      "sub_ct",
+      "distinct_subs",
+      "sub_amount",
+      "last_sub"
+     ],
+     "rows": [
+      {
+       "prime_awardee_uei": "S3NQNFD3YS43",
+       "prime": "HANFORD TANK WASTE OPERATIONS & CLOSURE, LLC",
+       "sub_ct": 385,
+       "distinct_subs": 117,
+       "sub_amount": 277453554.5899999,
+       "last_sub": "2026-05-27"
+      },
+      {
+       "prime_awardee_uei": "J4TDNRDMRMZ3",
+       "prime": "CENTRAL PLATEAU CLEANUP COMPANY LLC",
+       "sub_ct": 357,
+       "distinct_subs": 93,
+       "sub_amount": 131056266.81000005,
+       "last_sub": "2026-05-29"
+      },
+      {
+       "prime_awardee_uei": "LEEMJD9WKDC9",
+       "prime": "EA ENGINEERING, SCIENCE, AND TECHNOLOGY, INC., PBC",
+       "sub_ct": 111,
+       "distinct_subs": 79,
+       "sub_amount": 97165474.70000003,
+       "last_sub": "2026-05-20"
+      },
+      {
+       "prime_awardee_uei": "EPUXNLX5EYC4",
+       "prime": "AECOM TECHNICAL SERVICES, INC.",
+       "sub_ct": 59,
+       "distinct_subs": 45,
+       "sub_amount": 73483524.52,
+       "last_sub": "2026-02-23"
+      },
+      {
+       "prime_awardee_uei": "WDTLX4NKRKC8",
+       "prime": "ENERGY TECHNOLOGY ALLIANCE LLC",
+       "sub_ct": 59,
+       "distinct_subs": 9,
+       "sub_amount": 66332730.67,
+       "last_sub": "2025-07-16"
+      },
+      {
+       "prime_awardee_uei": "G6XGNM6YH9D4",
+       "prime": "NEWPORT NEWS NUCLEAR BWXT-LOS ALAMOS, LLC",
+       "sub_ct": 146,
+       "distinct_subs": 54,
+       "sub_amount": 57393253.73000001,
+       "last_sub": "2026-03-31"
+      },
+      {
+       "prime_awardee_uei": "K8QPQLGTRM33",
+       "prime": "AMENTUM TECHNOLOGY, INC.",
+       "sub_ct": 22,
+       "distinct_subs": 21,
+       "sub_amount": 44374636.419999994,
+       "last_sub": "2026-02-02"
+      },
+      {
+       "prime_awardee_uei": "LQ5ZLNE3EM27",
+       "prime": "IDAHO ENVIRONMENTAL COALITION LLC",
+       "sub_ct": 185,
+       "distinct_subs": 121,
+       "sub_amount": 39462479.34,
+       "last_sub": "2025-05-27"
+      },
+      {
+       "prime_awardee_uei": "DBD6KDKXWN65",
+       "prime": "ENVIRONMENTAL QUALITY MANAGEMENT, INC",
+       "sub_ct": 170,
+       "distinct_subs": 72,
+       "sub_amount": 32272504.82,
+       "last_sub": "2026-04-29"
+      },
+      {
+       "prime_awardee_uei": "MHKNRXGKKTS6",
+       "prime": "SALADO ISOLATION MINING CONTRACTORS, LLC",
+       "sub_ct": 571,
+       "distinct_subs": 190,
+       "sub_amount": 27024027.170000013,
+       "last_sub": "2025-04-01"
+      },
+      {
+       "prime_awardee_uei": "ULMYTS8ANMF4",
+       "prime": "HANFORD LABORATORY MANAGEMENT AND INTEGRATION LLC",
+       "sub_ct": 81,
+       "distinct_subs": 43,
+       "sub_amount": 21651202.050000004,
+       "last_sub": "2026-05-04"
+      },
+      {
+       "prime_awardee_uei": "Z4XGALW7L9K6",
+       "prime": "WESTON SOLUTIONS, INC.",
+       "sub_ct": 18,
+       "distinct_subs": 16,
+       "sub_amount": 15186274.249999998,
+       "last_sub": "2026-03-16"
+      }
+     ]
+    },
+    "label": "prime",
+    "source": "Source: USAspending, FSRS sub-award reports",
+    "valueFormat": "money",
+    "value": "sub_amount"
+   },
+   {
+    "kind": "p",
+    "text": "EA Engineering is the largest non-DOE buyer at $97.2 million across 79 subs. AECOM, Newport News Nuclear BWXT-Los Alamos, and Idaho Environmental Coalition follow. Salado Isolation Mining Contractors placed the most individual sub-awards, 571 to 190 firms, at a smaller $27 million."
+   },
+   {
+    "kind": "p",
+    "text": "For an environmental services firm, the Energy site contractors are a market of their own: long-duration, high-volume, and buying from a wide base of subcontractors. The Hanford pair alone is a wider door than the rest of the list combined."
+   }
+  ]
+ },
+ {
+  "slug": "gdit-and-booz-allen-each-placed-2-9-billion-in-sub-awards",
+  "title": "GDIT and Booz Allen Each Placed $2.9 Billion in Sub-Awards",
+  "dek": "Professional services is the deepest subcontracting market in the record. Twelve primes placed $20 billion across 14,000 sub-awards in two years, and Booz Allen used 1,072 distinct firms.",
+  "section": "markets",
+  "format": "subunder",
+  "formatName": "Sub-Under",
+  "publishedAt": "2026-09-02",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "General Dynamics Information Technology placed $2.9 billion across 3,091 sub-awards to 898 firms since August 2024. Booz Allen Hamilton placed the same dollar volume across 2,893 sub-awards to 1,072 firms, the widest subcontractor base of any prime in professional services (NAICS 541)."
+   },
+   {
+    "kind": "chart",
+    "form": "ranked",
+    "heading": "Sub-award volume under professional services primes · trailing 24 months",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "prime_awardee_uei",
+      "prime",
+      "sub_ct",
+      "distinct_subs",
+      "sub_amount",
+      "last_sub"
+     ],
+     "rows": [
+      {
+       "prime_awardee_uei": "SMNWM6HN79X5",
+       "prime": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+       "sub_ct": 3091,
+       "distinct_subs": 898,
+       "sub_amount": 2896467841.5199976,
+       "last_sub": "2026-05-13"
+      },
+      {
+       "prime_awardee_uei": "JCBMLGPE6Z71",
+       "prime": "BOOZ ALLEN HAMILTON INC.",
+       "sub_ct": 2893,
+       "distinct_subs": 1072,
+       "sub_amount": 2881029972.980002,
+       "last_sub": "2026-05-30"
+      },
+      {
+       "prime_awardee_uei": "MMLKPW9JLX64",
+       "prime": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+       "sub_ct": 1616,
+       "distinct_subs": 653,
+       "sub_amount": 2407956370.5000005,
+       "last_sub": "2026-05-29"
+      },
+      {
+       "prime_awardee_uei": "N3PBJAVNKF61",
+       "prime": "CACI, INC. - FEDERAL",
+       "sub_ct": 1856,
+       "distinct_subs": 555,
+       "sub_amount": 2274119511.0199986,
+       "last_sub": "2026-05-29"
+      },
+      {
+       "prime_awardee_uei": "CKV2L9GZKJK3",
+       "prime": "DELOITTE CONSULTING LLP",
+       "sub_ct": 611,
+       "distinct_subs": 362,
+       "sub_amount": 1692806499.8100002,
+       "last_sub": "2026-06-09"
+      },
+      {
+       "prime_awardee_uei": "ZBPQEJVECCT4",
+       "prime": "PERATON INC.",
+       "sub_ct": 698,
+       "distinct_subs": 362,
+       "sub_amount": 1637735451.1900008,
+       "last_sub": "2026-05-29"
+      },
+      {
+       "prime_awardee_uei": "MBSRAWAQ9559",
+       "prime": "PERSPECTA ENTERPRISE SOLUTIONS LLC",
+       "sub_ct": 506,
+       "distinct_subs": 185,
+       "sub_amount": 1521653772.8299994,
+       "last_sub": "2026-05-20"
+      },
+      {
+       "prime_awardee_uei": "G5H7HWC4L2R5",
+       "prime": "HII MISSION TECHNOLOGIES CORP",
+       "sub_ct": 495,
+       "distinct_subs": 312,
+       "sub_amount": 1217137452.8199995,
+       "last_sub": "2026-05-29"
+      },
+      {
+       "prime_awardee_uei": "JY2BDT2K58Z6",
+       "prime": "MANTECH ADVANCED SYSTEMS INTERNATIONAL, INC.",
+       "sub_ct": 445,
+       "distinct_subs": 246,
+       "sub_amount": 1098781084.1400006,
+       "last_sub": "2026-06-25"
+      },
+      {
+       "prime_awardee_uei": "NMBCAG1JBKL7",
+       "prime": "PARSONS GOVERNMENT SERVICES INC.",
+       "sub_ct": 420,
+       "distinct_subs": 300,
+       "sub_amount": 1076824782.4799998,
+       "last_sub": "2026-04-30"
+      },
+      {
+       "prime_awardee_uei": "CWHMVCX7K1N6",
+       "prime": "FLUOR MARINE PROPULSION, LLC",
+       "sub_ct": 1257,
+       "distinct_subs": 593,
+       "sub_amount": 822896586.5199993,
+       "last_sub": "2026-03-31"
+      },
+      {
+       "prime_awardee_uei": "UE9QJD4KK1L6",
+       "prime": "LEIDOS, INC.",
+       "sub_ct": 1063,
+       "distinct_subs": 256,
+       "sub_amount": 708029628.5199999,
+       "last_sub": "2026-04-29"
+      }
+     ]
+    },
+    "label": "prime",
+    "source": "Source: USAspending, FSRS sub-award reports",
+    "valueFormat": "money",
+    "value": "sub_amount"
+   },
+   {
+    "kind": "p",
+    "text": "SAIC and CACI placed $2.4 billion and $2.3 billion. Deloitte, Peraton, and Perspecta each placed between $1.5 billion and $1.7 billion. The twelve largest buyers together placed roughly $20 billion, an order of magnitude more than the construction or remediation markets."
+   },
+   {
+    "kind": "p",
+    "text": "The ratio of sub-awards to distinct firms tells the shape of each prime's supply base. Leidos placed 1,063 sub-awards to 256 firms, a concentrated bench. Booz Allen's 2.7 sub-awards per firm is the most open. A services firm seeking prime relationships should read the second column, not the first."
+   }
+  ]
+ },
+ {
+  "slug": "florida-guard-floor-meets-market-in-sumter-beats-it-on-the-panhandle",
+  "title": "Florida's Guard Floor Meets Market in Sumter and Beats It on the Panhandle",
+  "dek": "Guard II wage determinations in Florida run within a dollar of the $17.26 market median. In nine of twelve counties the contract rate is the higher number.",
+  "section": "briefings",
+  "format": "wage",
+  "formatName": "Wage Floor",
+  "publishedAt": "2026-09-01",
+  "byline": "GC Staff",
+  "body": [
+   {
+    "kind": "p",
+    "text": "Florida is the counter-example to Texas. The Service Contract Act floor for a Guard II sits within 65 cents of the state's market median of $17.26 in every listed county, and in most of them the floor is above it. Sumter County's $17.26 matches the market exactly."
+   },
+   {
+    "kind": "chart",
+    "form": "dumbbell",
+    "heading": "Guard II · SCA floor vs Florida market median, by county",
+    "data": {
+     "takenAt": "2026-09-17",
+     "columns": [
+      "county_name",
+      "county_fips",
+      "classification_title",
+      "floor_hourly",
+      "market_median",
+      "h_pct25",
+      "h_pct75",
+      "market_minus_floor"
+     ],
+     "rows": [
+      {
+       "county_name": "Highlands",
+       "county_fips": "12055",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.73,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": 0.5300000000000011
+      },
+      {
+       "county_name": "Marion",
+       "county_fips": "12083",
+       "classification_title": "Guard II",
+       "floor_hourly": 16.82,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": 0.4400000000000013
+      },
+      {
+       "county_name": "Sumter",
+       "county_fips": "12119",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.26,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": 0
+      },
+      {
+       "county_name": "Gadsden",
+       "county_fips": "12039",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.4,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.13999999999999702
+      },
+      {
+       "county_name": "Jefferson",
+       "county_fips": "12065",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.4,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.13999999999999702
+      },
+      {
+       "county_name": "Leon",
+       "county_fips": "12073",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.4,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.13999999999999702
+      },
+      {
+       "county_name": "Wakulla",
+       "county_fips": "12129",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.4,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.13999999999999702
+      },
+      {
+       "county_name": "Indian River",
+       "county_fips": "12061",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.51,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.25
+      },
+      {
+       "county_name": "Flagler",
+       "county_fips": "12035",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.9,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.639999999999997
+      },
+      {
+       "county_name": "Volusia",
+       "county_fips": "12127",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.9,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.639999999999997
+      },
+      {
+       "county_name": "Gulf",
+       "county_fips": "12045",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.91,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.6499999999999986
+      },
+      {
+       "county_name": "Bay",
+       "county_fips": "12005",
+       "classification_title": "Guard II",
+       "floor_hourly": 17.91,
+       "market_median": 17.26,
+       "h_pct25": 15.55,
+       "h_pct75": 19,
+       "market_minus_floor": -0.6499999999999986
+      }
+     ]
+    },
+    "label": "county_name",
+    "source": "Source: SAM.gov wage determinations; BLS OEWS state wages",
+    "valueFormat": "hourly",
+    "a": "floor_hourly",
+    "b": "market_median",
+    "aName": "SCA floor",
+    "bName": "Market median"
+   },
+   {
+    "kind": "p",
+    "text": "Highlands and Marion are the only counties where the market pays more than the contract, by 53 and 44 cents. Tallahassee's four counties, Gadsden, Jefferson, Leon, and Wakulla, set $17.40. Flagler, Volusia, Gulf, and Bay set $17.90 to $17.91, 64 to 65 cents above market."
+   },
+   {
+    "kind": "p",
+    "text": "Where the floor exceeds the market, the contract wage is the local premium. Recruiting is easier than the determination suggests and the bid can price at the floor. Where it falls short, as in Highlands, the bid carries the difference."
+   }
+  ]
+ }
+]

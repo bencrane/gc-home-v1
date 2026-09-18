@@ -1,7 +1,9 @@
 ---
 import Base from "@/layouts/Base.astro"
 import SectionIndex from "@/views/SectionIndex"
+import { getPieces, bySection } from "@/lib/content"
+const pieces = bySection(await getPieces(), "briefings")
 ---
 <Base title="Briefings">
-  <SectionIndex section="briefings" />
+  <SectionIndex section="briefings" pieces={pieces} />
 </Base>

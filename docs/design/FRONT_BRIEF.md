@@ -16,4 +16,4 @@
 
 **Anti-goals.** No cards of unequal height in a row. No pooled whitespace. No dashboard tiles on the front. No section with one card. No hero copy.
 
-**Constraints.** Vite + React, existing primitives. Content from local fixtures now, Sanity next; the page reads a `Piece[]` either way. Accessibility: headline is the link, art is decorative (`aria-hidden`).
+**Constraints.** Vite + React, existing primitives. Content is fetched from Sanity at build (`src/lib/content.ts`) and validated at the boundary; the page reads a `Piece[]`. Accessibility: headline is the link, art is decorative (`aria-hidden`).

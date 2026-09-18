@@ -32,8 +32,22 @@ export const piece = defineType({
       validation: (r) => r.required(),
       group: 'meta',
     }),
+    defineField({
+      name: 'format',
+      type: 'string',
+      options: {list: [
+        {title: 'The Record', value: 'record'}, {title: 'Flows', value: 'flows'}, {title: 'Expiring', value: 'expiring'},
+        {title: 'Sub-Under', value: 'subunder'}, {title: 'Who Won', value: 'whowon'}, {title: 'Wage Floor', value: 'wage'},
+      ]},
+      validation: (r) => r.required(),
+      group: 'meta',
+    }),
     defineField({name: 'series', type: 'reference', to: [{type: 'series'}], group: 'meta'}),
-    defineField({name: 'byline', type: 'reference', to: [{type: 'author'}], group: 'meta'}),
+    defineField({name: 'byline', type: 'string', initialValue: 'GC Staff', group: 'meta'}),
+    defineField({name: 'author', type: 'reference', to: [{type: 'author'}], group: 'meta'}),
+    defineField({name: 'agencies', title: 'Agencies (codes)', type: 'array', of: [{type: 'string'}], options: {layout: 'tags'}, group: 'meta'}),
+    defineField({name: 'naics3', title: 'Sectors (NAICS 3-digit)', type: 'array', of: [{type: 'string'}], options: {layout: 'tags'}, group: 'meta'}),
+    defineField({name: 'ogFigure', title: 'Preview card figure', type: 'object', fields: [{name: 'label', type: 'string'}, {name: 'value', type: 'string'}], group: 'meta'}),
     defineField({
       name: 'status',
       type: 'string',
@@ -81,10 +95,10 @@ export const piece = defineType({
     {title: 'Published, newest', name: 'publishedDesc', by: [{field: 'publishedAt', direction: 'desc'}]},
   ],
   preview: {
-    select: {title: 'title', section: 'section', status: 'status', date: 'publishedAt'},
-    prepare: ({title, section, status, date}) => ({
+    select: {title: 'title', section: 'section', format: 'format', status: 'status', date: 'publishedAt'},
+    prepare: ({title, section, format, status, date}) => ({
       title,
-      subtitle: [section?.toUpperCase(), status, date?.slice(0, 10)].filter(Boolean).join(' · '),
+      subtitle: [section?.toUpperCase(), format, status, date?.slice(0, 10)].filter(Boolean).join(' · '),
     }),
   },
 })

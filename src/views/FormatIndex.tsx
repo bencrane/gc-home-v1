@@ -1,12 +1,11 @@
 import { Eyebrow, Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
-import { PIECES } from "@/content/pieces"
+import type { Piece } from "@/content/types"
 import { formatById } from "@/content/formats"
 
-export default function FormatIndex({ format }: { format: string }) {
+export default function FormatIndex({ format, pieces }: { format: string; pieces: Piece[] }) {
   const f = formatById(format)!
-  const pieces = PIECES.filter((p) => p.format === f.id)
   return (
     <>
       <Band className="border-b border-line py-10">

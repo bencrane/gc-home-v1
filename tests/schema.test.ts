@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest"
 import { parsePiece, assertPublic } from "@/lib/schema"
-import { PIECES } from "@/content/pieces"
+import snapshot from "@/data/pieces.snapshot.json"
+import type { Piece } from "@/content/types"
+const PIECES = snapshot as unknown as Piece[]
 
 const base = PIECES[0]
 describe("parsePiece", () => {

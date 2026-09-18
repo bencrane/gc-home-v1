@@ -2,12 +2,14 @@
 import Base from "@/layouts/Base.astro"
 import FormatIndex from "@/views/FormatIndex"
 import { FORMATS } from "@/content/formats"
-export function getStaticPaths() {
-  return FORMATS.map((f) => ({ params: { format: f.id }, props: { name: f.name, blurb: f.blurb } }))
+import { getPieces, byFormat } from "@/lib/content"
+export async function getStaticPaths() {
+  const all = await getPieces()
+  return FORMATS.map((f) => ({ params: { format: f.id }, props: { name: f.name, blurb: f.blurb, pieces: byFormat(all, f.id) } })).filter((x) => x.props.pieces.length > 0)
 }
 const { format } = Astro.params
-const { name, blurb } = Astro.props
+const { name, blurb, pieces } = Astro.props
 ---
 <Base title={name} description={blurb}>
-  <FormatIndex format={format!} />
+  <FormatIndex format={format!} pieces={pieces} />
 </Base>

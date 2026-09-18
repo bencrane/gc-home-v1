@@ -1,7 +1,7 @@
 import { Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
-import { PIECES, bySection } from "@/content/pieces"
+import { bySection } from "@/lib/content"
 import type { Piece } from "@/content/types"
 
 function SectionHead({ title, to, blurb }: { title: string; to: string; blurb: string }) {
@@ -27,12 +27,12 @@ function River({ pieces, figureWells = 0 }: { pieces: Piece[]; figureWells?: num
 }
 
 /** Front page per docs/design/FRONT_BRIEF.md. Lead → secondaries → rivers by section. Every piece once. */
-export default function Front() {
-  const [lead, ...rest] = PIECES
+export default function Front({ pieces }: { pieces: Piece[] }) {
+  const [lead, ...rest] = pieces
   const latest = rest.slice(0, 4)
   const used = new Set([lead, ...latest].map((p) => p.slug))
-  const markets = bySection("markets").filter((p) => !used.has(p.slug)).slice(0, 8)
-  const briefings = bySection("briefings").filter((p) => !used.has(p.slug)).slice(0, 8)
+  const markets = bySection(pieces, "markets").filter((p) => !used.has(p.slug)).slice(0, 8)
+  const briefings = bySection(pieces, "briefings").filter((p) => !used.has(p.slug)).slice(0, 8)
 
   return (
     <>

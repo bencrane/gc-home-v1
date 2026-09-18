@@ -1,15 +1,14 @@
 import { Eyebrow, Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
-import { bySection } from "@/content/pieces"
+import type { Piece } from "@/content/types"
 
 const COPY = {
   markets: { title: "Markets", lede: "Obligations by agency, flows between industries, contracts reaching expiration, and the demand primes place on subcontractors. Read quarterly and monthly from the federal record." },
   briefings: { title: "Briefings", lede: "The month's largest awards, the wage floors that set service-contract bids, and the primes that shape the market." },
 } as const
 
-export default function SectionIndex({ section }: { section: "markets" | "briefings" }) {
-  const pieces = bySection(section)
+export default function SectionIndex({ section, pieces }: { section: "markets" | "briefings"; pieces: Piece[] }) {
   const copy = COPY[section]
   return (
     <>
