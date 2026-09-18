@@ -9,5 +9,5 @@ const { slug } = Astro.params
 const { title, dek } = Astro.props
 ---
 <Base title={title} description={dek}>
-  <PiecePage client:load slug={slug!} />
+  <PiecePage slug={slug!} />
 </Base>

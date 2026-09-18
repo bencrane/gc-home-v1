@@ -1,7 +1,5 @@
 import type { Piece, FiguresSpec, LedgerSpec, ChartSpec } from "@/content/types"
-import { money, count, hourly } from "@/lib/format"
-
-const fmt = { money, count, hourly, date: (v: unknown) => String(v) } as const
+import { formatValue } from "@/lib/format"
 
 /** The card well: the piece's key figure, set large, on a field by section.
  *  Markets → ink field, paper figure. Briefings → paper field, ink figure. Copper rule under the figure. */
@@ -10,11 +8,10 @@ export function keyFigure(piece: Piece): { value: string; label: string } | null
   if (figs && figs.figures[0]) return { value: figs.figures[0].value, label: figs.figures[0].label }
   const led = piece.body.find((b): b is LedgerSpec => b.kind === "ledger")
   if (led && led.data.rows[0]) {
-    const f = fmt[led.valueFormat] as (v: unknown) => string
-    return { value: f(led.data.rows[0][led.value]), label: String(led.data.rows[0][led.label] ?? led.heading) }
+    return { value: formatValue(led.valueFormat, led.data.rows[0][led.value]), label: String(led.data.rows[0][led.label] ?? led.heading) }
   }
   const ch = piece.body.find((b): b is ChartSpec => b.kind === "chart")
-  if (ch && ch.data.rows[0]) return { value: money(Number(ch.data.rows[0][ch.series[0].column])), label: String(ch.data.rows[0][ch.category]) }
+  if (ch && ch.data.rows[0]) { const r = ch.data.rows[0]; const col = "value" in ch ? ch.value : ch.b; return { value: formatValue(ch.valueFormat, r[col]), label: String(r[ch.label] ?? ch.heading) } }
   return null
 }
 

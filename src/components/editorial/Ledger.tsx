@@ -1,12 +1,9 @@
 import type { LedgerSpec } from "@/content/types"
-import { money, count, hourly, dateShort, pct } from "@/lib/format"
+import { formatValue, dateShort, pct } from "@/lib/format"
 import { MonoLabel } from "@/components/primitives"
-
-const fmt = { money, count, hourly, date: (v: unknown) => dateShort(String(v)) } as const
 
 /** The ledger table: label left in sans, value right in mono tabular, hairline rows, no boxes. */
 export function Ledger({ spec }: { spec: LedgerSpec }) {
-  const f = fmt[spec.valueFormat] as (v: unknown) => string
   return (
     <figure className="my-10 first:mt-0">
       <MonoLabel as="span" className="text-copper-600">{spec.heading}</MonoLabel>
@@ -23,7 +20,7 @@ export function Ledger({ spec }: { spec: LedgerSpec }) {
                   {pct(Number(r[spec.delta]))}
                 </span>
               )}
-              <span className="w-20 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
+              <span className="w-20 font-mono text-mono-data tabular-nums text-foreground">{formatValue(spec.valueFormat, r[spec.value])}</span>
             </div>
           </div>
         ))}

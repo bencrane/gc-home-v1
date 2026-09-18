@@ -1,51 +1,27 @@
+import type { ValueFormat } from "@/lib/format"
+
 export type Section = "markets" | "briefings"
 export type Format = "record" | "flows" | "expiring" | "subunder" | "wage" | "whowon"
 
-export type Frozen = {
-  queryId: string
-  artifact: string | null
-  takenAt: string
-  columns: string[]
-  rows: Record<string, unknown>[]
-}
+/** A frozen result. Public-facing: no query ids or artifact stamps are ever rendered. */
+export type Frozen = { takenAt: string; columns: string[]; rows: Record<string, unknown>[] }
 
 export type LedgerSpec = {
-  kind: "ledger"
-  heading: string
-  data: Frozen
-  label: string            // column for the left cell
-  value: string            // column for the right cell
-  valueFormat: "money" | "count" | "hourly" | "date"
-  sub?: string             // optional column rendered muted under the label
-  delta?: string           // optional column rendered as a signed % next to value
-  source: string
+  kind: "ledger"; heading: string; data: Frozen
+  label: string; value: string; valueFormat: ValueFormat; sub?: string; delta?: string; source: string
 }
-export type FiguresSpec = {
-  kind: "figures"
-  figures: { label: string; value: string; sub?: string }[]
-  source: string
-}
-export type ChartSpec = {
-  kind: "chart"
-  heading: string
-  data: Frozen
-  category: string
-  series: { column: string; name: string }[]
-  valueFormat: "money"
-  source: string
-}
+export type FiguresSpec = { kind: "figures"; figures: { label: string; value: string; sub?: string }[]; source: string }
+
+/** One chart form per format (docs/design/CHARTS.md). */
+export type ChartSpec =
+  | { kind: "chart"; form: "ranked"; heading: string; data: Frozen; label: string; value: string; valueFormat: ValueFormat; sub?: string; source: string }
+  | { kind: "chart"; form: "change"; heading: string; data: Frozen; label: string; value: string; valueFormat: ValueFormat; source: string }
+  | { kind: "chart"; form: "timeline"; heading: string; data: Frozen; label: string; date: string; value: string; valueFormat: ValueFormat; source: string }
+  | { kind: "chart"; form: "dumbbell"; heading: string; data: Frozen; label: string; a: string; b: string; aName: string; bName: string; valueFormat: ValueFormat; source: string }
+
 export type Block = { kind: "p"; text: string } | { kind: "h2"; text: string } | LedgerSpec | FiguresSpec | ChartSpec
 
 export type Piece = {
-  slug: string
-  title: string
-  dek: string
-  section: Section
-  format: Format
-  formatName: string
-  publishedAt: string
-  byline: string
-  /** Card visual override; default follows the active variant. */
-  visual?: "data" | "art"
-  body: Block[]
+  slug: string; title: string; dek: string; section: Section; format: Format; formatName: string
+  publishedAt: string; byline: string; body: Block[]
 }

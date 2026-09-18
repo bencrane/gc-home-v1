@@ -2,7 +2,7 @@ import { href } from "@/lib/url"
 import type { Piece } from "@/content/types"
 import { Heading, MonoLabel } from "@/components/primitives"
 import { dateShort } from "@/lib/format"
-import { Visual } from "./Visual"
+import { LeadVisual } from "./LeadVisual"
 import { Art } from "./Art"
 import { FigureWell } from "./FigureWell"
 import { cn } from "@/lib/cn"
@@ -24,7 +24,7 @@ export function PieceCard({ piece, variant = "card", well = "art", className }: 
             <a href={href(hrefPath)} className="group mt-6 block"><Heading level={1} className="text-display transition-colors group-hover:text-navy-600">{piece.title}</Heading></a>
             <p className="mt-8 max-w-[60ch] text-dek-lg text-foreground-muted">{piece.dek}</p>
           </div>
-          <a href={href(hrefPath)} className="block lg:col-span-5"><Visual piece={piece} size="lead" /></a>
+          <a href={href(hrefPath)} className="block lg:col-span-5"><LeadVisual piece={piece} /></a>
         </div>
       </article>
     )
