@@ -1,0 +1,125 @@
+{
+ "queryId": "flows_fy24",
+ "takenAt": "2026-09-17",
+ "columns": [
+  "agency",
+  "naics3",
+  "obl_cur",
+  "obl_prev",
+  "delta"
+ ],
+ "rows": [
+  {
+   "agency": "Department of Defense",
+   "naics3": "336",
+   "obl_cur": 129089710560.3425,
+   "obl_prev": 153128600939.77945,
+   "delta": -24038890379.43695
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "541",
+   "obl_cur": 115122394845.05959,
+   "obl_prev": 108794019421.99062,
+   "delta": 6328375423.06897
+  },
+  {
+   "agency": "Department of Veterans Affairs",
+   "naics3": "524",
+   "obl_cur": 28772009050.11999,
+   "obl_prev": 24314440741.06,
+   "delta": 4457568309.05999
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "332",
+   "obl_cur": 17501660666.8195,
+   "obl_prev": 14266261125.989798,
+   "delta": 3235399540.8297024
+  },
+  {
+   "agency": "Department of Health and Human Services",
+   "naics3": "541",
+   "obl_cur": 20300136111.189926,
+   "obl_prev": 22648104892.39997,
+   "delta": -2347968781.210045
+  },
+  {
+   "agency": "Department of Homeland Security",
+   "naics3": "236",
+   "obl_cur": 434099395.15999997,
+   "obl_prev": 2392048422.2999988,
+   "delta": -1957949027.139999
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "237",
+   "obl_cur": 12612685658.859997,
+   "obl_prev": 10750257086.540003,
+   "delta": 1862428572.319994
+  },
+  {
+   "agency": "Department of Veterans Affairs",
+   "naics3": "621",
+   "obl_cur": 5744464334.530001,
+   "obl_prev": 4228159942.1699963,
+   "delta": 1516304392.3600044
+  },
+  {
+   "agency": "General Services Administration",
+   "naics3": "541",
+   "obl_cur": 16736651499.519958,
+   "obl_prev": 15334659671.169819,
+   "delta": 1401991828.3501396
+  },
+  {
+   "agency": "Department of the Treasury",
+   "naics3": "331",
+   "obl_cur": 2248626140.1500006,
+   "obl_prev": 3598764861.0299997,
+   "delta": -1350138720.8799992
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "325",
+   "obl_cur": 6034113299.090326,
+   "obl_prev": 7364208054.509926,
+   "delta": -1330094755.4195995
+  },
+  {
+   "agency": "Department of Health and Human Services",
+   "naics3": "325",
+   "obl_cur": 8930746459.55,
+   "obl_prev": 7643630538.419992,
+   "delta": 1287115921.1300068
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "561",
+   "obl_cur": 15194934943.240002,
+   "obl_prev": 16369922844.300007,
+   "delta": -1174987901.0600052
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "334",
+   "obl_cur": 29804593749.7798,
+   "obl_prev": 28681480013.22979,
+   "delta": 1123113736.5500107
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "236",
+   "obl_cur": 21951139600.94001,
+   "obl_prev": 22922414763.260025,
+   "delta": -971275162.320015
+  },
+  {
+   "agency": "Department of Defense",
+   "naics3": "562",
+   "obl_cur": 4459882117.710008,
+   "obl_prev": 3490433362.2500014,
+   "delta": 969448755.4600062
+  }
+ ]
+}

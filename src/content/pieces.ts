@@ -16,9 +16,10 @@ import won06 from "@/fixtures/whowon_2026_06.json"
 import won04 from "@/fixtures/whowon_2026_04.json"
 import wageCa from "@/fixtures/wage_ca_janitor.json"
 import wageFl from "@/fixtures/wage_fl_guard2.json"
+import flows24 from "@/fixtures/flows_fy24.json"
 
 const F = (x: unknown) => { const { takenAt, columns, rows } = x as Frozen & { queryId?: string; artifact?: string }; return { takenAt, columns, rows } as Frozen }
-const NAICS3: Record<string, string> = { "336": "Transportation equipment", "541": "Professional services", "236": "Building construction", "621": "Ambulatory health care", "524": "Insurance", "324": "Petroleum products", "325": "Chemicals & pharma", "523": "Securities & funds", "562": "Remediation", "561": "Facilities support", "237": "Heavy civil", "423": "Wholesale durables", "334": "Electronics" }
+const NAICS3: Record<string, string> = { "336": "Transportation equipment", "541": "Professional services", "332": "Fabricated metal products", "339": "Miscellaneous manufacturing", "611": "Educational services", "622": "Hospitals", "488": "Transportation support", "236": "Building construction", "621": "Ambulatory health care", "524": "Insurance", "324": "Petroleum products", "325": "Chemicals & pharma", "523": "Securities & funds", "562": "Remediation", "561": "Facilities support", "237": "Heavy civil", "423": "Wholesale durables", "334": "Electronics" }
 const SETASIDE_NAMES: Record<string, string> = { SBA: "Small business set-aside", "8AN": "8(a) sole source", SDVOSBC: "Service-disabled veteran-owned", "8A": "8(a) competed", WOSB: "Women-owned", HZC: "HUBZone", SBP: "Partial small business", EDWOSB: "Economically disadvantaged WOSB", VSA: "Veteran-owned" }
 const setasideFy25: Frozen = { ...F(setaside), rows: F(setaside).rows.filter((r) => r.fy === 2025 && r.set_aside !== "NONE" && SETASIDE_NAMES[String(r.set_aside)]).map((r) => {
   const prev = F(setaside).rows.find((x) => x.fy === 2023 && x.set_aside === r.set_aside)
@@ -28,12 +29,15 @@ const setasideFy25: Frozen = { ...F(setaside), rows: F(setaside).rows.filter((r)
 const STATE_NAMES: Record<string, string> = { VA: "Virginia", TX: "Texas", CA: "California", MD: "Maryland", CT: "Connecticut", FL: "Florida", DC: "District of Columbia", PA: "Pennsylvania", AZ: "Arizona", MA: "Massachusetts", AL: "Alabama", CO: "Colorado", WA: "Washington", GA: "Georgia", MO: "Missouri", OH: "Ohio", NY: "New York", IL: "Illinois", NJ: "New Jersey", MS: "Mississippi" }
 const statesNamed: Frozen = { ...F(states), rows: F(states).rows.map((r) => ({ ...r, name: STATE_NAMES[String(r.pop_state)] ?? r.pop_state })) }
 /** Flows chart wants one label per agency × industry row. */
+const labelFlows = (fz: Frozen): Frozen => ({ ...fz, rows: fz.rows.map((r) => ({ ...r, label: `${String(r.agency).replace("Department of ", "").replace("Agency for International Development", "USAID").replace("Health and Human Services", "HHS").replace("Homeland Security", "DHS").replace("Veterans Affairs", "VA").replace("General Services Administration", "GSA").replace("Housing and Urban Development", "HUD")} · ${NAICS3[String(r.naics3)] ?? r.naics3}` })) })
+const flows24Labeled = labelFlows(F(flows24))
 const flowsLabeled: Frozen = { ...F(flows), rows: F(flows).rows.map((r) => ({ ...r, label: `${String(r.agency).replace("Department of ", "").replace("Agency for International Development", "USAID").replace("Health and Human Services", "HHS").replace("Homeland Security", "DHS").replace("Veterans Affairs", "VA").replace("General Services Administration", "GSA").replace("Housing and Urban Development", "HUD")} · ${NAICS3[String(r.naics3)] ?? r.naics3}` })) }
 const SRC = "Source: USAspending, FPDS contract actions"
 
 export const PIECES: Piece[] = [
   {
     slug: "defense-up-10-hhs-down-a-quarter-fy25",
+    agencies: ["097", "036", "089", "070", "075", "047", "080", "019", "069", "012", "015", "020"], naics3: [],
     title: "Defense Spending Rose 10% in FY25 as HHS Fell by a Quarter",
     dek: "The Pentagon added $45.8 billion to its contract book while Health and Human Services gave back $10 billion. Nine of the fifteen largest buyers shrank.",
     section: "markets", format: "record", formatName: "The Record",
@@ -53,6 +57,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "defense-shifted-43-billion-into-aircraft-and-vehicles",
+    agencies: ["097", "075", "070", "036"], naics3: ["336", "541", "236", "621", "524", "324", "562"],
     title: "Defense Shifted $43 Billion Into Aircraft and Vehicles in One Year",
     dek: "Transportation equipment absorbed nearly all of the Pentagon's growth. Construction and petroleum lost ground, and HHS professional services fell $6 billion.",
     section: "markets", format: "flows", formatName: "Flows",
@@ -67,6 +72,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "savannah-river-39-billion-runs-out-in-september",
+    agencies: ["089", "049", "075", "097", "019", "080"], naics3: ["561"],
     title: "$39 Billion of Savannah River Work Runs Out in September",
     dek: "The largest facilities-support contract in the federal record ends on the last day of the fiscal year. Behind it, $5.4 billion of Texas base operations expires in December.",
     section: "markets", format: "expiring", formatName: "Expiring",
@@ -81,6 +87,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "rq-construction-largest-buyer-of-subcontracted-federal-work",
+    agencies: [], naics3: ["236"],
     title: "RQ Construction Is the Largest Buyer of Subcontracted Federal Work",
     dek: "Fifteen builders placed $1.6 billion of sub-awards on federal construction over two years. Three of them account for half of it.",
     section: "markets", format: "subunder", formatName: "Sub-Under",
@@ -95,6 +102,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "southwest-valley-constructors-takes-1-7-billion-border-award",
+    agencies: ["070", "075", "069", "014", "036"], naics3: ["236", "541", "336"],
     title: "Southwest Valley Constructors Takes $1.7 Billion Border Award",
     dek: "Homeland Security construction produced four of May's five largest new awards, $3.1 billion combined, all in Texas and California.",
     section: "briefings", format: "whowon", formatName: "Who Won",
@@ -109,6 +117,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "border-counties-set-guard-wages-2-50-under-the-texas-market",
+    agencies: [], naics3: ["561"],
     title: "Border Counties Set Guard Wages $2.50 Under the Texas Market",
     dek: "The Service Contract Act floor for a Guard II runs from $14.73 in Webb County to $16.10 in East Texas. The state's market median is $17.30.",
     section: "briefings", format: "wage", formatName: "Wage Floor",
@@ -122,6 +131,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "defense-fell-2-percent-in-fy24-as-gsa-and-va-grew",
+    agencies: ["097", "036", "089", "075", "047", "070", "080"], naics3: [],
     title: "Defense Fell 2% in FY24 While GSA and VA Grew Fastest",
     dek: "The year before the rebound, the Pentagon gave back $10.8 billion. General Services grew 10.5% and Veterans Affairs 8.4%. Treasury and Justice shrank most.",
     section: "markets", format: "record", formatName: "The Record",
@@ -135,6 +145,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "set-aside-dollars-flat-since-fy23-hubzone-fell-13-percent",
+    agencies: [], naics3: [],
     title: "Set-Aside Dollars Are Flat Since FY23 and HUBZone Fell 13%",
     dek: "Small-business set-asides obligated $33.6 billion in FY25, up 2% on two years. 8(a) sole-source and service-disabled veteran programs both shrank. Women-owned grew 10%.",
     section: "markets", format: "record", formatName: "The Record",
@@ -153,6 +164,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "virginia-took-120-billion-of-fy25-obligations-texas-86",
+    agencies: [], naics3: [],
     title: "Virginia Took $120.6 Billion of FY25 Work, Texas $86.3 Billion",
     dek: "Place of performance concentrates in five states. Virginia, Texas, California, Maryland, and Connecticut carry $344 billion, nearly half of all obligations with a stated location.",
     section: "markets", format: "flows", formatName: "Flows",
@@ -166,6 +178,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "hensel-phelps-650-million-florida-contract-ends-in-days",
+    agencies: ["097", "019", "015"], naics3: ["236"],
     title: "Hensel Phelps' $650 Million Florida Build Ends This Month",
     dek: "Federal building construction has $4.4 billion in awards ending within 180 days. Two end in July, six in September and November, and State Department embassy work accounts for a third.",
     section: "markets", format: "expiring", formatName: "Expiring",
@@ -179,6 +192,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "argonne-17-billion-lab-contract-ends-september-30",
+    agencies: ["089", "072", "015", "097", "080", "047"], naics3: ["541"],
     title: "Argonne's $17.9 Billion Lab Contract Ends September 30",
     dek: "Professional and technical services has $47 billion in awards ending within 180 days. Two national laboratory contracts, two USAID programs, and five Defense engineering awards lead the list.",
     section: "markets", format: "expiring", formatName: "Expiring",
@@ -192,6 +206,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "hanford-primes-bought-400-million-of-cleanup-capacity",
+    agencies: ["089"], naics3: ["562"],
     title: "Two Hanford Primes Bought $409 Million of Cleanup Capacity",
     dek: "Remediation sub-awards concentrate at Department of Energy sites. Hanford Tank Waste Operations and Central Plateau Cleanup placed 742 sub-awards to 210 firms in two years.",
     section: "markets", format: "subunder", formatName: "Sub-Under",
@@ -205,6 +220,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "gdit-and-booz-allen-each-placed-2-9-billion-in-sub-awards",
+    agencies: [], naics3: ["541"],
     title: "GDIT and Booz Allen Each Placed $2.9 Billion in Sub-Awards",
     dek: "Professional services is the deepest subcontracting market in the record. Twelve primes placed $20 billion across 14,000 sub-awards in two years, and Booz Allen used 1,072 distinct firms.",
     section: "markets", format: "subunder", formatName: "Sub-Under",
@@ -218,6 +234,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "fisher-sand-and-gravel-takes-2-6-billion-in-june",
+    agencies: ["070", "036", "014", "013"], naics3: ["236", "524"],
     title: "Fisher Sand & Gravel Takes $2.6 Billion in June's Largest Award",
     dek: "Homeland Security border construction produced the two biggest awards of the month. Veterans Affairs placed $3.8 billion in community care with TriWest and Optum.",
     section: "briefings", format: "whowon", formatName: "Who Won",
@@ -231,6 +248,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "barnard-construction-1-6-billion-border-award-leads-april",
+    agencies: ["070", "036", "089", "014", "075"], naics3: ["236", "524", "325"],
     title: "Barnard Construction's $1.6 Billion Border Award Led April",
     dek: "Three DHS construction awards and four VA health awards made up April's top ten. McKesson's $1.2 billion pharmaceutical order was the largest non-construction, non-care award.",
     section: "briefings", format: "whowon", formatName: "Who Won",
@@ -244,6 +262,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "california-janitor-floor-sits-2-under-market-in-central-valley",
+    agencies: [], naics3: ["561"],
     title: "California's Janitor Floor Sits $2.24 Under Market in the Central Valley",
     dek: "The Service Contract Act rate for janitors runs from $17.51 in Fresno to $18.32 in San Bernardino against a state market median of $19.75. Every listed county is below market.",
     section: "briefings", format: "wage", formatName: "Wage Floor",
@@ -257,6 +276,7 @@ export const PIECES: Piece[] = [
   },
   {
     slug: "florida-guard-floor-meets-market-in-sumter-beats-it-on-the-panhandle",
+    agencies: [], naics3: ["561"],
     title: "Florida's Guard Floor Meets Market in Sumter and Beats It on the Panhandle",
     dek: "Guard II wage determinations in Florida run within a dollar of the $17.26 market median. In nine of twelve counties the contract rate is the higher number.",
     section: "briefings", format: "wage", formatName: "Wage Floor",
@@ -266,6 +286,20 @@ export const PIECES: Piece[] = [
       { kind: "chart", form: "dumbbell", heading: "Guard II · SCA floor vs Florida market median, by county", data: F(wageFl), label: "county_name", a: "floor_hourly", b: "market_median", aName: "SCA floor", bName: "Market median", valueFormat: "hourly", source: "Source: SAM.gov wage determinations; BLS OEWS state wages" },
       { kind: "p", text: "Highlands and Marion are the only counties where the market pays more than the contract, by 53 and 44 cents. Tallahassee's four counties, Gadsden, Jefferson, Leon, and Wakulla, set $17.40. Flagler, Volusia, Gulf, and Bay set $17.90 to $17.91, 64 to 65 cents above market." },
       { kind: "p", text: "Where the floor exceeds the market, the contract wage is the local premium. Recruiting is easier than the determination suggests and the bid can price at the floor. Where it falls short, as in Highlands, the bid carries the difference." },
+    ],
+  },
+  {
+    slug: "defense-cut-24-billion-of-aircraft-and-vehicles-in-fy24",
+    title: "Defense Cut $24 Billion of Aircraft and Vehicle Buying in FY24",
+    dek: "The year before the rebound, transportation equipment absorbed the Pentagon's entire decline. Professional services and VA community care grew; HHS services fell.",
+    section: "markets", format: "flows", formatName: "Flows",
+    publishedAt: "2026-09-05", byline: "GC Staff",
+    agencies: ["097", "036", "075"], naics3: ["336", "541", "524", "332"],
+    body: [
+      { kind: "p", text: "The largest single movement in the FY24 record ran the other way from FY25. Defense obligations in transportation equipment manufacturing (NAICS 336) fell $24.0 billion from FY23, more than the department's total decline of $10.8 billion. The hardware line that would rise $42.8 billion a year later was the line that fell first." },
+      { kind: "chart", form: "change", heading: "Largest obligation movements by agency and industry · FY23 to FY24", data: flows24Labeled, label: "label", value: "delta", valueFormat: "money", source: SRC },
+      { kind: "p", text: "Against that, Defense professional services grew $6.3 billion and fabricated metal products $3.2 billion. Veterans Affairs added $4.5 billion in insurance and community-care codes, the first year of a run that continued into FY25." },
+      { kind: "p", text: "Health and Human Services professional services fell $2.3 billion in FY24, then $6.2 billion in FY25. Read together, the two years show the same rotation, hardware and care up, civilian services down, with FY24 as the trough for aircraft and vehicles." },
     ],
   },
 ]

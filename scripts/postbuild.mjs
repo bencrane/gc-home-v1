@@ -7,7 +7,7 @@ const walk = (d) => { for (const f of readdirSync(d)) { const p = join(d, f); st
 walk(dist)
 const leak = /sidecar|query_sidecar|queryId|artifact"|core-x/i
 const problems = []
-const pages = { front: 0, pieces: 0, sections: 0, formats: 0, other: 0 }
+const pages = { front: 0, pieces: 0, sections: 0, formats: 0, agencies: 0, sectors: 0, other: 0 }
 for (const f of html) {
   const t = readFileSync(f, "utf8")
   if (leak.test(t)) problems.push(`internal identifier in ${f.replace(dist, "")}`)
@@ -17,9 +17,11 @@ for (const f of html) {
   else if (/^(markets|briefings)\/[^/]+\/index\.html$/.test(rel)) pages.pieces++
   else if (/^(markets|briefings)\/index\.html$/.test(rel)) pages.sections++
   else if (/^section\//.test(rel)) pages.formats++
+  else if (/^agency\//.test(rel)) pages.agencies++
+  else if (/^sector\//.test(rel)) pages.sectors++
   else pages.other++
 }
 const manifest = { builtAt: new Date().toISOString(), pages, problems }
 writeFileSync(join(dist, "build-manifest.json"), JSON.stringify(manifest, null, 2))
-console.log(`[postbuild] ${html.length} pages · pieces ${pages.pieces} · formats ${pages.formats} · problems ${problems.length}`)
+console.log(`[postbuild] ${html.length} pages · pieces ${pages.pieces} · formats ${pages.formats} · agencies ${pages.agencies} · sectors ${pages.sectors} · problems ${problems.length}`)
 if (problems.length) { for (const p of problems) console.error("  " + p); process.exit(1) }

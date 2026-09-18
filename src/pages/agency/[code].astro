@@ -1,0 +1,10 @@
+---
+import Base from "@/layouts/Base.astro"
+import { AgencyView } from "@/views/ReferencePage"
+import { agencyPages } from "@/lib/reference"
+export function getStaticPaths() { return agencyPages().map((p) => ({ params: { code: p.code }, props: { page: p } })) }
+const { page } = Astro.props
+---
+<Base title={page.name} description={`Federal contract obligations, recipients, and coverage for ${page.name}.`}>
+  <AgencyView page={page} />
+</Base>

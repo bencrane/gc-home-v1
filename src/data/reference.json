@@ -1,0 +1,2720 @@
+{
+"takenAt": "2026-09-17",
+"agencyFy": [
+{
+"code": "012",
+"fy": 2023,
+"obl": 11521138049.659992,
+"recipients": 11836,
+"actions": 72378
+},
+{
+"code": "012",
+"fy": 2024,
+"obl": 11616242021.810024,
+"recipients": 11694,
+"actions": 75854
+},
+{
+"code": "012",
+"fy": 2025,
+"obl": 9637725975.420002,
+"recipients": 10320,
+"actions": 65046
+},
+{
+"code": "013",
+"fy": 2023,
+"obl": 5027577128.809998,
+"recipients": 4762,
+"actions": 20669
+},
+{
+"code": "013",
+"fy": 2024,
+"obl": 5195291356.510007,
+"recipients": 4019,
+"actions": 16597
+},
+{
+"code": "013",
+"fy": 2025,
+"obl": 4174442859.640002,
+"recipients": 3628,
+"actions": 15052
+},
+{
+"code": "014",
+"fy": 2023,
+"obl": 7645141312.870012,
+"recipients": 11579,
+"actions": 51454
+},
+{
+"code": "014",
+"fy": 2024,
+"obl": 8126188762.32,
+"recipients": 11246,
+"actions": 48807
+},
+{
+"code": "014",
+"fy": 2025,
+"obl": 6517722807.769978,
+"recipients": 10121,
+"actions": 41012
+},
+{
+"code": "015",
+"fy": 2023,
+"obl": 10329329822.289942,
+"recipients": 8367,
+"actions": 99810
+},
+{
+"code": "015",
+"fy": 2024,
+"obl": 9595385673.500061,
+"recipients": 7987,
+"actions": 103698
+},
+{
+"code": "015",
+"fy": 2025,
+"obl": 8761081099.52003,
+"recipients": 7376,
+"actions": 98534
+},
+{
+"code": "019",
+"fy": 2023,
+"obl": 11870623998.790012,
+"recipients": 7010,
+"actions": 74496
+},
+{
+"code": "019",
+"fy": 2024,
+"obl": 11871470781.20996,
+"recipients": 6963,
+"actions": 68080
+},
+{
+"code": "019",
+"fy": 2025,
+"obl": 9898961234.349985,
+"recipients": 6777,
+"actions": 64715
+},
+{
+"code": "020",
+"fy": 2023,
+"obl": 10272928671.56,
+"recipients": 3229,
+"actions": 19328
+},
+{
+"code": "020",
+"fy": 2024,
+"obl": 9301597654.499983,
+"recipients": 3162,
+"actions": 18632
+},
+{
+"code": "020",
+"fy": 2025,
+"obl": 8576309239.24,
+"recipients": 3097,
+"actions": 20586
+},
+{
+"code": "024",
+"fy": 2023,
+"obl": 496399357.9000001,
+"recipients": 325,
+"actions": 1421
+},
+{
+"code": "028",
+"fy": 2023,
+"obl": 2023834447.9299984,
+"recipients": 1009,
+"actions": 4831
+},
+{
+"code": "028",
+"fy": 2024,
+"obl": 1952291778.3299997,
+"recipients": 1032,
+"actions": 4825
+},
+{
+"code": "028",
+"fy": 2025,
+"obl": 1813076501.160001,
+"recipients": 1558,
+"actions": 6942
+},
+{
+"code": "029",
+"fy": 2025,
+"obl": 93093005.65,
+"recipients": 334,
+"actions": 1121
+},
+{
+"code": "031",
+"fy": 2023,
+"obl": 183288400.2199999,
+"recipients": 393,
+"actions": 1547
+},
+{
+"code": "031",
+"fy": 2024,
+"obl": 192923805.2800001,
+"recipients": 365,
+"actions": 1570
+},
+{
+"code": "031",
+"fy": 2025,
+"obl": 183407577.4100001,
+"recipients": 353,
+"actions": 1574
+},
+{
+"code": "036",
+"fy": 2023,
+"obl": 61700341925.58018,
+"recipients": 14198,
+"actions": 125188
+},
+{
+"code": "036",
+"fy": 2024,
+"obl": 66903643039.370056,
+"recipients": 13733,
+"actions": 126204
+},
+{
+"code": "036",
+"fy": 2025,
+"obl": 78317658363.64981,
+"recipients": 13047,
+"actions": 122796
+},
+{
+"code": "047",
+"fy": 2023,
+"obl": 24408847097.210358,
+"recipients": 17514,
+"actions": 1561567
+},
+{
+"code": "047",
+"fy": 2024,
+"obl": 26963817369.71154,
+"recipients": 18074,
+"actions": 1551831
+},
+{
+"code": "047",
+"fy": 2025,
+"obl": 24259007398.530346,
+"recipients": 18432,
+"actions": 1471280
+},
+{
+"code": "049",
+"fy": 2023,
+"obl": 631125418.1100001,
+"recipients": 340,
+"actions": 1023
+},
+{
+"code": "049",
+"fy": 2024,
+"obl": 775662102.5500001,
+"recipients": 322,
+"actions": 1093
+},
+{
+"code": "050",
+"fy": 2023,
+"obl": 701799736.6400001,
+"recipients": 404,
+"actions": 1437
+},
+{
+"code": "050",
+"fy": 2024,
+"obl": 552414097.2500001,
+"recipients": 391,
+"actions": 1477
+},
+{
+"code": "050",
+"fy": 2025,
+"obl": 498159347.2900004,
+"recipients": 418,
+"actions": 1698
+},
+{
+"code": "068",
+"fy": 2023,
+"obl": 1879374539.4500012,
+"recipients": 1313,
+"actions": 12552
+},
+{
+"code": "068",
+"fy": 2024,
+"obl": 2218966470.7000012,
+"recipients": 1296,
+"actions": 13381
+},
+{
+"code": "068",
+"fy": 2025,
+"obl": 1713612069.7699997,
+"recipients": 1220,
+"actions": 13695
+},
+{
+"code": "069",
+"fy": 2023,
+"obl": 9456883328.839983,
+"recipients": 3860,
+"actions": 32337
+},
+{
+"code": "069",
+"fy": 2024,
+"obl": 9284263132.419973,
+"recipients": 4261,
+"actions": 33687
+},
+{
+"code": "069",
+"fy": 2025,
+"obl": 9890055144.069992,
+"recipients": 3806,
+"actions": 33893
+},
+{
+"code": "070",
+"fy": 2023,
+"obl": 24059942578.149933,
+"recipients": 8545,
+"actions": 58711
+},
+{
+"code": "070",
+"fy": 2024,
+"obl": 23647432192.249844,
+"recipients": 8795,
+"actions": 60812
+},
+{
+"code": "070",
+"fy": 2025,
+"obl": 28399838054.62989,
+"recipients": 9000,
+"actions": 59823
+},
+{
+"code": "072",
+"fy": 2023,
+"obl": 6822703680.34,
+"recipients": 1657,
+"actions": 9347
+},
+{
+"code": "072",
+"fy": 2024,
+"obl": 7498586442.540009,
+"recipients": 1656,
+"actions": 9674
+},
+{
+"code": "072",
+"fy": 2025,
+"obl": 4163432862.01,
+"recipients": 992,
+"actions": 6690
+},
+{
+"code": "073",
+"fy": 2023,
+"obl": 382451895.67000014,
+"recipients": 401,
+"actions": 1352
+},
+{
+"code": "073",
+"fy": 2024,
+"obl": 336098854.95,
+"recipients": 395,
+"actions": 1200
+},
+{
+"code": "075",
+"fy": 2023,
+"obl": 38500370385.64994,
+"recipients": 9507,
+"actions": 71612
+},
+{
+"code": "075",
+"fy": 2024,
+"obl": 36760275170.619896,
+"recipients": 9025,
+"actions": 66799
+},
+{
+"code": "075",
+"fy": 2025,
+"obl": 26765166776.939926,
+"recipients": 7870,
+"actions": 54337
+},
+{
+"code": "077",
+"fy": 2024,
+"obl": 103623017.19999996,
+"recipients": 313,
+"actions": 1107
+},
+{
+"code": "080",
+"fy": 2023,
+"obl": 20943491873.03001,
+"recipients": 3238,
+"actions": 24852
+},
+{
+"code": "080",
+"fy": 2024,
+"obl": 20054862273.239983,
+"recipients": 3112,
+"actions": 23159
+},
+{
+"code": "080",
+"fy": 2025,
+"obl": 21331761747.879997,
+"recipients": 3211,
+"actions": 25192
+},
+{
+"code": "086",
+"fy": 2023,
+"obl": 433057236.2100003,
+"recipients": 411,
+"actions": 1652
+},
+{
+"code": "086",
+"fy": 2024,
+"obl": 1523204129.08,
+"recipients": 456,
+"actions": 1806
+},
+{
+"code": "086",
+"fy": 2025,
+"obl": -1330541497.88,
+"recipients": 442,
+"actions": 1927
+},
+{
+"code": "088",
+"fy": 2023,
+"obl": 242244146.74999994,
+"recipients": 322,
+"actions": 1203
+},
+{
+"code": "088",
+"fy": 2024,
+"obl": 222999110.0200001,
+"recipients": 308,
+"actions": 1175
+},
+{
+"code": "088",
+"fy": 2025,
+"obl": 207686582.2399999,
+"recipients": 306,
+"actions": 1374
+},
+{
+"code": "089",
+"fy": 2023,
+"obl": 46273526476.130005,
+"recipients": 1680,
+"actions": 11157
+},
+{
+"code": "089",
+"fy": 2024,
+"obl": 47670870350.029976,
+"recipients": 1738,
+"actions": 11725
+},
+{
+"code": "089",
+"fy": 2025,
+"obl": 50261963271.38006,
+"recipients": 1814,
+"actions": 12717
+},
+{
+"code": "091",
+"fy": 2023,
+"obl": 2445998712.83,
+"recipients": 624,
+"actions": 2473
+},
+{
+"code": "091",
+"fy": 2024,
+"obl": 2724860714.8700004,
+"recipients": 550,
+"actions": 2469
+},
+{
+"code": "091",
+"fy": 2025,
+"obl": 2502613339.39,
+"recipients": 523,
+"actions": 2545
+},
+{
+"code": "097",
+"fy": 2023,
+"obl": 456835080685.31085,
+"recipients": 48222,
+"actions": 4404768
+},
+{
+"code": "097",
+"fy": 2024,
+"obl": 446027969554.9197,
+"recipients": 47666,
+"actions": 4420430
+},
+{
+"code": "097",
+"fy": 2025,
+"obl": 491809760074.001,
+"recipients": 47511,
+"actions": 4489803
+},
+{
+"code": "1601",
+"fy": 2023,
+"obl": 2478805629.4400015,
+"recipients": 907,
+"actions": 6315
+},
+{
+"code": "1601",
+"fy": 2024,
+"obl": 2190837568.0500016,
+"recipients": 796,
+"actions": 5879
+},
+{
+"code": "1601",
+"fy": 2025,
+"obl": 1753682573.450002,
+"recipients": 728,
+"actions": 5285
+},
+{
+"code": "3300",
+"fy": 2023,
+"obl": 493434752.85999995,
+"recipients": 1682,
+"actions": 3940
+},
+{
+"code": "3300",
+"fy": 2024,
+"obl": 496840093.2199999,
+"recipients": 1293,
+"actions": 2974
+},
+{
+"code": "3300",
+"fy": 2025,
+"obl": 430764433.31000006,
+"recipients": 1144,
+"actions": 2648
+},
+{
+"code": "514",
+"fy": 2023,
+"obl": 141356523.51,
+"recipients": 526,
+"actions": 3385
+},
+{
+"code": "514",
+"fy": 2024,
+"obl": 126370450.39999998,
+"recipients": 423,
+"actions": 3496
+},
+{
+"code": "514",
+"fy": 2025,
+"obl": 71901433.91999999,
+"recipients": 265,
+"actions": 1729
+}
+],
+"naicsFy": [
+{
+"naics3": "115",
+"fy": 2023,
+"obl": 1366652710.11,
+"recipients": 3424,
+"actions": 21355
+},
+{
+"naics3": "115",
+"fy": 2024,
+"obl": 1420413279.3599982,
+"recipients": 3293,
+"actions": 23153
+},
+{
+"naics3": "115",
+"fy": 2025,
+"obl": 1243831315.380004,
+"recipients": 3425,
+"actions": 22227
+},
+{
+"naics3": "221",
+"fy": 2023,
+"obl": 2719100062.700001,
+"recipients": 1828,
+"actions": 12665
+},
+{
+"naics3": "221",
+"fy": 2024,
+"obl": 2804716854.0799985,
+"recipients": 1743,
+"actions": 11491
+},
+{
+"naics3": "221",
+"fy": 2025,
+"obl": 3225381902.219998,
+"recipients": 1703,
+"actions": 12022
+},
+{
+"naics3": "236",
+"fy": 2023,
+"obl": 34771303125.57991,
+"recipients": 4298,
+"actions": 54482
+},
+{
+"naics3": "236",
+"fy": 2024,
+"obl": 32935301012.200005,
+"recipients": 4185,
+"actions": 52988
+},
+{
+"naics3": "236",
+"fy": 2025,
+"obl": 32238364861.849995,
+"recipients": 4125,
+"actions": 50313
+},
+{
+"naics3": "237",
+"fy": 2023,
+"obl": 14302447234.010012,
+"recipients": 3127,
+"actions": 17457
+},
+{
+"naics3": "237",
+"fy": 2024,
+"obl": 15419022911.419998,
+"recipients": 3037,
+"actions": 16207
+},
+{
+"naics3": "237",
+"fy": 2025,
+"obl": 14160687216.11,
+"recipients": 2972,
+"actions": 15653
+},
+{
+"naics3": "238",
+"fy": 2023,
+"obl": 4771024977.809997,
+"recipients": 6456,
+"actions": 30020
+},
+{
+"naics3": "238",
+"fy": 2024,
+"obl": 4036326069.8399987,
+"recipients": 6338,
+"actions": 29120
+},
+{
+"naics3": "238",
+"fy": 2025,
+"obl": 3678713712.500008,
+"recipients": 5921,
+"actions": 28334
+},
+{
+"naics3": "311",
+"fy": 2023,
+"obl": 8265878592.7697315,
+"recipients": 1111,
+"actions": 1090542
+},
+{
+"naics3": "311",
+"fy": 2024,
+"obl": 8157415565.689621,
+"recipients": 1141,
+"actions": 994659
+},
+{
+"naics3": "311",
+"fy": 2025,
+"obl": 7427714927.530101,
+"recipients": 1106,
+"actions": 1082455
+},
+{
+"naics3": "312",
+"fy": 2023,
+"obl": 36242984.17000002,
+"recipients": 161,
+"actions": 5754
+},
+{
+"naics3": "312",
+"fy": 2024,
+"obl": 29126842.300000004,
+"recipients": 174,
+"actions": 5096
+},
+{
+"naics3": "312",
+"fy": 2025,
+"obl": 42327359.79000008,
+"recipients": 149,
+"actions": 5050
+},
+{
+"naics3": "313",
+"fy": 2023,
+"obl": 181622100.98999992,
+"recipients": 486,
+"actions": 6267
+},
+{
+"naics3": "313",
+"fy": 2024,
+"obl": 164315396.65999934,
+"recipients": 473,
+"actions": 6131
+},
+{
+"naics3": "313",
+"fy": 2025,
+"obl": 235111257.52999997,
+"recipients": 438,
+"actions": 4556
+},
+{
+"naics3": "314",
+"fy": 2023,
+"obl": 645657333.0400028,
+"recipients": 890,
+"actions": 15783
+},
+{
+"naics3": "314",
+"fy": 2024,
+"obl": 591358070.9399943,
+"recipients": 910,
+"actions": 17723
+},
+{
+"naics3": "314",
+"fy": 2025,
+"obl": 586515324.6199937,
+"recipients": 905,
+"actions": 15510
+},
+{
+"naics3": "315",
+"fy": 2023,
+"obl": 1709946342.469993,
+"recipients": 901,
+"actions": 14651
+},
+{
+"naics3": "315",
+"fy": 2024,
+"obl": 1815858249.370004,
+"recipients": 911,
+"actions": 14693
+},
+{
+"naics3": "315",
+"fy": 2025,
+"obl": 1888861049.8800097,
+"recipients": 875,
+"actions": 14489
+},
+{
+"naics3": "316",
+"fy": 2023,
+"obl": 135130540.55000007,
+"recipients": 212,
+"actions": 1824
+},
+{
+"naics3": "316",
+"fy": 2024,
+"obl": 123900701.92,
+"recipients": 224,
+"actions": 1776
+},
+{
+"naics3": "316",
+"fy": 2025,
+"obl": 226267605.67999986,
+"recipients": 210,
+"actions": 1811
+},
+{
+"naics3": "321",
+"fy": 2023,
+"obl": 234598708.71999982,
+"recipients": 416,
+"actions": 16439
+},
+{
+"naics3": "321",
+"fy": 2024,
+"obl": 265731790.30000147,
+"recipients": 445,
+"actions": 14921
+},
+{
+"naics3": "321",
+"fy": 2025,
+"obl": 142694724.73999968,
+"recipients": 406,
+"actions": 11787
+},
+{
+"naics3": "322",
+"fy": 2023,
+"obl": 347573752.3900053,
+"recipients": 513,
+"actions": 158243
+},
+{
+"naics3": "322",
+"fy": 2024,
+"obl": 390480246.66999316,
+"recipients": 505,
+"actions": 135228
+},
+{
+"naics3": "322",
+"fy": 2025,
+"obl": 358655999.74998546,
+"recipients": 454,
+"actions": 114641
+},
+{
+"naics3": "323",
+"fy": 2023,
+"obl": 45556934.779998206,
+"recipients": 435,
+"actions": 10210
+},
+{
+"naics3": "323",
+"fy": 2024,
+"obl": 51006873.03999907,
+"recipients": 387,
+"actions": 9170
+},
+{
+"naics3": "323",
+"fy": 2025,
+"obl": 58522385.48999901,
+"recipients": 354,
+"actions": 7959
+},
+{
+"naics3": "324",
+"fy": 2023,
+"obl": 12912075460.419888,
+"recipients": 941,
+"actions": 388603
+},
+{
+"naics3": "324",
+"fy": 2024,
+"obl": 11968105567.600159,
+"recipients": 894,
+"actions": 408907
+},
+{
+"naics3": "324",
+"fy": 2025,
+"obl": 8458689122.369669,
+"recipients": 847,
+"actions": 377057
+},
+{
+"naics3": "325",
+"fy": 2023,
+"obl": 25615187418.129276,
+"recipients": 3132,
+"actions": 298672
+},
+{
+"naics3": "325",
+"fy": 2024,
+"obl": 24943613613.29922,
+"recipients": 3124,
+"actions": 377751
+},
+{
+"naics3": "325",
+"fy": 2025,
+"obl": 27003259857.03014,
+"recipients": 2937,
+"actions": 368528
+},
+{
+"naics3": "326",
+"fy": 2023,
+"obl": 374055261.60000145,
+"recipients": 1603,
+"actions": 32259
+},
+{
+"naics3": "326",
+"fy": 2024,
+"obl": 438443540.0100002,
+"recipients": 1593,
+"actions": 34369
+},
+{
+"naics3": "326",
+"fy": 2025,
+"obl": 407554140.9999945,
+"recipients": 1592,
+"actions": 35019
+},
+{
+"naics3": "327",
+"fy": 2023,
+"obl": 167921949.2499995,
+"recipients": 704,
+"actions": 3669
+},
+{
+"naics3": "327",
+"fy": 2024,
+"obl": 225049944.78999949,
+"recipients": 735,
+"actions": 4752
+},
+{
+"naics3": "327",
+"fy": 2025,
+"obl": 149577584.18999976,
+"recipients": 773,
+"actions": 5701
+},
+{
+"naics3": "331",
+"fy": 2023,
+"obl": 3774031427.980005,
+"recipients": 963,
+"actions": 14549
+},
+{
+"naics3": "331",
+"fy": 2024,
+"obl": 2448213688.880001,
+"recipients": 958,
+"actions": 13103
+},
+{
+"naics3": "331",
+"fy": 2025,
+"obl": 2501045896.030002,
+"recipients": 1006,
+"actions": 12376
+},
+{
+"naics3": "332",
+"fy": 2023,
+"obl": 15016307116.13992,
+"recipients": 6852,
+"actions": 554777
+},
+{
+"naics3": "332",
+"fy": 2024,
+"obl": 18176676750.769436,
+"recipients": 6712,
+"actions": 511555
+},
+{
+"naics3": "332",
+"fy": 2025,
+"obl": 18067786653.96988,
+"recipients": 6752,
+"actions": 456512
+},
+{
+"naics3": "333",
+"fy": 2023,
+"obl": 5913009839.979861,
+"recipients": 6677,
+"actions": 210338
+},
+{
+"naics3": "333",
+"fy": 2024,
+"obl": 6929880724.400408,
+"recipients": 6570,
+"actions": 191959
+},
+{
+"naics3": "333",
+"fy": 2025,
+"obl": 7372090234.980263,
+"recipients": 6349,
+"actions": 174777
+},
+{
+"naics3": "334",
+"fy": 2023,
+"obl": 34657752168.2994,
+"recipients": 10031,
+"actions": 182881
+},
+{
+"naics3": "334",
+"fy": 2024,
+"obl": 35616874167.64983,
+"recipients": 9810,
+"actions": 186430
+},
+{
+"naics3": "334",
+"fy": 2025,
+"obl": 36605964359.66965,
+"recipients": 9318,
+"actions": 175157
+},
+{
+"naics3": "335",
+"fy": 2023,
+"obl": 2083916353.6899898,
+"recipients": 3859,
+"actions": 109273
+},
+{
+"naics3": "335",
+"fy": 2024,
+"obl": 2035140491.8598814,
+"recipients": 3845,
+"actions": 106567
+},
+{
+"naics3": "335",
+"fy": 2025,
+"obl": 2089552815.5099428,
+"recipients": 3778,
+"actions": 102059
+},
+{
+"naics3": "336",
+"fy": 2023,
+"obl": 161423669175.90317,
+"recipients": 6264,
+"actions": 249192
+},
+{
+"naics3": "336",
+"fy": 2024,
+"obl": 138209620412.05188,
+"recipients": 6502,
+"actions": 252443
+},
+{
+"naics3": "336",
+"fy": 2025,
+"obl": 180557735371.1324,
+"recipients": 6900,
+"actions": 272506
+},
+{
+"naics3": "337",
+"fy": 2023,
+"obl": 1235938110.7300029,
+"recipients": 1603,
+"actions": 63311
+},
+{
+"naics3": "337",
+"fy": 2024,
+"obl": 1040224998.7600176,
+"recipients": 1516,
+"actions": 60428
+},
+{
+"naics3": "337",
+"fy": 2025,
+"obl": 999344434.7599792,
+"recipients": 1365,
+"actions": 50608
+},
+{
+"naics3": "339",
+"fy": 2023,
+"obl": 7486552556.590037,
+"recipients": 6373,
+"actions": 287233
+},
+{
+"naics3": "339",
+"fy": 2024,
+"obl": 7885385098.149757,
+"recipients": 6211,
+"actions": 258932
+},
+{
+"naics3": "339",
+"fy": 2025,
+"obl": 7668608534.420135,
+"recipients": 5960,
+"actions": 235543
+},
+{
+"naics3": "423",
+"fy": 2023,
+"obl": 6176359032.152731,
+"recipients": 2484,
+"actions": 1035409
+},
+{
+"naics3": "423",
+"fy": 2024,
+"obl": 6399601893.270536,
+"recipients": 2241,
+"actions": 1079059
+},
+{
+"naics3": "423",
+"fy": 2025,
+"obl": 7859695267.222034,
+"recipients": 1989,
+"actions": 1065133
+},
+{
+"naics3": "424",
+"fy": 2023,
+"obl": 2224368033.979949,
+"recipients": 638,
+"actions": 386125
+},
+{
+"naics3": "424",
+"fy": 2024,
+"obl": 2393022133.379969,
+"recipients": 556,
+"actions": 382356
+},
+{
+"naics3": "424",
+"fy": 2025,
+"obl": 3052061938.299966,
+"recipients": 490,
+"actions": 452782
+},
+{
+"naics3": "443",
+"fy": 2023,
+"obl": 367027030.0000132,
+"recipients": 128,
+"actions": 7430
+},
+{
+"naics3": "443",
+"fy": 2024,
+"obl": 249142626.00998473,
+"recipients": 93,
+"actions": 4632
+},
+{
+"naics3": "443",
+"fy": 2025,
+"obl": 119904549.17000237,
+"recipients": 79,
+"actions": 3086
+},
+{
+"naics3": "444",
+"fy": 2023,
+"obl": 371403900.8600046,
+"recipients": 516,
+"actions": 224173
+},
+{
+"naics3": "444",
+"fy": 2024,
+"obl": 433244997.59999895,
+"recipients": 480,
+"actions": 261174
+},
+{
+"naics3": "444",
+"fy": 2025,
+"obl": 468780266.48999417,
+"recipients": 421,
+"actions": 260622
+},
+{
+"naics3": "453",
+"fy": 2023,
+"obl": 47947691.560000405,
+"recipients": 106,
+"actions": 111708
+},
+{
+"naics3": "453",
+"fy": 2024,
+"obl": 61258275.92999956,
+"recipients": 72,
+"actions": 114148
+},
+{
+"naics3": "453",
+"fy": 2025,
+"obl": 64560917.7899995,
+"recipients": 54,
+"actions": 102907
+},
+{
+"naics3": "459",
+"fy": 2023,
+"obl": 13740188.070000008,
+"recipients": 118,
+"actions": 1069
+},
+{
+"naics3": "481",
+"fy": 2023,
+"obl": 6928606982.780003,
+"recipients": 548,
+"actions": 14899
+},
+{
+"naics3": "481",
+"fy": 2024,
+"obl": 7775622932.379999,
+"recipients": 528,
+"actions": 12661
+},
+{
+"naics3": "481",
+"fy": 2025,
+"obl": 7407805708.419994,
+"recipients": 540,
+"actions": 12906
+},
+{
+"naics3": "483",
+"fy": 2023,
+"obl": 3418059428.390005,
+"recipients": 239,
+"actions": 4672
+},
+{
+"naics3": "483",
+"fy": 2024,
+"obl": 3472185508.4700003,
+"recipients": 231,
+"actions": 5325
+},
+{
+"naics3": "483",
+"fy": 2025,
+"obl": 3451147607.139999,
+"recipients": 206,
+"actions": 7144
+},
+{
+"naics3": "484",
+"fy": 2023,
+"obl": 265459866.21999997,
+"recipients": 724,
+"actions": 3819
+},
+{
+"naics3": "484",
+"fy": 2024,
+"obl": 258480738.12999994,
+"recipients": 692,
+"actions": 3921
+},
+{
+"naics3": "484",
+"fy": 2025,
+"obl": 262236868.8899998,
+"recipients": 641,
+"actions": 3642
+},
+{
+"naics3": "485",
+"fy": 2023,
+"obl": 457933381.29999995,
+"recipients": 854,
+"actions": 5650
+},
+{
+"naics3": "485",
+"fy": 2024,
+"obl": 468805973.4200003,
+"recipients": 747,
+"actions": 4621
+},
+{
+"naics3": "485",
+"fy": 2025,
+"obl": 571664050.0700002,
+"recipients": 707,
+"actions": 4752
+},
+{
+"naics3": "488",
+"fy": 2023,
+"obl": 8655461409.289993,
+"recipients": 2009,
+"actions": 22742
+},
+{
+"naics3": "488",
+"fy": 2024,
+"obl": 9363980163.489994,
+"recipients": 1886,
+"actions": 21065
+},
+{
+"naics3": "488",
+"fy": 2025,
+"obl": 9485098272.499996,
+"recipients": 1748,
+"actions": 20333
+},
+{
+"naics3": "492",
+"fy": 2023,
+"obl": 577717539.0700005,
+"recipients": 219,
+"actions": 5993
+},
+{
+"naics3": "492",
+"fy": 2024,
+"obl": 1122237603.0400019,
+"recipients": 213,
+"actions": 6077
+},
+{
+"naics3": "492",
+"fy": 2025,
+"obl": 849122358.0800004,
+"recipients": 199,
+"actions": 5735
+},
+{
+"naics3": "493",
+"fy": 2023,
+"obl": 1232683318.5299797,
+"recipients": 444,
+"actions": 77965
+},
+{
+"naics3": "493",
+"fy": 2024,
+"obl": 1512115321.5600352,
+"recipients": 469,
+"actions": 123949
+},
+{
+"naics3": "493",
+"fy": 2025,
+"obl": 1590280719.390012,
+"recipients": 452,
+"actions": 109489
+},
+{
+"naics3": "511",
+"fy": 2023,
+"obl": 5858112095.430011,
+"recipients": 2101,
+"actions": 16772
+},
+{
+"naics3": "511",
+"fy": 2024,
+"obl": 6679499538.870007,
+"recipients": 1614,
+"actions": 15691
+},
+{
+"naics3": "511",
+"fy": 2025,
+"obl": 6317861560.42,
+"recipients": 1196,
+"actions": 14655
+},
+{
+"naics3": "512",
+"fy": 2023,
+"obl": 79670114.55000004,
+"recipients": 407,
+"actions": 1456
+},
+{
+"naics3": "512",
+"fy": 2024,
+"obl": 111066547.28000005,
+"recipients": 346,
+"actions": 1636
+},
+{
+"naics3": "512",
+"fy": 2025,
+"obl": 94767173.82999994,
+"recipients": 300,
+"actions": 1634
+},
+{
+"naics3": "513",
+"fy": 2023,
+"obl": 495752299.8799999,
+"recipients": 1811,
+"actions": 4835
+},
+{
+"naics3": "513",
+"fy": 2024,
+"obl": 1038553694.6799989,
+"recipients": 2143,
+"actions": 6975
+},
+{
+"naics3": "513",
+"fy": 2025,
+"obl": 1635624001.3199978,
+"recipients": 2236,
+"actions": 8640
+},
+{
+"naics3": "515",
+"fy": 2023,
+"obl": 36545887.94,
+"recipients": 258,
+"actions": 1047
+},
+{
+"naics3": "517",
+"fy": 2023,
+"obl": 6292938432.419886,
+"recipients": 1646,
+"actions": 63643
+},
+{
+"naics3": "517",
+"fy": 2024,
+"obl": 6488433776.109946,
+"recipients": 1605,
+"actions": 55073
+},
+{
+"naics3": "517",
+"fy": 2025,
+"obl": 7127010077.859984,
+"recipients": 1546,
+"actions": 55222
+},
+{
+"naics3": "518",
+"fy": 2023,
+"obl": 3085342458.130003,
+"recipients": 1426,
+"actions": 6572
+},
+{
+"naics3": "518",
+"fy": 2024,
+"obl": 3063611672.330004,
+"recipients": 1501,
+"actions": 7457
+},
+{
+"naics3": "518",
+"fy": 2025,
+"obl": 3361936621.0099983,
+"recipients": 1321,
+"actions": 7911
+},
+{
+"naics3": "519",
+"fy": 2023,
+"obl": 597331043.1899999,
+"recipients": 812,
+"actions": 4977
+},
+{
+"naics3": "519",
+"fy": 2024,
+"obl": 616141711.9500006,
+"recipients": 716,
+"actions": 4702
+},
+{
+"naics3": "519",
+"fy": 2025,
+"obl": 503200837.99,
+"recipients": 625,
+"actions": 4548
+},
+{
+"naics3": "522",
+"fy": 2023,
+"obl": 1614353775.5199997,
+"recipients": 117,
+"actions": 1168
+},
+{
+"naics3": "522",
+"fy": 2024,
+"obl": 1662192850.8800006,
+"recipients": 110,
+"actions": 1268
+},
+{
+"naics3": "522",
+"fy": 2025,
+"obl": 1681637981.4199991,
+"recipients": 109,
+"actions": 1060
+},
+{
+"naics3": "524",
+"fy": 2023,
+"obl": 39970500346.410126,
+"recipients": 322,
+"actions": 3601
+},
+{
+"naics3": "524",
+"fy": 2024,
+"obl": 44787926669.88999,
+"recipients": 327,
+"actions": 3944
+},
+{
+"naics3": "524",
+"fy": 2025,
+"obl": 48490254049.00987,
+"recipients": 325,
+"actions": 4061
+},
+{
+"naics3": "531",
+"fy": 2023,
+"obl": 458344501.7900003,
+"recipients": 1213,
+"actions": 6262
+},
+{
+"naics3": "531",
+"fy": 2024,
+"obl": 793076646.8199978,
+"recipients": 1201,
+"actions": 8045
+},
+{
+"naics3": "531",
+"fy": 2025,
+"obl": 532954910.23000014,
+"recipients": 1225,
+"actions": 6785
+},
+{
+"naics3": "532",
+"fy": 2023,
+"obl": 853490500.0899987,
+"recipients": 1669,
+"actions": 15289
+},
+{
+"naics3": "532",
+"fy": 2024,
+"obl": 824707452.4899986,
+"recipients": 1838,
+"actions": 17277
+},
+{
+"naics3": "532",
+"fy": 2025,
+"obl": 782599952.0199984,
+"recipients": 1739,
+"actions": 17554
+},
+{
+"naics3": "541",
+"fy": 2023,
+"obl": 238783709856.7375,
+"recipients": 32206,
+"actions": 499557
+},
+{
+"naics3": "541",
+"fy": 2024,
+"obl": 244241222674.21814,
+"recipients": 32363,
+"actions": 485784
+},
+{
+"naics3": "541",
+"fy": 2025,
+"obl": 230045226815.1799,
+"recipients": 31835,
+"actions": 495579
+},
+{
+"naics3": "561",
+"fy": 2023,
+"obl": 54518482402.16002,
+"recipients": 11475,
+"actions": 119110
+},
+{
+"naics3": "561",
+"fy": 2024,
+"obl": 54996822008.59033,
+"recipients": 11443,
+"actions": 122294
+},
+{
+"naics3": "561",
+"fy": 2025,
+"obl": 55679598908.230125,
+"recipients": 11008,
+"actions": 120598
+},
+{
+"naics3": "562",
+"fy": 2023,
+"obl": 10091307925.309992,
+"recipients": 3555,
+"actions": 41723
+},
+{
+"naics3": "562",
+"fy": 2024,
+"obl": 11429432301.56999,
+"recipients": 3637,
+"actions": 43701
+},
+{
+"naics3": "562",
+"fy": 2025,
+"obl": 14269389028.049984,
+"recipients": 3663,
+"actions": 43714
+},
+{
+"naics3": "611",
+"fy": 2023,
+"obl": 5448194994.899995,
+"recipients": 4662,
+"actions": 26125
+},
+{
+"naics3": "611",
+"fy": 2024,
+"obl": 5246473996.539998,
+"recipients": 4507,
+"actions": 26406
+},
+{
+"naics3": "611",
+"fy": 2025,
+"obl": 5050658411.39,
+"recipients": 4213,
+"actions": 25856
+},
+{
+"naics3": "621",
+"fy": 2023,
+"obl": 6561689367.369997,
+"recipients": 3142,
+"actions": 22632
+},
+{
+"naics3": "621",
+"fy": 2024,
+"obl": 7907839087.820031,
+"recipients": 3014,
+"actions": 23379
+},
+{
+"naics3": "621",
+"fy": 2025,
+"obl": 12495361724.62002,
+"recipients": 2852,
+"actions": 23011
+},
+{
+"naics3": "622",
+"fy": 2023,
+"obl": 1638850192.6299953,
+"recipients": 395,
+"actions": 13302
+},
+{
+"naics3": "622",
+"fy": 2024,
+"obl": 1470581018.4200013,
+"recipients": 352,
+"actions": 14734
+},
+{
+"naics3": "622",
+"fy": 2025,
+"obl": 1454012254.6699998,
+"recipients": 316,
+"actions": 12480
+},
+{
+"naics3": "623",
+"fy": 2023,
+"obl": 1386596467.1100018,
+"recipients": 1795,
+"actions": 7547
+},
+{
+"naics3": "623",
+"fy": 2024,
+"obl": 1304768226.2700016,
+"recipients": 1541,
+"actions": 7569
+},
+{
+"naics3": "623",
+"fy": 2025,
+"obl": 1389128413.59,
+"recipients": 1398,
+"actions": 7109
+},
+{
+"naics3": "624",
+"fy": 2023,
+"obl": 1898738934.9500008,
+"recipients": 673,
+"actions": 2380
+},
+{
+"naics3": "624",
+"fy": 2024,
+"obl": 1215309228.399999,
+"recipients": 668,
+"actions": 2379
+},
+{
+"naics3": "624",
+"fy": 2025,
+"obl": 991004874.5199997,
+"recipients": 1150,
+"actions": 4379
+},
+{
+"naics3": "711",
+"fy": 2023,
+"obl": 113297792.24000004,
+"recipients": 596,
+"actions": 3123
+},
+{
+"naics3": "711",
+"fy": 2024,
+"obl": 91064506.31000002,
+"recipients": 598,
+"actions": 3365
+},
+{
+"naics3": "711",
+"fy": 2025,
+"obl": 79484928.35000002,
+"recipients": 516,
+"actions": 2303
+},
+{
+"naics3": "721",
+"fy": 2023,
+"obl": 372381721.95000005,
+"recipients": 2276,
+"actions": 12923
+},
+{
+"naics3": "721",
+"fy": 2024,
+"obl": 374629011.78000027,
+"recipients": 2334,
+"actions": 13108
+},
+{
+"naics3": "721",
+"fy": 2025,
+"obl": 318479578.1600001,
+"recipients": 2121,
+"actions": 11141
+},
+{
+"naics3": "722",
+"fy": 2023,
+"obl": 1243626732.5899987,
+"recipients": 627,
+"actions": 4412
+},
+{
+"naics3": "722",
+"fy": 2024,
+"obl": 1303169531.230004,
+"recipients": 602,
+"actions": 4580
+},
+{
+"naics3": "722",
+"fy": 2025,
+"obl": 1423394950.91,
+"recipients": 598,
+"actions": 4395
+},
+{
+"naics3": "811",
+"fy": 2023,
+"obl": 4028402671.8300066,
+"recipients": 6964,
+"actions": 36599
+},
+{
+"naics3": "811",
+"fy": 2024,
+"obl": 4281756667.310023,
+"recipients": 6960,
+"actions": 36998
+},
+{
+"naics3": "811",
+"fy": 2025,
+"obl": 4604261258.26001,
+"recipients": 6896,
+"actions": 37291
+},
+{
+"naics3": "812",
+"fy": 2023,
+"obl": 424692534.9800006,
+"recipients": 1488,
+"actions": 7201
+},
+{
+"naics3": "812",
+"fy": 2024,
+"obl": 399923850.02,
+"recipients": 1545,
+"actions": 7470
+},
+{
+"naics3": "812",
+"fy": 2025,
+"obl": 303568442.7399999,
+"recipients": 1143,
+"actions": 6610
+},
+{
+"naics3": "813",
+"fy": 2023,
+"obl": 221486589.63000008,
+"recipients": 1146,
+"actions": 3093
+},
+{
+"naics3": "813",
+"fy": 2024,
+"obl": 206685400.04000005,
+"recipients": 1101,
+"actions": 3113
+},
+{
+"naics3": "813",
+"fy": 2025,
+"obl": 129012203.96000001,
+"recipients": 989,
+"actions": 3173
+},
+{
+"naics3": "922",
+"fy": 2023,
+"obl": 408095358.83,
+"recipients": 618,
+"actions": 1747
+},
+{
+"naics3": "922",
+"fy": 2024,
+"obl": 446648244.37000006,
+"recipients": 589,
+"actions": 1559
+},
+{
+"naics3": "922",
+"fy": 2025,
+"obl": 466412254.58999985,
+"recipients": 521,
+"actions": 1451
+},
+{
+"naics3": "923",
+"fy": 2023,
+"obl": 151269064.26000002,
+"recipients": 305,
+"actions": 1058
+},
+{
+"naics3": "923",
+"fy": 2024,
+"obl": 117893529.19000003,
+"recipients": 290,
+"actions": 1095
+}
+],
+"topRecipients": [
+{
+"code": "012",
+"uei": "QGUQWSU5AHB4",
+"name": "PERIMETER SOLUTIONS LP",
+"obl": 252508061.4
+},
+{
+"code": "012",
+"uei": "DX7AU4JMLPC7",
+"name": "TYSON FOODS INC.",
+"obl": 226992632.47000003
+},
+{
+"code": "012",
+"uei": "RNUGGJVG1RK8",
+"name": "PACIFIC COAST PRODUCERS",
+"obl": 117320699.66
+},
+{
+"code": "012",
+"uei": "H1VHLSRLB3Y7",
+"name": "HELICOPTER TRANSPORT SERVICES, LLC",
+"obl": 114604604.80999999
+},
+{
+"code": "012",
+"uei": "QLPVYV6GY874",
+"name": "AERO-FLITE, INC.",
+"obl": 112412917.51000002
+},
+{
+"code": "012",
+"uei": "TTB1W4DXY7L5",
+"name": "BONGARDS CREAMERIES",
+"obl": 103862985.40999998
+},
+{
+"code": "012",
+"uei": "RH1LCNXGVHL7",
+"name": "HELICOPTER EXPRESS LLC",
+"obl": 102458350.31000003
+},
+{
+"code": "013",
+"uei": "M8U2V6FM8643",
+"name": "REED TECHNOLOGY AND INFORMATION SERVICES LLC",
+"obl": 171796583.37999997
+},
+{
+"code": "013",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 158800309.85000002
+},
+{
+"code": "013",
+"uei": "DFH4YBBMYMU8",
+"name": "EARTH RESOURCES TECHNOLOGY, LLC",
+"obl": 128992322.27000004
+},
+{
+"code": "013",
+"uei": "MMLKPW9JLX64",
+"name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+"obl": 122276704.36999997
+},
+{
+"code": "013",
+"uei": "Z2JUCG8WMHL3",
+"name": "JAG ALASKA INC.",
+"obl": 109651739.3
+},
+{
+"code": "013",
+"uei": "C47BNA8GM833",
+"name": "ACCENTURE FEDERAL SERVICES LLC",
+"obl": 101340970.97
+},
+{
+"code": "013",
+"uei": "DMHDNDCPWUD1",
+"name": "THE MITRE CORPORATION",
+"obl": 100485198.12
+},
+{
+"code": "014",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 298564060.89
+},
+{
+"code": "014",
+"uei": "SNSLU2QXJ7Z5",
+"name": "NW CONSTRUCTION, INC",
+"obl": 225853814.76999998
+},
+{
+"code": "014",
+"uei": "KGG6RMJ7D9P8",
+"name": "KIEWIT INFRASTRUCTURE WEST CO.",
+"obl": 217243435.0
+},
+{
+"code": "014",
+"uei": "CAJ4W5QGNKK9",
+"name": "ACACIA CENTER FOR JUSTICE",
+"obl": 147941461.9
+},
+{
+"code": "014",
+"uei": "WEBHVDKSC4T5",
+"name": "JACOBS PROJECT MANAGEMENT CO.",
+"obl": 132562210.0
+},
+{
+"code": "014",
+"uei": "WCK5W6RK82X1",
+"name": "AMES FEDERAL CONTRACTING GROUP LLC",
+"obl": 112100000.0
+},
+{
+"code": "014",
+"uei": "EZMNZ2HYHFB7",
+"name": "TEPA EC, LLC",
+"obl": 109376451.03
+},
+{
+"code": "015",
+"uei": "M8XJCDL1AE26",
+"name": "METROPOLITAN SECURITY SERVICES, INC.",
+"obl": 510012950.5599999
+},
+{
+"code": "015",
+"uei": "HJGMJN1JKL46",
+"name": "CORECIVIC, INC.",
+"obl": 285946272.67999995
+},
+{
+"code": "015",
+"uei": "S1RUKWWRYFL6",
+"name": "MCKESSON CORPORATION",
+"obl": 211984609.6500002
+},
+{
+"code": "015",
+"uei": "TRKEP1HEBNS5",
+"name": "CGI FEDERAL INC.",
+"obl": 170725931.74
+},
+{
+"code": "015",
+"uei": "JMLKZZ1NL2Z6",
+"name": "THE GEO GROUP, INC.",
+"obl": 170077363.27
+},
+{
+"code": "015",
+"uei": "GB3CE4QXH6A4",
+"name": "NAPHCARE LLC",
+"obl": 169424066.98
+},
+{
+"code": "015",
+"uei": "TWVGJRMK6Z78",
+"name": "BRASFIELD & GORRIE LLC",
+"obl": 158861769.92
+},
+{
+"code": "015",
+"uei": "MX89BGD5FK75",
+"name": "AT&T ENTERPRISES, LLC",
+"obl": 143670275.89000002
+},
+{
+"code": "019",
+"uei": "ZJFDNMA46LT9",
+"name": "XATOR LLC",
+"obl": 618512991.3299999
+},
+{
+"code": "019",
+"uei": "TRKEP1HEBNS5",
+"name": "CGI FEDERAL INC.",
+"obl": 363769985.47000015
+},
+{
+"code": "019",
+"uei": "XXNJCWMAKNH8",
+"name": "BL HARBERT INTERNATIONAL LLC",
+"obl": 323929443.07
+},
+{
+"code": "019",
+"uei": "LN9PU5M2YZN5",
+"name": "MISCELLANEOUS FOREIGN AWARDEES",
+"obl": 254136750.87000006
+},
+{
+"code": "019",
+"uei": "FKJWA9VNRNC9",
+"name": "PECKHAM VOCATIONAL INDUSTRIES, INC.",
+"obl": 244676616.19
+},
+{
+"code": "019",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 235175990.99000004
+},
+{
+"code": "019",
+"uei": "C47BNA8GM833",
+"name": "ACCENTURE FEDERAL SERVICES LLC",
+"obl": 181676682.46999994
+},
+{
+"code": "019",
+"uei": "ELJMJND6DDF3",
+"name": "CADDELL CONSTRUCTION CO. (DE), LLC",
+"obl": 179919356.08
+},
+{
+"code": "020",
+"uei": "ZRGFMMN3RXV8",
+"name": "STONEX FINANCIAL LTD",
+"obl": 1330684787.300001
+},
+{
+"code": "020",
+"uei": "JEANDJTZ8HJ3",
+"name": "FCN, INC.",
+"obl": 427950988.1699999
+},
+{
+"code": "020",
+"uei": "GL5NPDBBRMC8",
+"name": "ASAHI REFINING USA INC",
+"obl": 339833337.47000015
+},
+{
+"code": "020",
+"uei": "C47BNA8GM833",
+"name": "ACCENTURE FEDERAL SERVICES LLC",
+"obl": 335749687.6100001
+},
+{
+"code": "020",
+"uei": "NNDATBHM7KY1",
+"name": "LANCER INFORMATION SOLUTIONS, LLC",
+"obl": 270249739.29
+},
+{
+"code": "020",
+"uei": "MMLKPW9JLX64",
+"name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+"obl": 238083779.14999992
+},
+{
+"code": "020",
+"uei": "CKV2L9GZKJK3",
+"name": "DELOITTE CONSULTING LLP",
+"obl": 235845157.48000002
+},
+{
+"code": "020",
+"uei": "CN4KSKX2UQY5",
+"name": "COUNTERTRADE PRODUCTS, INC.",
+"obl": 227041253.26
+},
+{
+"code": "028",
+"uei": "MYKLJHTX3MM7",
+"name": "LEIDOS, INC.",
+"obl": 263725922.78
+},
+{
+"code": "028",
+"uei": "DT8KJHZXVJH5",
+"name": "CARAHSOFT TECHNOLOGY CORP",
+"obl": 128351310.09999998
+},
+{
+"code": "036",
+"uei": "XMUZGJN98231",
+"name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+"obl": 22490531833.79999
+},
+{
+"code": "036",
+"uei": "S1RUKWWRYFL6",
+"name": "MCKESSON CORPORATION",
+"obl": 11450566559.869999
+},
+{
+"code": "036",
+"uei": "J7M9HPTGJ1S9",
+"name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+"obl": 9834327511.740002
+},
+{
+"code": "036",
+"uei": "GN8YP96TMPK6",
+"name": "QTC MEDICAL SERVICES INC",
+"obl": 2775778966.8500004
+},
+{
+"code": "036",
+"uei": "G5XXLHZSW8X3",
+"name": "OPTUMSERVE HEALTH SERVICES, INC.",
+"obl": 2501192977.539999
+},
+{
+"code": "036",
+"uei": "MT6ZNX9BMGB7",
+"name": "VETERANS EVALUATION SERVICES, INC",
+"obl": 2033102247.2699995
+},
+{
+"code": "036",
+"uei": "DT2KS3HH5FP5",
+"name": "ORACLE HEALTH GOVERNMENT SERVICES, INC.",
+"obl": 1006450120.03
+},
+{
+"code": "036",
+"uei": "Y54FQAPG4TN5",
+"name": "LOYAL SOURCE GOVERNMENT SERVICES LLC",
+"obl": 759509201.8900002
+},
+{
+"code": "047",
+"uei": "JCBMLGPE6Z71",
+"name": "BOOZ ALLEN HAMILTON INC",
+"obl": 2359497441.31
+},
+{
+"code": "047",
+"uei": "MMLKPW9JLX64",
+"name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+"obl": 1049732087.51
+},
+{
+"code": "047",
+"uei": "N3PBJAVNKF61",
+"name": "CACI, INC. - FEDERAL",
+"obl": 961725563.6000001
+},
+{
+"code": "047",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 924600620.9700003
+},
+{
+"code": "047",
+"uei": "G5H7HWC4L2R5",
+"name": "HII MISSION TECHNOLOGIES CORP",
+"obl": 879387064.4400002
+},
+{
+"code": "047",
+"uei": "CKV2L9GZKJK3",
+"name": "DELOITTE CONSULTING LLP",
+"obl": 685569819.7
+},
+{
+"code": "047",
+"uei": "ZBPQEJVECCT4",
+"name": "PERATON INC.",
+"obl": 651069603.4100001
+},
+{
+"code": "047",
+"uei": "MDSWM6MB1BH7",
+"name": "LEIDOS, INC.",
+"obl": 488042996.28999996
+},
+{
+"code": "049",
+"uei": "X38JVP4R72E1",
+"name": "LEIDOS, INC.",
+"obl": 319931375.40999997
+},
+{
+"code": "068",
+"uei": "DBD6KDKXWN65",
+"name": "ENVIRONMENTAL QUALITY MANAGEMENT, INC",
+"obl": 141735682.10000005
+},
+{
+"code": "068",
+"uei": "VHPJR3MJWV49",
+"name": "SEVENSON ENVIRONMENTAL SERVICES, INC.",
+"obl": 136907984.75
+},
+{
+"code": "068",
+"uei": "MHMPN3F73NX3",
+"name": "ENVIRONMENTAL RESTORATION LLC",
+"obl": 115445521.14999999
+},
+{
+"code": "069",
+"uei": "E98VT6T8R7E1",
+"name": "HARRIS CORPORATION",
+"obl": 918037659.6500001
+},
+{
+"code": "069",
+"uei": "MYKLJHTX3MM7",
+"name": "LEIDOS, INC.",
+"obl": 364275502.57000023
+},
+{
+"code": "069",
+"uei": "MMLKPW9JLX64",
+"name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+"obl": 318747896.3900001
+},
+{
+"code": "069",
+"uei": "QM4EZDV15JL8",
+"name": "L3HARRIS TECHNOLOGIES, INC.",
+"obl": 285097595.92
+},
+{
+"code": "069",
+"uei": "PHZDZ8SJ5CM1",
+"name": "CDW GOVERNMENT LLC",
+"obl": 181501300.5600002
+},
+{
+"code": "069",
+"uei": "UE9QJD4KK1L6",
+"name": "LEIDOS, INC.",
+"obl": 164357644.61999997
+},
+{
+"code": "069",
+"uei": "DMHDNDCPWUD1",
+"name": "THE MITRE CORPORATION",
+"obl": 159346542.67000005
+},
+{
+"code": "069",
+"uei": "P35CUAWMBQ19",
+"name": "FREQUENTIS USA, INC",
+"obl": 156029023.76000002
+},
+{
+"code": "070",
+"uei": "VNQTYNAV9C25",
+"name": "BCCG A JOINT VENTURE",
+"obl": 3127100299.0
+},
+{
+"code": "070",
+"uei": "XAVBDA4D13N7",
+"name": "FISHER SAND & GRAVEL CO",
+"obl": 928459404.0
+},
+{
+"code": "070",
+"uei": "US79M57E8DT9",
+"name": "BARNARD SPENCER JOINT VENTURE",
+"obl": 778434100.0
+},
+{
+"code": "070",
+"uei": "RG6LJJM6JBS3",
+"name": "AUSTAL USA, LLC",
+"obl": 707287781.84
+},
+{
+"code": "070",
+"uei": "D5BNEHB3UL89",
+"name": "CSI AVIATION, INC",
+"obl": 658478143.3399999
+},
+{
+"code": "070",
+"uei": "JMLKZZ1NL2Z6",
+"name": "THE GEO GROUP, INC.",
+"obl": 621382988.2999998
+},
+{
+"code": "070",
+"uei": "RG1VD6RNMXB5",
+"name": "PARAGON SYSTEMS INC",
+"obl": 494008436.2600003
+},
+{
+"code": "070",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 372821881.74
+},
+{
+"code": "072",
+"uei": "DSUSFJFR9A33",
+"name": "CHEMONICS INTERNATIONAL, INC.",
+"obl": 1258761152.7700002
+},
+{
+"code": "072",
+"uei": "KA5HQCLKUVW1",
+"name": "DOMESTIC AWARDEES (UNDISCLOSED)",
+"obl": 516596556.29
+},
+{
+"code": "072",
+"uei": "JKMEF5QVJK24",
+"name": "DAI GLOBAL LLC",
+"obl": 274862608.7
+},
+{
+"code": "072",
+"uei": "VRAASTY11EA3",
+"name": "FAMILY HEALTH INTERNATIONAL",
+"obl": 238333614.0
+},
+{
+"code": "072",
+"uei": "C9S1NLQ67626",
+"name": "ABT GLOBAL LLC",
+"obl": 161768743.68
+},
+{
+"code": "072",
+"uei": "PD3VNAABZJL7",
+"name": "PATH",
+"obl": 157716687.44
+},
+{
+"code": "072",
+"uei": "FZNCSKF4X6D9",
+"name": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
+"obl": 108798173.13
+},
+{
+"code": "075",
+"uei": "FCFDA78HKKG2",
+"name": "MERCK SHARP & DOHME LLC",
+"obl": 2880176701.19
+},
+{
+"code": "075",
+"uei": "NCXBGGQ8YTU9",
+"name": "SANOFI VACCINES US INC.",
+"obl": 1120633135.2000003
+},
+{
+"code": "075",
+"uei": "FRHTPHMZMX47",
+"name": "GLAXOSMITHKLINE, LLC",
+"obl": 979676058.5799998
+},
+{
+"code": "075",
+"uei": "TREKW6J3QSF5",
+"name": "MAXIMUS FEDERAL SERVICES, INC.",
+"obl": 949709497.8100001
+},
+{
+"code": "075",
+"uei": "SMNWM6HN79X5",
+"name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+"obl": 839322393.1300001
+},
+{
+"code": "075",
+"uei": "MHBQULRMEEJ5",
+"name": "PFIZER INC",
+"obl": 698673086.67
+},
+{
+"code": "075",
+"uei": "HV8BH9BPG8Y9",
+"name": "LEIDOS BIOMEDICAL RESEARCH INC",
+"obl": 559562924.5600001
+},
+{
+"code": "075",
+"uei": "CKV2L9GZKJK3",
+"name": "DELOITTE CONSULTING LLP",
+"obl": 407385673.6300001
+},
+{
+"code": "080",
+"uei": "YC1YP79BFD19",
+"name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+"obl": 2297095444.23
+},
+{
+"code": "080",
+"uei": "C6M7C2FLKER5",
+"name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+"obl": 2149913303.0
+},
+{
+"code": "080",
+"uei": "FYHNA5WC8XD7",
+"name": "LOCKHEED MARTIN CORP",
+"obl": 1314527667.76
+},
+{
+"code": "080",
+"uei": "SML4NN2CT556",
+"name": "THE BOEING COMPANY",
+"obl": 1172217661.0
+},
+{
+"code": "080",
+"uei": "Q11ZHUFBW741",
+"name": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+"obl": 886247858.6
+},
+{
+"code": "080",
+"uei": "SH2ER4W6LH13",
+"name": "BLUE ORIGIN WASHINGTON, LLC",
+"obl": 828970508.0699999
+},
+{
+"code": "080",
+"uei": "HYBLSJAMM2F4",
+"name": "KBR WYLE SERVICES, LLC",
+"obl": 782058615.2299999
+},
+{
+"code": "080",
+"uei": "DTRJLHVLK8F4",
+"name": "AMENTUM TECHNOLOGY, INC.",
+"obl": 742285262.0099999
+},
+{
+"code": "089",
+"uei": "LUJEPCRRT377",
+"name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
+"obl": 5673408173.920002
+},
+{
+"code": "089",
+"uei": "X7WUS5LRBQU3",
+"name": "TRIAD NATIONAL SECURITY, LLC",
+"obl": 5199738722.650001
+},
+{
+"code": "089",
+"uei": "PM52LCJH72T9",
+"name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
+"obl": 3625335906.9899993
+},
+{
+"code": "089",
+"uei": "ZLHJJ57QA2H8",
+"name": "UT-BATTELLE LLC",
+"obl": 2679775140.7300005
+},
+{
+"code": "089",
+"uei": "EWV8QKG1JUV7",
+"name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
+"obl": 2537032357.81
+},
+{
+"code": "089",
+"uei": "DMEGBYTVBQS5",
+"name": "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC",
+"obl": 2113530440.2199998
+},
+{
+"code": "089",
+"uei": "XLQ7CKUSQSD5",
+"name": "SAVANNAH RIVER NUCLEAR SOLUTIONS LLC",
+"obl": 1954824443.53
+},
+{
+"code": "089",
+"uei": "HG7XL5RBNX55",
+"name": "BATTELLE ENERGY ALLIANCE, LLC",
+"obl": 1937803141.78
+},
+{
+"code": "091",
+"uei": "MNXKQ62J7AE8",
+"name": "NELNET SERVICING LLC",
+"obl": 397232036.03999996
+},
+{
+"code": "091",
+"uei": "C47BNA8GM833",
+"name": "ACCENTURE FEDERAL SERVICES LLC",
+"obl": 298424089.83
+},
+{
+"code": "091",
+"uei": "HSUVUJE1ESU7",
+"name": "MAXIMUS EDUCATION LLC",
+"obl": 295267628.5500001
+},
+{
+"code": "091",
+"uei": "TB69PMAFZSK8",
+"name": "EDFINANCIAL SERVICES LLC",
+"obl": 249322949.57999995
+},
+{
+"code": "091",
+"uei": "N76QY63KMM18",
+"name": "MISSOURI HIGHER EDUCATION LOAN AUTHORITY",
+"obl": 239777671.82999998
+},
+{
+"code": "091",
+"uei": "TREKW6J3QSF5",
+"name": "MAXIMUS FEDERAL SERVICES, INC.",
+"obl": 186168006.33
+},
+{
+"code": "097",
+"uei": "G4KDGE4JFFK7",
+"name": "LOCKHEED MARTIN CORPORATION",
+"obl": 34088390516.219994
+},
+{
+"code": "097",
+"uei": "E7BEKJ4V9528",
+"name": "ELECTRIC BOAT CORPORATION",
+"obl": 21366142819.4
+},
+{
+"code": "097",
+"uei": "VTEWM5QSE598",
+"name": "RAYTHEON COMPANY",
+"obl": 10727405807.080011
+},
+{
+"code": "097",
+"uei": "XFJMYSYFJEK4",
+"name": "LOCKHEED MARTIN CORPORATION",
+"obl": 10420319267.599997
+},
+{
+"code": "097",
+"uei": "KABZK8W6PQT3",
+"name": "AMERISOURCEBERGEN DRUG CORP",
+"obl": 7441520544.740009
+},
+{
+"code": "097",
+"uei": "QN1BCFY7JDJ5",
+"name": "RTX CORPORATION",
+"obl": 7279061880.520008
+},
+{
+"code": "097",
+"uei": "ZE6ZM6NKSV43",
+"name": "HUMANA GOVERNMENT BUSINESS INC",
+"obl": 6513706438.989999
+},
+{
+"code": "097",
+"uei": "JJM4FRDZJDX1",
+"name": "THE BOEING COMPANY",
+"obl": 6336949046.3899975
+},
+{
+"code": "1601",
+"uei": "HV9FBNEWXMY9",
+"name": "ADAMS AND ASSOCIATES INC",
+"obl": 195228661.39999986
+},
+{
+"code": "1601",
+"uei": "G58ZEJ7HJGM1",
+"name": "MANAGEMENT & TRAINING CORPORATION",
+"obl": 159945155.8100001
+},
+{
+"code": "1601",
+"uei": "MV7PBX3HLST1",
+"name": "EDUCATION & TRAINING RESOURCES LLC",
+"obl": 111698633.53000005
+}
+]
+}

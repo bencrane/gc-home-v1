@@ -24,4 +24,6 @@ export type Block = { kind: "p"; text: string } | { kind: "h2"; text: string } |
 export type Piece = {
   slug: string; title: string; dek: string; section: Section; format: Format; formatName: string
   publishedAt: string; byline: string; body: Block[]
+  /** Reference-page tags: awarding agency codes and 3-digit NAICS. Editor-owned after seed. */
+  agencies?: string[]; naics3?: string[]
 }
