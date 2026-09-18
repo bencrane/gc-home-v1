@@ -21,7 +21,7 @@ export default function SectionIndex() {
         <Text size="body-lg" tone="muted" className="mt-6 max-w-2xl">{copy.lede}</Text>
       </Section>
       <Section spacing="sm">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {pieces.map((p) => <PieceCard key={p.slug} piece={p} />)}
         </div>
       </Section>

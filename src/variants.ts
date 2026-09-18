@@ -11,13 +11,6 @@ export const VARIANTS: Variant[] = [
     changes: ["No overrides"],
   },
   {
-    id: "art",
-    name: "Art Cards",
-    summary: "Same tokens as Federal Register, but cards carry abstract art generated per piece (motif by format, seeded by slug) instead of a data visual. The lead keeps its figures.",
-    changes: ["Card visual: abstract SVG art", "Lead visual unchanged"],
-    cardVisual: "art",
-  },
-  {
     id: "broadsheet",
     name: "Broadsheet",
     summary: "Denser newspaper read. Smaller display, 17px body in a wider measure, tighter section rhythm, more pieces per screen.",

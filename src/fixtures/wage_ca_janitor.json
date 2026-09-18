@@ -1,0 +1,138 @@
+{
+ "queryId": "wage_ca_janitor",
+ "artifact": "query-sidecar/query_sidecar_20260802T120425Z.duckdb",
+ "takenAt": "2026-09-17",
+ "elapsedMs": 28.5,
+ "columns": [
+  "county_name",
+  "county_fips",
+  "classification_title",
+  "floor_hourly",
+  "market_median",
+  "h_pct25",
+  "h_pct75",
+  "market_minus_floor"
+ ],
+ "rows": [
+  {
+   "county_name": "Fresno",
+   "county_fips": "06019",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.51,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.2399999999999984
+  },
+  {
+   "county_name": "Madera",
+   "county_fips": "06039",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.51,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.2399999999999984
+  },
+  {
+   "county_name": "Imperial",
+   "county_fips": "06025",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.56,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.1900000000000013
+  },
+  {
+   "county_name": "Tulare",
+   "county_fips": "06107",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.56,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.1900000000000013
+  },
+  {
+   "county_name": "Los Angeles",
+   "county_fips": "06037",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.73,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.0199999999999996
+  },
+  {
+   "county_name": "Orange",
+   "county_fips": "06059",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.73,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 2.0199999999999996
+  },
+  {
+   "county_name": "San Diego",
+   "county_fips": "06073",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.79,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.9600000000000009
+  },
+  {
+   "county_name": "Shasta",
+   "county_fips": "06089",
+   "classification_title": "Janitor",
+   "floor_hourly": 17.91,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.8399999999999999
+  },
+  {
+   "county_name": "Santa Barbara",
+   "county_fips": "06083",
+   "classification_title": "Janitor",
+   "floor_hourly": 18.06,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.6900000000000013
+  },
+  {
+   "county_name": "San Luis Obispo",
+   "county_fips": "06079",
+   "classification_title": "Janitor",
+   "floor_hourly": 18.21,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.5399999999999991
+  },
+  {
+   "county_name": "Butte",
+   "county_fips": "06007",
+   "classification_title": "Janitor",
+   "floor_hourly": 18.23,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.5199999999999996
+  },
+  {
+   "county_name": "San Bernardino",
+   "county_fips": "06071",
+   "classification_title": "Janitor",
+   "floor_hourly": 18.32,
+   "market_median": 19.75,
+   "h_pct25": 17.71,
+   "h_pct75": 23.2,
+   "market_minus_floor": 1.4299999999999997
+  }
+ ]
+}

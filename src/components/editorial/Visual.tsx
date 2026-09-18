@@ -14,9 +14,20 @@ const fmt = { money, count, hourly, date: (v: unknown) => dateShort(String(v)) }
 export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" | "lead" }) {
   const mode = piece.visual ?? activeVariant().cardVisual ?? "data"
   if (size === "card" && mode === "art") return <Art piece={piece} className="block h-full w-full" />
-  const block = piece.body.find((b): b is LedgerSpec | ChartSpec | FiguresSpec => b.kind === "ledger" || b.kind === "chart" || b.kind === "figures")
+  const blocks = piece.body.filter((b): b is LedgerSpec | ChartSpec | FiguresSpec => b.kind === "ledger" || b.kind === "chart" || b.kind === "figures")
+  const block = blocks[0]
   if (!block) return null
-  if (block.kind === "figures") return <FigureVisual spec={block} size={size} />
+  if (block.kind === "figures") {
+    // Lead: figures in a row, then the first table or chart beneath, so the block carries density.
+    const next = size === "lead" ? blocks.find((b) => b.kind !== "figures") : undefined
+    return (
+      <div>
+        <FigureVisual spec={block} size={size} />
+        {next && next.kind === "ledger" && <div className="mt-6 border-t border-line pt-4"><LedgerVisual spec={next} size="lead" /></div>}
+        {next && next.kind === "chart" && <div className="mt-6 border-t border-line pt-4"><ChartVisual spec={next} size="lead" /></div>}
+      </div>
+    )
+  }
   if (block.kind === "ledger") return <LedgerVisual spec={block} size={size} />
   return <ChartVisual spec={block} size={size} />
 }
@@ -24,14 +35,14 @@ export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" |
 function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead" }) {
   const [f, ...rest] = spec.figures
   return (
-    <div className={size === "lead" ? "flex flex-wrap items-end gap-x-10 gap-y-4" : ""}>
+    <div className={size === "lead" ? "grid grid-cols-3 gap-6" : ""}>
       <div>
-        <p className={"figures-display text-foreground " + (size === "lead" ? "text-display" : "text-h1")}>{f.value}</p>
+        <p className={"figures-display text-foreground " + (size === "lead" ? "text-h1" : "text-h1")}>{f.value}</p>
         <MonoLabel className="mt-1 text-foreground-subtle">{f.label}</MonoLabel>
       </div>
       {size === "lead" && rest.map((r) => (
         <div key={r.label}>
-          <p className="figures-display text-h2 text-foreground">{r.value}</p>
+          <p className="figures-display text-h1 text-foreground">{r.value}</p>
           <MonoLabel className="mt-1 text-foreground-subtle">{r.label}</MonoLabel>
         </div>
       ))}
@@ -40,7 +51,7 @@ function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead"
 }
 
 function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" }) {
-  const rows = spec.data.rows.slice(0, size === "lead" ? 8 : 5)
+  const rows = spec.data.rows.slice(0, size === "lead" ? 6 : 5)
   const f = fmt[spec.valueFormat] as (v: unknown) => string
   const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (

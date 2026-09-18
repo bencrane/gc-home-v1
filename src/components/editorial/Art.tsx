@@ -78,6 +78,6 @@ const MOTIF: Record<Format, (r: () => number) => string> = {
 export function Art({ piece, className }: { piece: Piece; className?: string }) {
   const body = MOTIF[piece.format](rng(piece.slug))
   return (
-    <svg viewBox="0 0 400 240" role="img" aria-label="" className={className} xmlns="http://www.w3.org/2000/svg" dangerouslySetInnerHTML={{ __html: `<rect width="400" height="240" fill="#f7f5f0"/>${body}` }} />
+    <svg viewBox="0 0 400 240" aria-hidden="true" focusable="false" className={className} xmlns="http://www.w3.org/2000/svg" dangerouslySetInnerHTML={{ __html: `<rect width="400" height="240" fill="#f7f5f0"/>${body}` }} />
   )
 }
