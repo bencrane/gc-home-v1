@@ -25,11 +25,11 @@ export default function PiecePage() {
       </Band>
       {more.length > 1 && (
         <Band className="border-t border-line py-10">
-          <div className="mb-6 flex items-end justify-between border-b-2 border-navy-900 pb-3">
+          <div className="mb-8 flex items-end justify-between border-b-2 border-navy-900 pb-4">
             <Heading level={2}>More in {piece.section}</Heading>
             <Link to={`/${piece.section}`} className="text-mono-label font-mono uppercase text-copper-600 hover:text-navy-900">All {piece.section} →</Link>
           </div>
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 xl:grid-cols-4">{more.map((p) => <PieceCard key={p.slug} piece={p} />)}</div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">{more.map((p) => <PieceCard key={p.slug} piece={p} />)}</div>
         </Band>
       )}
     </>

@@ -32,10 +32,10 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
 
   if (variant === "row") {
     return (
-      <article className={cn("border-b border-line py-4 first:pt-0", className)}>
+      <article className={cn("border-b border-line py-6 first:pt-0", className)}>
         {meta}
-        <Link to={href} className="group mt-1.5 block"><Heading level={2} className="text-h3 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-        <p className="mt-2 line-clamp-2 text-body text-foreground-muted">{piece.dek}</p>
+        <Link to={href} className="group mt-3 block"><Heading level={2} className="text-h3 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
+        <p className="mt-3 line-clamp-3 text-body-lg text-foreground-muted">{piece.dek}</p>
       </article>
     )
   }
@@ -43,10 +43,10 @@ export function PieceCard({ piece, variant = "card", className }: Props) {
   return (
     <article className={cn("flex flex-col border border-line bg-surface", className)}>
       <Link to={href} aria-hidden tabIndex={-1} className="block aspect-[5/3] overflow-hidden border-b border-line"><Art piece={piece} className="block h-full w-full" /></Link>
-      <div className="flex flex-1 flex-col p-4">
+      <div className="flex flex-1 flex-col p-6">
         {meta}
-        <Link to={href} className="group mt-2 block"><Heading level={3} className="text-h4 transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
-        <p className="mt-2 line-clamp-2 text-body text-foreground-muted">{piece.dek}</p>
+        <Link to={href} className="group mt-3 block"><Heading level={3} className="transition-colors group-hover:text-navy-600">{piece.title}</Heading></Link>
+        <p className="mt-3 line-clamp-3 text-body-lg text-foreground-muted">{piece.dek}</p>
       </div>
     </article>
   )
