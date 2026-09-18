@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Eyebrow, Heading, Text } from "@/components/primitives"
+import { Heading, Text } from "@/components/primitives"
 import { Band } from "@/components/site/Band"
 import { PieceCard } from "@/components/editorial/PieceCard"
 import { PIECES, bySection } from "@/content/pieces"
