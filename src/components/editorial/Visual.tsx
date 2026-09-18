@@ -11,25 +11,40 @@ const fmt = { money, count, hourly, date: (v: unknown) => dateShort(String(v)) }
 
 /** The card visual: derived from the piece's first data block, never a stock image.
  *  figures → the lead figure large; ledger → top rows as a compact bar list; chart → small bars. */
-export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" | "lead" }) {
+export function Visual({ piece, size = "card" }: { piece: Piece; size?: "card" | "lead" | "strip" }) {
   const mode = piece.visual ?? activeVariant().cardVisual ?? "data"
   if (size === "card" && mode === "art") return <Art piece={piece} className="block h-full w-full" />
   const blocks = piece.body.filter((b): b is LedgerSpec | ChartSpec | FiguresSpec => b.kind === "ledger" || b.kind === "chart" || b.kind === "figures")
   const block = blocks[0]
   if (!block) return null
-  if (block.kind === "figures") {
-    // Lead: figures in a row, then the first table or chart beneath, so the block carries density.
-    const next = size === "lead" ? blocks.find((b) => b.kind !== "figures") : undefined
-    return (
-      <div>
-        <FigureVisual spec={block} size={size} />
-        {next && next.kind === "ledger" && <div className="mt-6 border-t border-line pt-4"><LedgerVisual spec={next} size="lead" /></div>}
-        {next && next.kind === "chart" && <div className="mt-6 border-t border-line pt-4"><ChartVisual spec={next} size="lead" /></div>}
-      </div>
-    )
+  // strip: the figures as an inline row under the dek (lead text column). Nothing if the piece has none.
+  if (size === "strip") {
+    const figs = blocks.find((b): b is FiguresSpec => b.kind === "figures")
+    return figs ? <FigureStrip spec={figs} /> : null
   }
+  // lead: one visual only — the first table or chart; figures live in the strip.
+  if (size === "lead") {
+    const main = blocks.find((b) => b.kind !== "figures") ?? block
+    if (main.kind === "ledger") return <LedgerVisual spec={main} size="lead" />
+    if (main.kind === "chart") return <ChartVisual spec={main} size="lead" />
+    return <FigureVisual spec={main} size="lead" />
+  }
+  if (block.kind === "figures") return <FigureVisual spec={block} size={size} />
   if (block.kind === "ledger") return <LedgerVisual spec={block} size={size} />
   return <ChartVisual spec={block} size={size} />
+}
+
+function FigureStrip({ spec }: { spec: FiguresSpec }) {
+  return (
+    <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-3 border-t border-line pt-4">
+      {spec.figures.map((f) => (
+        <div key={f.label} className="flex items-baseline gap-2">
+          <dd className="figures-display text-h3 text-foreground">{f.value}</dd>
+          <dt className="font-mono text-mono-label uppercase text-foreground-subtle">{f.label}</dt>
+        </div>
+      ))}
+    </dl>
+  )
 }
 
 function FigureVisual({ spec, size }: { spec: FiguresSpec; size: "card" | "lead" }) {
@@ -55,23 +70,24 @@ function LedgerVisual({ spec, size }: { spec: LedgerSpec; size: "card" | "lead" 
   const f = fmt[spec.valueFormat] as (v: unknown) => string
   const max = Math.max(...rows.map((r) => Number(r[spec.value]) || 0))
   return (
-    <div>
+    <figure>
       <MonoLabel className="text-copper-600">{spec.heading}</MonoLabel>
-      <ul className="mt-2">
+      <ol className="mt-3">
         {rows.map((r, i) => {
           const v = Number(r[spec.value]) || 0
+          const w = max ? Math.max(2, (v / max) * 100) : 0
           return (
-            <li key={i} className="border-b border-line py-1.5 last:border-b-0">
-              <div className="flex items-baseline justify-between gap-3">
-                <span className="truncate text-body-sm text-foreground">{String(r[spec.label] ?? "—")}</span>
-                <span className="shrink-0 font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
+            <li key={i} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-1">
+              <div className="relative h-7 min-w-0">
+                <div className={"absolute inset-y-0 left-0 " + (i === 0 ? "bg-navy-900" : "bg-navy-200")} style={{ width: `${w}%` }} />
+                <span className={"relative flex h-7 items-center truncate pl-2 text-body-sm " + (i === 0 ? "text-background" : "text-foreground")}>{String(r[spec.label] ?? "—")}</span>
               </div>
-              <div className="mt-1 h-[3px] w-full bg-slate-100"><div className="h-full bg-navy-600" style={{ width: `${max ? (v / max) * 100 : 0}%` }} /></div>
+              <span className="w-16 text-right font-mono text-mono-data tabular-nums text-foreground">{f(r[spec.value])}</span>
             </li>
           )
         })}
-      </ul>
-    </div>
+      </ol>
+    </figure>
   )
 }
 
