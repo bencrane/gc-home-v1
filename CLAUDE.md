@@ -22,6 +22,9 @@ Ultra-matte, high-density financial terminal. Banned outright:
 
 Active design skills: `impeccable`, `design-taste-frontend`, `web-design-guidelines`. The other bundled taste-skill presets (`gpt-taste`, `minimalist-ui`, `high-end-visual-design`, `brandkit`, `imagegen-*`, `industrial-brutalist-ui`, `stitch-design-taste`) are installed but NOT active for this project; do not load them unless explicitly asked.
 
+## Stack
+Vite + React 18 + TypeScript. Tailwind 4 via `@tailwindcss/vite`. shadcn/ui components live in `src/components/ui` (Radix base, `@/` alias). ECharts for dense series; Tremor for telemetry primitives. React stays on 18 until Tremor supports 19.
+
 ## Animation and composition scope
 - `gsap` — data-visualization transitions only (value ticks, series draw-in, sort reorders). Duration ≤ 240ms, no easing overshoot, honor `prefers-reduced-motion`. Skills: `gsap-core`, `gsap-timeline`, `gsap-react`, `gsap-performance`.
 - `remotion` — programmatic video renders of terminal views (reports, replays). Skills: `remotion-best-practices` (router).

@@ -6,7 +6,7 @@ gc-home-v1 — an ultra-matte, high-density financial terminal UI. All fields be
 web
 
 ## Stack
-Node 22. Animation and composition: gsap, remotion, hyperframes (data-visualization animation and component composition only). Design authority: DESIGN.md at the project root.
+Vite 8 + React 18 + TypeScript 6, Tailwind CSS 4, shadcn/ui (radix-nova preset, Radix primitives, Geist), Tremor, ECharts. Animation and composition: gsap, remotion, hyperframes (data-visualization animation and component composition only). Design authority: DESIGN.md at the project root.
 
 ## Users
 Operators reading dense financial and market data for long sessions: traders, analysts, GTM operators who scan tabular numbers, tickers, and time series continuously. (inferred)
