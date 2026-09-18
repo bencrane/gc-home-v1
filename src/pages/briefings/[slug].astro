@@ -8,6 +8,6 @@ export function getStaticPaths() {
 const { slug } = Astro.params
 const { title, dek } = Astro.props
 ---
-<Base title={title} description={dek}>
+<Base title={title} description={dek} image={`/og/${slug}.png`}>
   <PiecePage slug={slug!} />
 </Base>

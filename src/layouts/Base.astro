@@ -3,8 +3,10 @@ import "@/index.css"
 import Rail from "@/components/site/Rail"
 import SiteHeader from "@/components/site/SiteHeader"
 import SiteFooter from "@/components/site/SiteFooter"
-interface Props { title?: string; description?: string; shell?: boolean }
-const { title = "Government Contracted", description = "Federal procurement, read from the record.", shell = true } = Astro.props
+interface Props { title?: string; description?: string; shell?: boolean; image?: string }
+const { title = "Government Contracted", description = "Federal procurement, read from the record.", shell = true, image } = Astro.props
+const ogImage = new URL(image ?? "/og/default.png", Astro.site ?? "https://gc-home.onrender.com").href
+const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://gc-home.onrender.com").href
 const base = import.meta.env.BASE_URL.replace(/\/$/, "")
 const currentPath = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.slice(base.length) || "/" : Astro.url.pathname
 ---
@@ -15,6 +17,19 @@ const currentPath = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.sli
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title === "Government Contracted" ? title : `${title} · Government Contracted`}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Government Contracted" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <script is:inline>
       // Design variant (see src/variants.ts): ?v= wins and is remembered; preview=1 never persists.
       (function () {
